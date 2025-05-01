@@ -103,23 +103,23 @@
 
 /* Custom theme colors for quick access */
 .text-theme-blue {
-  @apply text-theme-blue;
+  color: theme('colors.theme.blue.DEFAULT');
 }
 
 .bg-theme-blue {
-  @apply bg-theme-blue;
+  background-color: theme('colors.theme.blue.DEFAULT');
 }
 
 .text-theme-red {
-  @apply text-theme-red;
+  color: theme('colors.theme.red.DEFAULT');
 }
 
 .bg-theme-red {
-  @apply bg-theme-red;
+  background-color: theme('colors.theme.red.DEFAULT');
 }
 
 .text-theme-gray {
-  @apply text-theme-gray;
+  color: theme('colors.theme.gray.DEFAULT');
 }
 
 .animated-element {
