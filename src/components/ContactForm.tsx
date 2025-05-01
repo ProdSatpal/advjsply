@@ -4,8 +4,11 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
+import { supabase } from '@/integrations/supabase/client';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const ContactForm = () => {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,14 +23,27 @@ const ContactForm = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast.success("Message sent successfully. We will get back to you soon.");
+    try {
+      // Insert data into Supabase
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert({
+          full_name: formData.name,
+          email: formData.email || null, // Email is optional
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message
+        });
+
+      if (error) {
+        throw error;
+      }
+
+      toast.success(t("messageSentSuccess"));
       setFormData({
         name: '',
         email: '',
@@ -35,14 +51,19 @@ const ContactForm = () => {
         subject: '',
         message: ''
       });
-    }, 1000);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error(t("errorSendingMessage"));
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
         <label htmlFor="name" className="block mb-1 text-sm font-medium">
-          Full Name <span className="text-red-500">*</span>
+          {t("fullName")} <span className="text-red-500">*</span>
         </label>
         <Input
           type="text"
@@ -50,7 +71,7 @@ const ContactForm = () => {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          placeholder="Enter your full name"
+          placeholder={t("enterFullName")}
           required
           className="w-full"
         />
@@ -59,7 +80,7 @@ const ContactForm = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div>
           <label htmlFor="email" className="block mb-1 text-sm font-medium">
-            Email <span className="text-red-500">*</span>
+            {t("email")}
           </label>
           <Input
             type="email"
@@ -67,14 +88,13 @@ const ContactForm = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Enter your email"
-            required
+            placeholder={t("enterEmail")}
             className="w-full"
           />
         </div>
         <div>
           <label htmlFor="phone" className="block mb-1 text-sm font-medium">
-            Phone <span className="text-red-500">*</span>
+            {t("phone")} <span className="text-red-500">*</span>
           </label>
           <Input
             type="tel"
@@ -82,7 +102,7 @@ const ContactForm = () => {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            placeholder="Enter your phone number"
+            placeholder={t("enterPhone")}
             required
             className="w-full"
           />
@@ -91,7 +111,7 @@ const ContactForm = () => {
 
       <div>
         <label htmlFor="subject" className="block mb-1 text-sm font-medium">
-          Subject <span className="text-red-500">*</span>
+          {t("subject")} <span className="text-red-500">*</span>
         </label>
         <Input
           type="text"
@@ -99,7 +119,7 @@ const ContactForm = () => {
           name="subject"
           value={formData.subject}
           onChange={handleChange}
-          placeholder="Enter the subject of your message"
+          placeholder={t("enterSubject")}
           required
           className="w-full"
         />
@@ -107,14 +127,14 @@ const ContactForm = () => {
 
       <div>
         <label htmlFor="message" className="block mb-1 text-sm font-medium">
-          Message <span className="text-red-500">*</span>
+          {t("message")} <span className="text-red-500">*</span>
         </label>
         <Textarea
           id="message"
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Type your message here"
+          placeholder={t("typeMessage")}
           rows={5}
           required
           className="w-full"
@@ -126,7 +146,7 @@ const ContactForm = () => {
         className="w-full bg-navy hover:bg-navy-light" 
         disabled={isSubmitting}
       >
-        {isSubmitting ? "Sending..." : "Send Message"}
+        {isSubmitting ? t("sending") : t("sendMessage")}
       </Button>
     </form>
   );

@@ -4,11 +4,14 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ContactInfo from '@/components/ContactInfo';
 import ContactForm from '@/components/ContactForm';
-import AppointmentForm from '@/components/AppointmentForm';
 import Map from '@/components/Map';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Contact = () => {
+  const { t } = useLanguage();
   const animatedSectionsRef = useRef<HTMLElement[]>([]);
 
   useEffect(() => {
@@ -48,10 +51,10 @@ const Contact = () => {
       <section className="pt-32 pb-16 bg-navy">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">Contact Us</h1>
+            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4">{t("contactUs")}</h1>
             <div className="w-20 h-1 bg-gold mx-auto mb-6"></div>
             <p className="text-gray-300 text-lg">
-              Get in touch with Adv. Jasvinder Singh Ply for expert legal assistance tailored to your needs.
+              {t("contactIntro")}
             </p>
           </div>
         </div>
@@ -66,7 +69,7 @@ const Contact = () => {
               ref={addToRefs}
               className="animated-element lg:col-span-1"
             >
-              <h2 className="text-2xl font-serif text-navy mb-6">Get in Touch</h2>
+              <h2 className="text-2xl font-serif text-navy mb-6">{t("getInTouch")}</h2>
               <ContactInfo />
             </div>
 
@@ -77,19 +80,27 @@ const Contact = () => {
             >
               <Tabs defaultValue="contact" className="w-full">
                 <TabsList className="grid w-full grid-cols-2 mb-8">
-                  <TabsTrigger value="contact">Contact Us</TabsTrigger>
-                  <TabsTrigger value="appointment">Book Appointment</TabsTrigger>
+                  <TabsTrigger value="contact">{t("contactUs")}</TabsTrigger>
+                  <TabsTrigger value="appointment">{t("bookAppointment")}</TabsTrigger>
                 </TabsList>
                 <TabsContent value="contact">
                   <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                    <h2 className="text-2xl font-serif text-navy mb-6">Send Us a Message</h2>
+                    <h2 className="text-2xl font-serif text-navy mb-6">{t("sendMessage")}</h2>
                     <ContactForm />
                   </div>
                 </TabsContent>
                 <TabsContent value="appointment">
                   <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                    <h2 className="text-2xl font-serif text-navy mb-6">Schedule an Appointment</h2>
-                    <AppointmentForm />
+                    <h2 className="text-2xl font-serif text-navy mb-6">{t("scheduleAppointment")}</h2>
+                    <div className="text-center py-8">
+                      <p className="mb-6 text-lg">{t("appointmentInstruction")}</p>
+                      <Button 
+                        asChild
+                        className="bg-navy hover:bg-navy-light text-white py-3 px-8 text-lg"
+                      >
+                        <Link to="/contact">{t("bookAppointmentNow")}</Link>
+                      </Button>
+                    </div>
                   </div>
                 </TabsContent>
               </Tabs>
@@ -105,10 +116,10 @@ const Contact = () => {
             ref={addToRefs}
             className="max-w-3xl mx-auto text-center mb-12 animated-element"
           >
-            <h2 className="text-3xl font-serif text-navy mb-4">Our Location</h2>
+            <h2 className="text-3xl font-serif text-navy mb-4">{t("ourLocation")}</h2>
             <div className="w-20 h-1 bg-gold mx-auto mb-6"></div>
             <p className="text-gray-700">
-              Visit our office located at Buddh Nagar, Indora Square, Nagpur for in-person consultations.
+              {t("visitOffice")}
             </p>
           </div>
 
@@ -124,7 +135,7 @@ const Contact = () => {
             className="mt-8 text-center animated-element"
           >
             <p className="text-gray-700">
-              We're conveniently located near major landmarks in Nagpur. If you need help with directions, please don't hesitate to call us.
+              {t("locationHelp")}
             </p>
           </div>
         </div>
@@ -136,9 +147,9 @@ const Contact = () => {
         className="py-12 bg-navy text-white animated-element"
       >
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-2xl font-serif mb-4">Connect on WhatsApp</h2>
+          <h2 className="text-2xl font-serif mb-4">{t("connectWhatsapp")}</h2>
           <p className="text-gray-300 mb-6">
-            For quick responses, reach out to us on WhatsApp. We're available during business hours to assist you.
+            {t("whatsappInfo")}
           </p>
           <button className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 rounded-md text-white font-medium transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -147,7 +158,7 @@ const Contact = () => {
               <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
               <path d="M9.5 13.5h5" />
             </svg>
-            Connect on WhatsApp
+            {t("connectWhatsapp")}
           </button>
         </div>
       </section>
