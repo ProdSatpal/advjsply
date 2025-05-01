@@ -62,7 +62,7 @@ const About = () => {
             ref={addToRefs}
             className="text-gray-200 max-w-2xl mx-auto animated-element"
           >
-            {t('aboutHeroDescription')}
+            With over 12 years of legal expertise, Adv. Jasvinder Singh Ply provides personalized legal guidance and representation. Dedicated to navigating the complexities of family and real estate law with integrity and professionalism.
           </p>
         </div>
       </section>
@@ -91,7 +91,6 @@ const About = () => {
                         <p><strong>{t('experience')}:</strong> 12+ {t('years')}</p>
                         <p><strong>{t('education')}:</strong> B.Com, LL.B</p>
                         <p><strong>{t('specialization')}:</strong> Family Law, Real Estate</p>
-                        <p className="border-t pt-3 mt-3 italic text-gray-500">"{t('philosophyQuote')}"</p>
                       </div>
                       
                       <div className="mt-6">
@@ -165,23 +164,6 @@ const About = () => {
                     </CardContent>
                   </Card>
                   
-                  <Card className="border-l-4 border-theme-red hover:shadow-md transition-all">
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-lg flex items-center gap-2">
-                        <BookOpen className="h-5 w-5 text-theme-red" />
-                        {t('professionalPhilosophy')}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-gray-700 italic">
-                        "{t('philosophyQuote')}"
-                      </p>
-                      <p className="mt-2 text-gray-700">
-                        Adv. Singh believes in a client-centered approach, ensuring that each case is handled with the attention to detail and personalized service it deserves. His practice is built on the principles of integrity, thoroughness, and compassionate representation.
-                      </p>
-                    </CardContent>
-                  </Card>
-                  
                   <Card className="border-l-4 border-emerald-500 hover:shadow-md transition-all">
                     <CardHeader className="pb-2">
                       <CardTitle className="text-lg flex items-center gap-2">
@@ -200,105 +182,51 @@ const About = () => {
                       </ul>
                     </CardContent>
                   </Card>
-                </div>
-
-                {/* Experience Section */}
-                <Card className="border-none shadow-md bg-gray-50">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Briefcase className="h-5 w-5 text-navy" />
-                      Professional Experience
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="border-l-2 border-gold pl-4 py-1">
-                      <p className="font-medium text-navy">Independent Legal Practice (2013 - Present)</p>
-                      <p className="text-gray-700 text-sm">Established own practice focusing on family matters, real estate, and civil litigation</p>
-                    </div>
-                    <div className="border-l-2 border-gold pl-4 py-1">
-                      <p className="font-medium text-navy">Legal Assistant at Office of D. M. Bhujade (2010 - 2013)</p>
-                      <p className="text-gray-700 text-sm">Specialized in real estate law, property documentation, and related matters</p>
-                    </div>
-                    <div className="border-l-2 border-gold pl-4 py-1">
-                      <p className="font-medium text-navy">Legal Assistant at Office of S. J. Kamdi (2004 - 2010)</p>
-                      <p className="text-gray-700 text-sm">Focused on family law matters and gained extensive knowledge in domestic relations</p>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Professional Highlights */}
-                <Card className="border-none shadow-md bg-gray-50">
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <FileText className="h-5 w-5 text-navy" />
-                      Professional Highlights
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                      <div className="flex items-start gap-2">
-                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                        <span>Expert in Court Procedures</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                        <span>Skilled Mediator</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                        <span>Thorough Document Review</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                        <span>Legal Documentation Specialist</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                        <span>Strategic Client Communication</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                        <span>Civil Litigation Expert</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                        <span>Drafting Affidavits & Submissions</span>
-                      </div>
-                      <div className="flex items-start gap-2">
-                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                        <span>Systematic File Management</span>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Why Choose Me Section */}
-                <div className="bg-gray-50 rounded-lg p-6 shadow-sm border border-gray-100">
-                  <h3 className="text-xl font-serif text-navy mb-4">Why Choose Adv. Singh</h3>
-                  <ul className="space-y-3 text-gray-700">
-                    <li className="flex items-start">
-                      <span className="inline-block bg-gold h-2 w-2 rounded-full mt-2 mr-2"></span>
-                      <span><strong>Experienced Representation:</strong> With over 12 years in the legal field, Adv. Singh brings depth of knowledge and practical experience to every case.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="inline-block bg-gold h-2 w-2 rounded-full mt-2 mr-2"></span>
-                      <span><strong>Family Law Expertise:</strong> Specialized experience in handling sensitive family matters with discretion and compassion.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="inline-block bg-gold h-2 w-2 rounded-full mt-2 mr-2"></span>
-                      <span><strong>Real Estate Documentation:</strong> Detailed knowledge of property laws and meticulous attention to documentation requirements.</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="inline-block bg-gold h-2 w-2 rounded-full mt-2 mr-2"></span>
-                      <span><strong>Client-Centric Approach:</strong> Communication, transparency, and dedication to achieving the best possible outcome for each client.</span>
-                    </li>
-                  </ul>
                   
-                  <div className="mt-6">
-                    <Button asChild className="bg-navy hover:bg-navy-light text-white">
-                      <Link to="/contact">Contact For Consultation</Link>
-                    </Button>
-                  </div>
+                  <Card className="border-l-4 border-theme-red hover:shadow-md transition-all">
+                    <CardHeader className="pb-2">
+                      <CardTitle className="text-lg flex items-center gap-2">
+                        <FileText className="h-5 w-5 text-theme-red" />
+                        Skills & Expertise
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div className="flex items-start gap-2">
+                          <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                          <span>Expert in Court Procedures</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                          <span>Skilled Mediator</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                          <span>Thorough Document Review</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                          <span>Legal Documentation</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                          <span>Client Communication</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                          <span>Civil Litigation</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                          <span>Drafting Affidavits</span>
+                        </div>
+                        <div className="flex items-start gap-2">
+                          <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                          <span>Systematic File Management</span>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
             </div>
