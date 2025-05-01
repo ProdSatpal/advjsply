@@ -13,7 +13,7 @@ const ContactInfo = () => {
           <Phone size={20} className="mr-3 text-theme-red flex-shrink-0" />
           <div>
             <h3 className="font-serif text-lg text-theme-blue">{t('callUs')}</h3>
-            <p className="text-theme-gray">+91 XXXXXXXXXX</p>
+            <a href="https://wa.me/+919325625126"><p className="text-theme-gray">+91 9325625126</p></a>
             <p className="text-theme-gray">+91 XXXXXXXXXX</p>
           </div>
         </div>
