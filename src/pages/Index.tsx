@@ -14,8 +14,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Index = () => {
+  const { t } = useLanguage();
   const animatedSectionsRef = useRef<HTMLElement[]>([]);
 
   useEffect(() => {
@@ -49,41 +51,43 @@ const Index = () => {
 
   const services = [
     {
-      title: "Civil Rights Litigation",
-      description: "Protection of your fundamental rights and civil liberties through strategic legal advocacy."
+      title: t('civilRights'),
+      description: t('civilRightsDesc')
     },
     {
-      title: "Criminal Law",
-      description: "Comprehensive defense in criminal cases including bail petitions and writ petitions."
+      title: t('criminalLaw'),
+      description: t('criminalWritDesc')
     },
     {
-      title: "Family Law",
-      description: "Guidance through divorce proceedings, domestic violence cases, and family disputes."
+      title: t('familyLaw'),
+      description: t('familyLaw')
     },
     {
-      title: "Property Law",
-      description: "Assistance with property registry, disputes, and drafting of legal agreements."
+      title: t('propertyDisputes'),
+      description: t('propertyDocumentation')
     }
   ];
 
   const testimonials = [
     {
-      text: "Adv. Jasvinder handled my property dispute case with utmost professionalism and expertise. His guidance throughout the process was invaluable.",
-      author: "Rajesh Kumar, Nagpur"
+      text: t('testimonial1'),
+      author: t('testimonial1Author')
+    },
+    {
+      text: t('testimonial2'),
+      author: t('testimonial2Author')
     },
     {
       text: "I was impressed by the detailed attention given to my case and the successful resolution. Highly recommend for any legal matters.",
       author: "Priya Sharma, Nagpur"
     },
     {
-      text: "The level of dedication and legal knowledge demonstrated by Adv. Singh is exceptional. He made a complex legal process understandable.",
-      author: "Amit Patel, Nagpur"
-    },
-    {
       text: "Professional, punctual and thorough in his approach. I'm grateful for the positive outcome of my case.",
       author: "Sunita Verma, Nagpur"
     }
   ];
+
+  const whatsappUrl = "https://wa.me/918857972717?text=I%20need%20your%20legal%20assistance%20on%20below%20matter%0A";
 
   return (
     <>
@@ -98,14 +102,14 @@ const Index = () => {
               ref={addToRefs}
               className="text-3xl font-serif text-navy mb-4 animated-element"
             >
-              Our Legal Services
+              {t('servicesPreview')}
             </h2>
             <div className="w-20 h-1 bg-gold mx-auto mb-6"></div>
             <p 
               ref={addToRefs}
               className="text-gray-700 max-w-2xl mx-auto animated-element"
             >
-              We provide comprehensive legal services to meet your various needs. Our team is dedicated to offering personalized solutions tailored to your specific circumstances.
+              {t('servicesPreviewDesc')}
             </p>
           </div>
 
@@ -131,7 +135,7 @@ const Index = () => {
             className="mt-12 text-center animated-element"
           >
             <Button asChild className="bg-navy hover:bg-navy-light text-white font-medium">
-              <Link to="/services">Explore Services</Link>
+              <Link to="/services">{t('viewAllServices')}</Link>
             </Button>
           </div>
         </div>
@@ -145,39 +149,39 @@ const Index = () => {
               ref={addToRefs}
               className="animated-element"
             >
-              <h2 className="text-3xl font-serif text-navy mb-4">Why Choose Us</h2>
+              <h2 className="text-3xl font-serif text-navy mb-4">{t('whyChooseUs')}</h2>
               <div className="w-20 h-1 bg-gold mb-6"></div>
               
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-navy rounded-full flex items-center justify-center text-white font-bold">1</div>
                   <div>
-                    <h3 className="font-serif text-xl text-navy mb-2">Experienced Legal Expertise</h3>
-                    <p className="text-gray-700">With over 12 years in the field, we bring deep knowledge and proven strategies to every case.</p>
+                    <h3 className="font-serif text-xl text-navy mb-2">{t('expLegalExpertise')}</h3>
+                    <p className="text-gray-700">{t('expLegalDesc')}</p>
                   </div>
                 </div>
                 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-navy rounded-full flex items-center justify-center text-white font-bold">2</div>
                   <div>
-                    <h3 className="font-serif text-xl text-navy mb-2">Personalized Approach</h3>
-                    <p className="text-gray-700">We recognize that each client's situation is unique and tailor our services accordingly.</p>
+                    <h3 className="font-serif text-xl text-navy mb-2">{t('personalizedApproach')}</h3>
+                    <p className="text-gray-700">{t('personalizedDesc')}</p>
                   </div>
                 </div>
                 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-navy rounded-full flex items-center justify-center text-white font-bold">3</div>
                   <div>
-                    <h3 className="font-serif text-xl text-navy mb-2">Clear Communication</h3>
-                    <p className="text-gray-700">We explain complex legal matters in straightforward terms so you can make informed decisions.</p>
+                    <h3 className="font-serif text-xl text-navy mb-2">{t('clearCommunication')}</h3>
+                    <p className="text-gray-700">{t('clearCommDesc')}</p>
                   </div>
                 </div>
                 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-navy rounded-full flex items-center justify-center text-white font-bold">4</div>
                   <div>
-                    <h3 className="font-serif text-xl text-navy mb-2">Accessibility</h3>
-                    <p className="text-gray-700">We're responsive to your questions and concerns throughout the legal process.</p>
+                    <h3 className="font-serif text-xl text-navy mb-2">{t('accessibility')}</h3>
+                    <p className="text-gray-700">{t('accessibilityDesc')}</p>
                   </div>
                 </div>
               </div>
@@ -188,7 +192,7 @@ const Index = () => {
               className="animated-element"
             >
               <div className="bg-gray-50 rounded-lg p-8">
-                <h3 className="text-2xl font-serif text-navy mb-4 text-center">Client Testimonials</h3>
+                <h3 className="text-2xl font-serif text-navy mb-4 text-center">{t('clientTestimonials')}</h3>
                 
                 <Carousel className="w-full max-w-md mx-auto">
                   <CarouselContent>
@@ -197,7 +201,7 @@ const Index = () => {
                         <Card className="border-none shadow-lg">
                           <CardContent className="p-6">
                             <p className="text-gray-700 italic mb-4">{testimonial.text}</p>
-                            <p className="font-medium text-navy">- {testimonial.author}</p>
+                            <p className="font-medium text-navy">{testimonial.author}</p>
                           </CardContent>
                         </Card>
                       </CarouselItem>
@@ -220,16 +224,16 @@ const Index = () => {
         className="py-16 bg-navy text-white animated-element"
       >
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-serif mb-4">Need Legal Assistance?</h2>
+          <h2 className="text-3xl font-serif mb-4">{t('needLegal')}</h2>
           <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-            Whether you're facing a legal challenge or need advice on a specific matter, our team is ready to help you navigate the complexities of the legal system.
+            {t('needLegalDesc')}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="bg-gold hover:bg-gold-dark text-navy font-medium">
-              <Link to="/contact">Book a Consultation</Link>
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">{t('bookAppointment')}</a>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              <Link to="/services">Learn More About Our Services</Link>
+              <Link to="/services">{t('learnMoreServices')}</Link>
             </Button>
           </div>
         </div>
