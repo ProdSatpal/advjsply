@@ -31,7 +31,7 @@ const ContactInfo = () => {
             <a 
               href="https://wa.me/918857972717?text=I%20need%20your%20legal%20assistance%20on%20below%20matter%0A" 
               className="text-theme-gray hover:text-theme-red transition-colors"
-              target="_blank" 
+              target="_parent" 
               rel="noopener noreferrer"
             >
               +91 8857972717
@@ -55,7 +55,7 @@ const ContactInfo = () => {
           <MapPin size={20} className="mr-3 text-theme-red flex-shrink-0" />
           <div>
             <h3 className="font-serif text-lg text-theme-blue">{t('visitUs')}</h3>
-            <p className="text-theme-gray">At Buddh Nagar, Indora Square, Nagpur, Maharashtra 440017</p>
+            <a href="https://maps.app.goo.gl/GUJWe32txpTwUexP8"><p className="text-theme-gray">At Buddh Nagar, Indora Square, Nagpur, Maharashtra 440017</p></a>
           </div>
         </div>
       </div>
