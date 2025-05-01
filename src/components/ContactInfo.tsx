@@ -13,8 +13,8 @@ const ContactInfo = () => {
           <Phone size={20} className="mr-3 text-theme-red flex-shrink-0" />
           <div>
             <h3 className="font-serif text-lg text-theme-blue">{t('callUs')}</h3>
-            <a href="https://wa.me/+919325625126"><p className="text-theme-gray">+91 9325625126</p></a>
-            <p className="text-theme-gray">+91 XXXXXXXXXX</p>
+            <a href="https://wa.me/918857972717?text=I%20need%20your%20law%20assistance%20on%20below%20matter%0A
+"><p className="text-theme-gray">+91 8857972717</p></a>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@ const ContactInfo = () => {
           <Mail size={20} className="mr-3 text-theme-red flex-shrink-0" />
           <div>
             <h3 className="font-serif text-lg text-theme-blue">{t('emailUs')}</h3>
-            <p className="text-theme-gray break-all">contact@jasvinderlegal.com</p>
+            <a href="mailto:adv.jsply@gmail.com"><p className="text-theme-gray break-all">adv.jsply@gmail.com</p></a>
           </div>
         </div>
       </div>
