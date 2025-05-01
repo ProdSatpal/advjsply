@@ -2,8 +2,10 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
   const elementsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
@@ -43,8 +45,8 @@ const Hero = () => {
               className="animated-element delay-100"
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                Justice with <span className="text-gold">Integrity</span> <br />
-                and <span className="text-gold">Experience</span>
+                {t("justiceWithIntegrity")} <span className="text-gold">{t("integrity")}</span> <br />
+                {t("and")} <span className="text-gold">{t("experience")}</span>
               </h1>
             </div>
 
@@ -53,8 +55,7 @@ const Hero = () => {
               className="animated-element delay-300"
             >
               <p className="text-lg text-gray-200 mt-4 md:text-xl max-w-xl">
-                With over 12 years of legal expertise, Adv. Jasvinder Singh Ply provides 
-                comprehensive legal solutions tailored to your needs in Nagpur.
+                {t("heroDescription")}
               </p>
             </div>
 
@@ -62,11 +63,11 @@ const Hero = () => {
               ref={el => elementsRef.current[2] = el}
               className="animated-element delay-500 flex flex-wrap gap-4 pt-4"
             >
-              <Button asChild size="lg" className="bg-gold hover:bg-gold-dark text-navy font-medium">
-                <Link to="/contact">Book Consultation</Link>
+              <Button asChild size="lg" variant="gold" className="text-navy font-medium shadow-lg">
+                <Link to="/contact">{t("bookConsultation")}</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link to="/services">Explore Services</Link>
+              <Button asChild size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 shadow-lg">
+                <Link to="/services">{t("exploreServices")}</Link>
               </Button>
             </div>
           </div>
@@ -78,27 +79,27 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-gold to-gold-light opacity-75 blur"></div>
               <div className="relative bg-navy p-6 rounded-lg shadow-xl">
-                <h3 className="text-xl font-serif text-gold mb-4">Legal Practice Areas</h3>
+                <h3 className="text-xl font-serif text-gold mb-4">{t("legalPracticeAreas")}</h3>
                 <ul className="space-y-2 text-white">
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                    <span>Civil Rights Litigation</span>
+                    <span>{t("civilRightsLitigation")}</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                    <span>Disability Benefits (Accident Claims)</span>
+                    <span>{t("disabilityBenefits")}</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                    <span>Property Disputes & Agreements</span>
+                    <span>{t("propertyDisputes")}</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                    <span>Family Law & Divorce</span>
+                    <span>{t("familyLaw")}</span>
                   </li>
                   <li className="flex items-center">
                     <div className="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                    <span>Criminal Law & Bail Petitions</span>
+                    <span>{t("criminalLaw")}</span>
                   </li>
                 </ul>
               </div>
