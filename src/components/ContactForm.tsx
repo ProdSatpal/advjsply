@@ -6,7 +6,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { toast } from 'sonner';
 import { supabase } from '@/integrations/supabase/client';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Send } from 'lucide-react';
 
 const ContactForm = () => {
   const { t } = useLanguage();
@@ -63,7 +62,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="form-group">
-        <label htmlFor="name" className="block mb-2 text-base font-medium text-navy">
+        <label htmlFor="name" className="block mb-2 text-sm font-medium text-theme-blue">
           {t("fullName")} <span className="text-red-500">*</span>
         </label>
         <Input
@@ -74,13 +73,13 @@ const ContactForm = () => {
           onChange={handleChange}
           placeholder={t("enterFullName")}
           required
-          className="w-full bg-white text-gray-800 focus:ring-2 focus:ring-theme-blue focus:border-theme-blue placeholder:text-gray-400"
+          className="w-full focus:ring-2 focus:ring-theme-blue focus:border-theme-blue"
         />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="form-group">
-          <label htmlFor="email" className="block mb-2 text-base font-medium text-navy">
+          <label htmlFor="email" className="block mb-2 text-sm font-medium text-theme-blue">
             {t("email")}
           </label>
           <Input
@@ -90,11 +89,11 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder={t("enterEmail")}
-            className="w-full bg-white text-gray-800 focus:ring-2 focus:ring-theme-blue focus:border-theme-blue placeholder:text-gray-400"
+            className="w-full focus:ring-2 focus:ring-theme-blue focus:border-theme-blue"
           />
         </div>
         <div className="form-group">
-          <label htmlFor="phone" className="block mb-2 text-base font-medium text-navy">
+          <label htmlFor="phone" className="block mb-2 text-sm font-medium text-theme-blue">
             {t("phone")} <span className="text-red-500">*</span>
           </label>
           <Input
@@ -105,13 +104,13 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder={t("enterPhone")}
             required
-            className="w-full bg-white text-gray-800 focus:ring-2 focus:ring-theme-blue focus:border-theme-blue placeholder:text-gray-400"
+            className="w-full focus:ring-2 focus:ring-theme-blue focus:border-theme-blue"
           />
         </div>
       </div>
 
       <div className="form-group">
-        <label htmlFor="subject" className="block mb-2 text-base font-medium text-navy">
+        <label htmlFor="subject" className="block mb-2 text-sm font-medium text-theme-blue">
           {t("subject")} <span className="text-red-500">*</span>
         </label>
         <Input
@@ -122,12 +121,12 @@ const ContactForm = () => {
           onChange={handleChange}
           placeholder={t("enterSubject")}
           required
-          className="w-full bg-white text-gray-800 focus:ring-2 focus:ring-theme-blue focus:border-theme-blue placeholder:text-gray-400"
+          className="w-full focus:ring-2 focus:ring-theme-blue focus:border-theme-blue"
         />
       </div>
 
       <div className="form-group">
-        <label htmlFor="message" className="block mb-2 text-base font-medium text-navy">
+        <label htmlFor="message" className="block mb-2 text-sm font-medium text-theme-blue">
           {t("message")} <span className="text-red-500">*</span>
         </label>
         <Textarea
@@ -138,17 +137,15 @@ const ContactForm = () => {
           placeholder={t("typeMessage")}
           rows={5}
           required
-          className="w-full bg-white text-gray-800 focus:ring-2 focus:ring-theme-blue focus:border-theme-blue placeholder:text-gray-400"
+          className="w-full focus:ring-2 focus:ring-theme-blue focus:border-theme-blue"
         />
       </div>
 
       <Button 
         type="submit" 
-        variant="navy"
-        className="w-full text-base py-6 flex items-center justify-center" 
+        className="w-full bg-navy hover:bg-navy-light text-white text-base py-6 flex items-center justify-center" 
         disabled={isSubmitting}
       >
-        <Send className="mr-2" />
         {isSubmitting ? t("sending") : t("sendMessage")}
       </Button>
     </form>
