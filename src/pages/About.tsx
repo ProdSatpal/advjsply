@@ -6,7 +6,7 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { BookOpen, Award, Briefcase, GraduationCap } from 'lucide-react';
+import { BookOpen, Award, Briefcase, GraduationCap, Users, FileText, Check } from 'lucide-react';
 
 const About = () => {
   const { t } = useLanguage();
@@ -87,10 +87,11 @@ const About = () => {
                     </div>
                     <div className="p-6">
                       <h3 className="text-xl font-serif font-bold text-navy mb-2">{t('advocate')}</h3>
-                      <div className="text-sm space-y-2 text-gray-600">
-                        <p><strong>{t('experience')}:</strong> 15+ {t('years')}</p>
-                        <p><strong>{t('memberships')}:</strong> {t('membershipDescription')}</p>
-                        <p className="border-t pt-2 mt-2 italic text-gray-500">"{t('philosophyQuote')}"</p>
+                      <div className="text-sm space-y-3 text-gray-600">
+                        <p><strong>{t('experience')}:</strong> 12+ {t('years')}</p>
+                        <p><strong>{t('education')}:</strong> B.Com, LL.B</p>
+                        <p><strong>{t('specialization')}:</strong> Family Law, Real Estate</p>
+                        <p className="border-t pt-3 mt-3 italic text-gray-500">"{t('philosophyQuote')}"</p>
                       </div>
                       
                       <div className="mt-6">
@@ -117,13 +118,13 @@ const About = () => {
                   <div className="w-20 h-1 bg-gold mb-6"></div>
                   <div className="prose max-w-none text-gray-700">
                     <p className="mb-4">
-                      {t('aboutDescription1')}
+                      Advocate Jasvinder Singh Ply has been a dedicated legal professional since 2004, embarking on his journey as a legal assistant before establishing his independent practice in 2013. With over 12 years of comprehensive experience in the legal field, he has built a reputation for excellence in family matters and real estate law across Punjab.
                     </p>
                     <p className="mb-4">
-                      {t('aboutDescription2')}
+                      Beginning his career as a legal assistant at the office of S. J. Kamdi from 2004 to 2010, he specialized in family matters, developing a deep understanding of the complexities that families face during legal challenges. He later expanded his expertise by working with D. M. Bhujade from 2010 to 2013, focusing on real estate matters and property documentation.
                     </p>
                     <p className="mb-6">
-                      {t('aboutDescription3')}
+                      Since establishing his independent practice in 2013, Adv. Singh has successfully represented numerous clients with his meticulous approach to legal procedures, skilled mediation techniques, and thorough document review processes. His commitment to justice and client satisfaction remains the cornerstone of his practice.
                     </p>
                   </div>
                 </div>
@@ -139,8 +140,10 @@ const About = () => {
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2 text-gray-700">
-                        <li>LL.B from Dr. Ambedkar College of Law, Nagpur University</li>
-                        <li>B.A. in Political Science</li>
+                        <li>Bachelor of Law (LL.B) - 2013</li>
+                        <li>Bachelor of Commerce - 2004</li>
+                        <li>Legal Training under S. J. Kamdi (2004-2010)</li>
+                        <li>Advanced Real Estate Law Training with D. M. Bhujade (2010-2013)</li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -154,6 +157,11 @@ const About = () => {
                     </CardHeader>
                     <CardContent>
                       <p className="text-gray-700">{t('membershipDescription')}</p>
+                      <ul className="mt-2 space-y-1 text-gray-700">
+                        <li>Bar Association of Punjab</li>
+                        <li>Real Estate Legal Forum</li>
+                        <li>Family Law Practitioners Association</li>
+                      </ul>
                     </CardContent>
                   </Card>
                   
@@ -168,6 +176,9 @@ const About = () => {
                       <p className="text-gray-700 italic">
                         "{t('philosophyQuote')}"
                       </p>
+                      <p className="mt-2 text-gray-700">
+                        Adv. Singh believes in a client-centered approach, ensuring that each case is handled with the attention to detail and personalized service it deserves. His practice is built on the principles of integrity, thoroughness, and compassionate representation.
+                      </p>
                     </CardContent>
                   </Card>
                   
@@ -180,41 +191,112 @@ const About = () => {
                     </CardHeader>
                     <CardContent>
                       <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-gray-700">
-                        <li>{t('civilRights')}</li>
-                        <li>{t('criminalDefense')}</li>
-                        <li>{t('familyLaw')}</li>
-                        <li>{t('propertyLaw')}</li>
-                        <li>{t('documentation')}</li>
+                        <li>Family Law</li>
+                        <li>Real Estate Law</li>
+                        <li>Civil Litigation</li>
+                        <li>Property Documentation</li>
+                        <li>Legal Consultation</li>
+                        <li>Document Review</li>
                       </ul>
                     </CardContent>
                   </Card>
                 </div>
 
-                {/* Additional Information */}
+                {/* Experience Section */}
+                <Card className="border-none shadow-md bg-gray-50">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Briefcase className="h-5 w-5 text-navy" />
+                      Professional Experience
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="border-l-2 border-gold pl-4 py-1">
+                      <p className="font-medium text-navy">Independent Legal Practice (2013 - Present)</p>
+                      <p className="text-gray-700 text-sm">Established own practice focusing on family matters, real estate, and civil litigation</p>
+                    </div>
+                    <div className="border-l-2 border-gold pl-4 py-1">
+                      <p className="font-medium text-navy">Legal Assistant at Office of D. M. Bhujade (2010 - 2013)</p>
+                      <p className="text-gray-700 text-sm">Specialized in real estate law, property documentation, and related matters</p>
+                    </div>
+                    <div className="border-l-2 border-gold pl-4 py-1">
+                      <p className="font-medium text-navy">Legal Assistant at Office of S. J. Kamdi (2004 - 2010)</p>
+                      <p className="text-gray-700 text-sm">Focused on family law matters and gained extensive knowledge in domestic relations</p>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Professional Highlights */}
+                <Card className="border-none shadow-md bg-gray-50">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <FileText className="h-5 w-5 text-navy" />
+                      Professional Highlights
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      <div className="flex items-start gap-2">
+                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span>Expert in Court Procedures</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span>Skilled Mediator</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span>Thorough Document Review</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span>Legal Documentation Specialist</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span>Strategic Client Communication</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span>Civil Litigation Expert</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span>Drafting Affidavits & Submissions</span>
+                      </div>
+                      <div className="flex items-start gap-2">
+                        <Check className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                        <span>Systematic File Management</span>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Why Choose Me Section */}
                 <div className="bg-gray-50 rounded-lg p-6 shadow-sm border border-gray-100">
-                  <h3 className="text-xl font-serif text-navy mb-4">{t('whyChooseMe')}</h3>
+                  <h3 className="text-xl font-serif text-navy mb-4">Why Choose Adv. Singh</h3>
                   <ul className="space-y-3 text-gray-700">
                     <li className="flex items-start">
                       <span className="inline-block bg-gold h-2 w-2 rounded-full mt-2 mr-2"></span>
-                      <span>{t('experiencedRepresentation')}</span>
+                      <span><strong>Experienced Representation:</strong> With over 12 years in the legal field, Adv. Singh brings depth of knowledge and practical experience to every case.</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block bg-gold h-2 w-2 rounded-full mt-2 mr-2"></span>
-                      <span>{t('personalizedLegalSolutions')}</span>
+                      <span><strong>Family Law Expertise:</strong> Specialized experience in handling sensitive family matters with discretion and compassion.</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block bg-gold h-2 w-2 rounded-full mt-2 mr-2"></span>
-                      <span>{t('dedicatedAdvocacy')}</span>
+                      <span><strong>Real Estate Documentation:</strong> Detailed knowledge of property laws and meticulous attention to documentation requirements.</span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block bg-gold h-2 w-2 rounded-full mt-2 mr-2"></span>
-                      <span>{t('clientCentricApproach')}</span>
+                      <span><strong>Client-Centric Approach:</strong> Communication, transparency, and dedication to achieving the best possible outcome for each client.</span>
                     </li>
                   </ul>
                   
                   <div className="mt-6">
                     <Button asChild className="bg-navy hover:bg-navy-light text-white">
-                      <Link to="/contact">{t('getInTouch')}</Link>
+                      <Link to="/contact">Contact For Consultation</Link>
                     </Button>
                   </div>
                 </div>
@@ -225,6 +307,19 @@ const About = () => {
       </section>
 
       <Footer />
+
+      <style jsx>{`
+        .animated-element {
+          opacity: 0;
+          transform: translateY(20px);
+          transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .animated-element.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      `}</style>
     </>
   );
 };
