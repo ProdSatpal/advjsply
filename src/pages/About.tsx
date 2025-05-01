@@ -308,7 +308,8 @@ const About = () => {
 
       <Footer />
 
-      <style jsx>{`
+      <style>
+        {`
         .animated-element {
           opacity: 0;
           transform: translateY(20px);
@@ -319,7 +320,8 @@ const About = () => {
           opacity: 1;
           transform: translateY(0);
         }
-      `}</style>
+        `}
+      </style>
     </>
   );
 };
