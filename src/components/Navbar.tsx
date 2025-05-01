@@ -3,11 +3,14 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import LanguageSelector from './LanguageSelector';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,9 +22,9 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Services', path: '/services' },
-    { name: 'Contact', path: '/contact' }
+    { name: t('home'), path: '/' },
+    { name: t('services'), path: '/services' },
+    { name: t('contact'), path: '/contact' }
   ];
 
   return (
@@ -29,7 +32,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <span className="text-2xl font-serif font-bold text-navy">Adv. <span className="text-gold">Jasvinder</span> Singh Ply</span>
+            <span className="text-2xl font-serif font-bold text-theme-blue">Adv. <span className="text-theme-red">Jasvinder</span> Singh Ply</span>
           </Link>
 
           {/* Desktop Menu */}
@@ -39,28 +42,32 @@ const Navbar = () => {
                 <li key={link.name}>
                   <Link 
                     to={link.path}
-                    className={`px-3 py-2 rounded-md text-base font-medium transition-colors hover:text-gold
+                    className={`px-3 py-2 rounded-md text-base font-medium transition-colors hover:text-theme-red
                       ${location.pathname === link.path 
-                        ? 'text-gold font-semibold' 
-                        : 'text-navy'}`}
+                        ? 'text-theme-red font-semibold' 
+                        : 'text-theme-blue'}`}
                   >
                     {link.name}
                   </Link>
                 </li>
               ))}
             </ul>
-            <Button asChild className="ml-4 bg-navy hover:bg-navy-light">
-              <Link to="/contact">Book Appointment</Link>
+            <div className="ml-2 mr-4">
+              <LanguageSelector />
+            </div>
+            <Button asChild className="ml-4 bg-theme-blue hover:bg-theme-blue-dark text-white">
+              <Link to="/contact">{t('bookAppointment')}</Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center space-x-2">
+            <LanguageSelector />
             <Button 
               variant="outline" 
               size="icon" 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="border-navy text-navy"
+              className="border-theme-blue text-theme-blue"
             >
               <Menu />
             </Button>
@@ -77,8 +84,8 @@ const Navbar = () => {
                     to={link.path}
                     className={`block px-4 py-2 text-base font-medium transition-colors hover:bg-muted
                       ${location.pathname === link.path 
-                        ? 'text-gold font-semibold' 
-                        : 'text-navy'}`}
+                        ? 'text-theme-red font-semibold' 
+                        : 'text-theme-blue'}`}
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {link.name}
@@ -86,8 +93,8 @@ const Navbar = () => {
                 </li>
               ))}
               <li className="mt-2 px-4 py-2">
-                <Button asChild className="w-full bg-navy hover:bg-navy-light">
-                  <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Book Appointment</Link>
+                <Button asChild className="w-full bg-theme-blue hover:bg-theme-blue-dark">
+                  <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>{t('bookAppointment')}</Link>
                 </Button>
               </li>
             </ul>

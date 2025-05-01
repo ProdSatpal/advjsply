@@ -72,6 +72,24 @@ export default {
 					light: '#F0D48A',
 					DEFAULT: '#E0B251',
 					dark: '#BE8C2C'
+				},
+				// New theme colors from the image
+				theme: {
+					blue: {
+						light: '#3B88EB',
+						DEFAULT: '#3B88EB',
+						dark: '#2778D8'
+					},
+					red: {
+						DEFAULT: '#B23850',
+						light: '#C34A62'
+					},
+					lightblue: '#C4DBF6',
+					gray: {
+						light: '#E7E3D4',
+						DEFAULT: '#8590AA',
+						dark: '#596579'
+					}
 				}
 			},
 			borderRadius: {
