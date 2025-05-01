@@ -60,9 +60,9 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div>
-        <label htmlFor="name" className="block mb-1 text-sm font-medium">
+    <form onSubmit={handleSubmit} className="space-y-6">
+      <div className="form-group">
+        <label htmlFor="name" className="block mb-2 text-sm font-medium text-theme-blue">
           {t("fullName")} <span className="text-red-500">*</span>
         </label>
         <Input
@@ -73,13 +73,13 @@ const ContactForm = () => {
           onChange={handleChange}
           placeholder={t("enterFullName")}
           required
-          className="w-full"
+          className="w-full focus:ring-2 focus:ring-theme-blue focus:border-theme-blue"
         />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <label htmlFor="email" className="block mb-1 text-sm font-medium">
+        <div className="form-group">
+          <label htmlFor="email" className="block mb-2 text-sm font-medium text-theme-blue">
             {t("email")}
           </label>
           <Input
@@ -89,11 +89,11 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             placeholder={t("enterEmail")}
-            className="w-full"
+            className="w-full focus:ring-2 focus:ring-theme-blue focus:border-theme-blue"
           />
         </div>
-        <div>
-          <label htmlFor="phone" className="block mb-1 text-sm font-medium">
+        <div className="form-group">
+          <label htmlFor="phone" className="block mb-2 text-sm font-medium text-theme-blue">
             {t("phone")} <span className="text-red-500">*</span>
           </label>
           <Input
@@ -104,13 +104,13 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder={t("enterPhone")}
             required
-            className="w-full"
+            className="w-full focus:ring-2 focus:ring-theme-blue focus:border-theme-blue"
           />
         </div>
       </div>
 
-      <div>
-        <label htmlFor="subject" className="block mb-1 text-sm font-medium">
+      <div className="form-group">
+        <label htmlFor="subject" className="block mb-2 text-sm font-medium text-theme-blue">
           {t("subject")} <span className="text-red-500">*</span>
         </label>
         <Input
@@ -121,12 +121,12 @@ const ContactForm = () => {
           onChange={handleChange}
           placeholder={t("enterSubject")}
           required
-          className="w-full"
+          className="w-full focus:ring-2 focus:ring-theme-blue focus:border-theme-blue"
         />
       </div>
 
-      <div>
-        <label htmlFor="message" className="block mb-1 text-sm font-medium">
+      <div className="form-group">
+        <label htmlFor="message" className="block mb-2 text-sm font-medium text-theme-blue">
           {t("message")} <span className="text-red-500">*</span>
         </label>
         <Textarea
@@ -137,13 +137,13 @@ const ContactForm = () => {
           placeholder={t("typeMessage")}
           rows={5}
           required
-          className="w-full"
+          className="w-full focus:ring-2 focus:ring-theme-blue focus:border-theme-blue"
         />
       </div>
 
       <Button 
         type="submit" 
-        className="w-full bg-navy hover:bg-navy-light" 
+        className="w-full bg-navy hover:bg-navy-light text-white text-base py-6 flex items-center justify-center" 
         disabled={isSubmitting}
       >
         {isSubmitting ? t("sending") : t("sendMessage")}

@@ -16,7 +16,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Phone size={18} className="mr-2 mt-1 text-gold" />
-                <span>+91 XXXXXXXXXX</span>
+                <a href="tel:+918857972717" className="hover:text-gold transition-colors">+91 8857972717</a>
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="mr-2 mt-1 text-gold" />
@@ -30,6 +30,22 @@ const Footer = () => {
                 <Clock size={18} className="mr-2 mt-1 text-gold" />
                 <span>Mon-Sat: 9:00 AM - 7:00 PM</span>
               </li>
+              <li className="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 mt-1 text-gold" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                  <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                  <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                  <path d="M9.5 13.5h5" />
+                </svg>
+                <a 
+                  href="https://wa.me/918857972717?text=I%20need%20your%20legal%20assistance%20on%20below%20matter%0A" 
+                  className="hover:text-gold transition-colors"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  WhatsApp Us
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -42,6 +58,9 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/services" className="hover:text-gold transition-colors">Services</Link>
+              </li>
+              <li>
+                <Link to="/about" className="hover:text-gold transition-colors">About Me</Link>
               </li>
               <li>
                 <Link to="/contact" className="hover:text-gold transition-colors">Contact</Link>
