@@ -25,9 +25,11 @@ const Navbar = () => {
   const navLinks = [
     { name: t('home'), path: '/' },
     { name: t('services'), path: '/services' },
-    { name: t('about'), path: '/about' },
+    { name: t('aboutMe'), path: '/about' },
     { name: t('contact'), path: '/contact' }
   ];
+
+  const whatsappUrl = "https://wa.me/918857972717?text=I%20need%20your%20legal%20assistance%20on%20below%20matter%0A";
 
   return <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 md:px-6">
@@ -54,7 +56,7 @@ const Navbar = () => {
               <LanguageSelector />
             </div>
             <Button asChild className="ml-4 bg-theme-blue hover:bg-theme-blue-dark text-white">
-              <Link to="/contact">{t('bookAppointment')}</Link>
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">{t('bookAppointment')}</a>
             </Button>
           </div>
 
@@ -78,7 +80,7 @@ const Navbar = () => {
                 </li>)}
               <li className="mt-2 px-4 py-2">
                 <Button asChild className="w-full bg-theme-blue hover:bg-theme-blue-dark">
-                  <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>{t('bookAppointment')}</Link>
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>{t('bookAppointment')}</a>
                 </Button>
               </li>
             </ul>

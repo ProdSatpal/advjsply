@@ -16,6 +16,8 @@ const translations: Record<Language, Record<string, string>> = {
     'home': 'Home',
     'services': 'Services',
     'contact': 'Contact',
+    'aboutMe': 'About Me',
+    'about': 'About',
     'advocate': 'Advocate',
     'bookAppointment': 'Book Appointment',
     
@@ -25,6 +27,7 @@ const translations: Record<Language, Record<string, string>> = {
     'phone': 'Phone',
     'message': 'Message',
     'submit': 'Submit',
+    'fullName': 'Full Name',
     
     // Contact Page
     'address': 'Address',
@@ -38,11 +41,11 @@ const translations: Record<Language, Record<string, string>> = {
     'sendUsMessage': 'Send Us a Message',
     'scheduleAppointment': 'Schedule an Appointment',
     'ourLocation': 'Our Location',
-    'visitOffice': 'Visit our office located at Buddh Nagar, Indora Square, Nagpur for in-person consultations.',
+    'visitOffice': 'At Buddh Nagar, Indora Square, Nagpur, Maharashtra 440017',
     'convenientlyLocated': 'We\'re conveniently located near major landmarks in Nagpur. If you need help with directions, please don\'t hesitate to call us.',
     'connectWhatsapp': 'Connect on WhatsApp',
     'whatsappResponse': 'For quick responses, reach out to us on WhatsApp. We\'re available during business hours to assist you.',
-    'connectOnWhatsapp': 'Connect on WhatsApp',
+    'connectOnWhatsapp': 'WhatsApp Me',
     
     // Services Page
     'ourLegalServices': 'Our Legal Services',
@@ -148,6 +151,8 @@ const translations: Record<Language, Record<string, string>> = {
     'home': 'होम',
     'services': 'सेवाएं',
     'contact': 'संपर्क',
+    'aboutMe': 'मेरे बारे में',
+    'about': 'बारे में',
     'advocate': 'अधिवक्ता',
     'bookAppointment': 'अपॉइंटमेंट बुक करें',
     
@@ -157,6 +162,7 @@ const translations: Record<Language, Record<string, string>> = {
     'phone': 'फोन',
     'message': 'संदेश',
     'submit': 'सबमिट करें',
+    'fullName': 'पूरा नाम',
     
     // Contact Page
     'address': 'पता',
@@ -170,7 +176,7 @@ const translations: Record<Language, Record<string, string>> = {
     'sendUsMessage': 'हमें संदेश भेजें',
     'scheduleAppointment': 'अपॉइंटमेंट शेड्यूल करें',
     'ourLocation': 'हमारा स्थान',
-    'visitOffice': 'व्यक्तिगत परामर्श के लिए बुद्ध नगर, इंदोरा स्क्वायर, नागपुर में हमारे कार्यालय पर आएं।',
+    'visitOffice': 'बुद्ध नगर, इंदोरा स्क्वायर, नागपुर, महाराष्ट्र 440017',
     'convenientlyLocated': 'हम नागपुर के प्रमुख स्थलों के पास सुविधाजनक रूप से स्थित हैं। यदि आपको दिशानिर्देशों की आवश्यकता है, तो कृपया हमें कॉल करें।',
     'connectWhatsapp': 'व्हाट्सएप पर जुड़ें',
     'whatsappResponse': 'त्वरित प्रतिक्रिया के लिए, व्हाट्सएप पर हमसे संपर्क करें। हम व्यावसायिक घंटों के दौरान आपकी सहायता के लिए उपलब्ध हैं।',
@@ -280,6 +286,8 @@ const translations: Record<Language, Record<string, string>> = {
     'home': 'मुख्यपृष्ठ',
     'services': 'सेवा',
     'contact': 'संपर्क',
+    'aboutMe': 'माझ्याविषयी',
+    'about': 'बद्दल',
     'advocate': 'वकील',
     'bookAppointment': 'अपॉइंटमेंट बुक करा',
     
@@ -289,6 +297,7 @@ const translations: Record<Language, Record<string, string>> = {
     'phone': 'फोन',
     'message': 'संदेश',
     'submit': 'सबमिट करा',
+    'fullName': 'पूर्ण नाव',
     
     // Contact Page
     'address': 'पत्ता',
@@ -302,7 +311,7 @@ const translations: Record<Language, Record<string, string>> = {
     'sendUsMessage': 'आम्हाला संदेश पाठवा',
     'scheduleAppointment': 'अपॉइंटमेंट शेड्यूल करा',
     'ourLocation': 'आमचं स्थान',
-    'visitOffice': 'व्यक्तिगत सल्ल्यासाठी बुद्ध नगर, इंदोरा स्क्वेअर, नागपूर येथे आमच्या कार्यालयास भेट द्या.',
+    'visitOffice': 'बुद्ध नगर, इंदोरा स्क्वेअर, नागपूर, महाराष्ट्र 440017',
     'convenientlyLocated': 'आम्ही नागपूरमधील प्रमुख लँडमार्क्सच्या जवळ सुविधाजनकरित्या स्थित आहोत. दिशानिर्देशांसाठी मदत हवी असल्यास, कृपया आम्हाला कॉल करा.',
     'connectWhatsapp': 'व्हाट्सअॅपवर कनेक्ट व्हा',
     'whatsappResponse': 'जलद प्रतिसादासाठी, आमच्याशी व्हाट्सअॅपवर संपर्क साधा. आम्ही कार्यालयीन वेळेत आपल्या मदतीसाठी उपलब्ध आहोत.',
