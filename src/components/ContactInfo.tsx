@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, MessageSquare } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const ContactInfo = () => {
@@ -20,21 +20,22 @@ const ContactInfo = () => {
 
       <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300">
         <div className="flex items-start">
-          <svg xmlns="http://www.w3.org/2000/svg" className="mr-3 text-theme-red flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
-            <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
-            <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
-            <path d="M9.5 13.5h5" />
-          </svg>
+          <MessageSquare size={20} className="mr-3 text-theme-red flex-shrink-0" />
           <div>
             <h3 className="font-serif text-lg text-theme-blue">{t('whatsappUs')}</h3>
             <a 
               href="https://wa.me/918857972717?text=I%20need%20your%20legal%20assistance%20on%20below%20matter%0A" 
-              className="text-theme-gray hover:text-theme-red transition-colors"
+              className="text-theme-gray hover:text-theme-red transition-colors flex items-center"
               target="_parent" 
               rel="noopener noreferrer"
             >
-              +91 8857972717
+              <span>+91 8857972717</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 text-green-600" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                <path d="M9.5 13.5h5" />
+              </svg>
             </a>
           </div>
         </div>

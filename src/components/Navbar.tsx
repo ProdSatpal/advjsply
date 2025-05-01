@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { Menu } from 'lucide-react';
+import { Menu, MessageSquare } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageSelector from './LanguageSelector';
 
@@ -56,7 +56,10 @@ const Navbar = () => {
               <LanguageSelector />
             </div>
             <Button asChild className="ml-4 bg-theme-blue hover:bg-theme-blue-dark text-white">
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">{t('bookAppointment')}</a>
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                <MessageSquare size={18} className="mr-2" />
+                {t('bookAppointment')}
+              </a>
             </Button>
           </div>
 
@@ -80,7 +83,10 @@ const Navbar = () => {
                 </li>)}
               <li className="mt-2 px-4 py-2">
                 <Button asChild className="w-full bg-theme-blue hover:bg-theme-blue-dark">
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>{t('bookAppointment')}</a>
+                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} className="flex items-center justify-center">
+                    <MessageSquare size={18} className="mr-2" />
+                    {t('bookAppointment')}
+                  </a>
                 </Button>
               </li>
             </ul>

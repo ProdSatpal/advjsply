@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, MessageSquare } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Footer = () => {
@@ -35,19 +35,20 @@ const Footer = () => {
                 <span>{t('mondayToSaturday')}</span>
               </li>
               <li className="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 mt-1 text-gold" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
-                  <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
-                  <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
-                  <path d="M9.5 13.5h5" />
-                </svg>
+                <MessageSquare size={18} className="mr-2 mt-1 text-gold" />
                 <a 
                   href={whatsappUrl}
-                  className="hover:text-gold transition-colors"
+                  className="hover:text-gold transition-colors flex items-center"
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
                   {t('connectOnWhatsapp')}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 text-green-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                    <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                    <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                    <path d="M9.5 13.5h5" />
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -70,7 +71,15 @@ const Footer = () => {
                 <Link to="/contact" className="hover:text-gold transition-colors">{t('contact')}</Link>
               </li>
               <li>
-                <a href={whatsappUrl} className="hover:text-gold transition-colors" target="_blank" rel="noopener noreferrer">{t('bookAppointment')}</a>
+                <a href={whatsappUrl} className="hover:text-gold transition-colors flex items-center" target="_blank" rel="noopener noreferrer">
+                  {t('bookAppointment')}
+                  <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 text-green-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                    <path d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                    <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
+                    <path d="M9.5 13.5h5" />
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
