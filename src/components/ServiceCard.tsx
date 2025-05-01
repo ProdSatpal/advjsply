@@ -31,9 +31,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       {icon && <div className="text-theme-red mb-4">{icon}</div>}
       <h3 className="text-xl font-serif text-theme-blue mb-3 group-hover:text-theme-red transition-colors">{title}</h3>
       <p className="text-theme-gray flex-grow mb-4">{description}</p>
-      <Button asChild variant="outline" className="mt-auto border-theme-blue text-theme-blue hover:bg-theme-blue hover:text-white">
-        <Link to="/contact">{t('bookAppointment')}</Link>
-      </Button>
     </div>
   );
 };
