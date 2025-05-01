@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -32,7 +33,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <div className="py-0 text-3xl"><span className="text-2xl font-serif font-bold text-theme-blue">Jasvinder Singh Ply</span></div>
+            <div className="py-0 text-3xl">
+              <span className="text-2xl font-serif font-bold text-theme-blue">Jasvinder Singh Ply</span>
+              <div className="text-sm font-medium text-theme-red">{t('advocate')}</div>
+            </div>
             
           </Link>
 
