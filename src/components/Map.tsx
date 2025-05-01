@@ -1,16 +1,12 @@
-
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Map = () => {
-  const mapContainerRef = useRef<HTMLDivElement>(null);
   const [mapLoaded, setMapLoaded] = useState(false);
 
   useEffect(() => {
-    // This is a placeholder - in a real implementation, you would use an actual map library
-    // For now, we'll just simulate that a map has loaded with a static image
     const timer = setTimeout(() => {
       setMapLoaded(true);
-    }, 1000);
+    }, 1000); // simulate map loading
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,25 +18,19 @@ const Map = () => {
           <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-navy"></div>
         </div>
       )}
-      
-      {/* Static map placeholder - would be replaced with actual map integration */}
-      <div 
-        ref={mapContainerRef}
-        className={`w-full h-full bg-gray-200 ${mapLoaded ? 'block' : 'hidden'}`}
-        style={{
-          backgroundImage: 'url("https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+E0B251(79.0882,21.1458)/79.0882,21.1458,14,0/600x400?access_token=placeholder")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      >
-        {/* Map placeholder with overlay for styling */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded-md shadow-md">
-            <h3 className="font-serif text-navy">Adv. Jasvinder Singh Ply</h3>
-            <p className="text-sm text-gray-600">Buddh Nagar, Indora Square, Nagpur</p>
-          </div>
-        </div>
-      </div>
+
+      {mapLoaded && (
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3357.16973352647!2d79.09843517470432!3d21.17229148283437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c128559a0a73%3A0xbd6d4a01c21fd03a!2s761%2C%20Buddha%20Nagar%2C%20Balabhaupeth%2C%20Nagpur%2C%20Maharashtra%20440002%2C%20India!5e1!3m2!1sen!2sdk!4v1746113426858!5m2!1sen!2sdk"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="rounded-lg"
+        ></iframe>
+      )}
     </div>
   );
 };

@@ -20,7 +20,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="mr-2 mt-1 text-gold" />
-                <span>contact@jasvinderlegal.com</span>
+                <a href="mailto:adv.jsply@gmail.com" className="hover:text-gold transition-colors">adv.jsply@gmail.com</a>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 text-gold" />
@@ -43,7 +43,7 @@ const Footer = () => {
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  WhatsApp Us
+                  WhatsApp Me
                 </a>
               </li>
             </ul>
@@ -100,9 +100,6 @@ const Footer = () => {
               &copy; {currentYear} Adv. Jasvinder Singh Ply. All rights reserved.
             </p>
             <div className="mt-4 md:mt-0">
-              <span className="text-sm text-gray-300">
-                12+ Years of Legal Excellence
-              </span>
             </div>
           </div>
         </div>
