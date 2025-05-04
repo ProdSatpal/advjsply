@@ -55,7 +55,7 @@ const About = () => {
             ref={addToRefs}
             className="text-4xl md:text-5xl font-serif font-bold text-white mb-4 animated-element"
           >
-            {t('about')} <p><span className="text-gold">{t('advJasvinderSinghPly')}</span></p>
+            {t('about')} <p><span className="text-gold">{t('Me')}</span></p>
           </h1>
           <div className="w-24 h-1 bg-gold mx-auto mb-6"></div>
           <p 
