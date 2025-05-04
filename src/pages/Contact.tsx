@@ -85,7 +85,7 @@ const Contact = () => {
                 </TabsList>
                 <TabsContent value="contact">
                   <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                    <h2 className="text-2xl font-serif text-navy mb-6">{t("sendMessage")}</h2>
+                    <h2 className="text-2xl font-serif text-navy mb-6">{t("connectWhatsapp")}</h2>
                     <ContactForm />
                   </div>
                 </TabsContent>
@@ -163,7 +163,7 @@ const Contact = () => {
               <path d="M14 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1Z" />
               <path d="M9.5 13.5h5" />
             </svg>
-            {t("connectWhatsapp")}
+            {t("connectOnWhatsapp")}
           </a>
         </div>
       </section>

@@ -27,11 +27,21 @@ const translations: Record<Language, Record<string, string>> = {
     'message': 'Message',
     'submit': 'Submit',
     'fullName': 'Full Name',
+    'enterFullName': 'Enter your full name',
+    'enterEmail': 'Enter your email address',
+    'enterPhone': 'Enter your phone number',
+    'enterSubject': 'Enter subject',
+    'typeMessage': 'Type your message here',
+    'sending': 'Sending...',
+    'sendMessage': 'Send Message',
+    'messageSentSuccess': 'Your message has been sent successfully!',
+    'errorSendingMessage': 'Error sending message. Please try again.',
 
     // Contact Page
     'address': 'Address',
     'callUs': 'Call Us',
     'emailUs': 'Email Us',
+    'whatsappUs': 'WhatsApp Us',
     'visitUs': 'Visit Us',
     'officeHours': 'Office Hours',
     'mondayToSaturday': 'Mon - Sat: 9:00 AM - 7:00 PM',
@@ -45,6 +55,13 @@ const translations: Record<Language, Record<string, string>> = {
     'connectWhatsapp': 'Connect on WhatsApp',
     'whatsappResponse': 'Message us on WhatsApp for a quick reply during office hours.',
     'connectOnWhatsapp': 'WhatsApp Me',
+    'whatsappContactDesc': 'For quick and direct communication, click the button below to connect via WhatsApp',
+    'whatsappInfo': 'Get in touch through WhatsApp for quick responses during office hours',
+    'contactUs': 'Contact Us',
+    'contactIntro': 'For any legal consultation or assistance, feel free to reach out to us through the options below',
+    'locationHelp': 'If you need directions to our office, please call us and we\'ll guide you',
+    'appointmentInstruction': 'To schedule an appointment with Adv. Jasvinder Singh Ply, please click the button below',
+    'bookAppointmentNow': 'Book an Appointment',
 
     // Services Page
     'ourLegalServices': 'Our Legal Services',
@@ -105,12 +122,17 @@ const translations: Record<Language, Record<string, string>> = {
     
     // About
     'advJasvinderSinghPly': 'Advocate Jasvinder Singh Ply',
+    'aboutHeroTitle': 'About Advocate Jasvinder Singh Ply',
+    'aboutHeroDescription': 'A seasoned legal professional with over 12 years of experience providing expert legal services in civil, criminal, family, and property matters across Nagpur region',
     'experience': 'Experience',
+    'experienceDescription': 'With more than 12 years of legal practice, Adv. Jasvinder Singh Ply has established himself as a trusted legal advisor in Nagpur. His extensive courtroom experience and deep understanding of various legal domains ensure effective representation for all his clients.',
     'education': 'Education',
+    'educationDescription': 'Adv. Jasvinder Singh Ply holds a Bachelor in Commerce (2004) and a Bachelor of Law degree. His educational background combines business understanding with legal expertise, offering a unique perspective on complex cases.',
     'specialization': 'Specialization',
-    'professional': 'Professional',
-    'background': 'Background',
-
+    'specializationDescription': 'Family matters, property documentation, civil litigation, and criminal law are the primary focus areas of Adv. Singh\'s practice. He excels in preparing legal documents and representing clients in court proceedings.',
+    'skills': 'Skills & Expertise',
+    'skillsDescription': 'Adv. Singh is known for his excellent court procedures knowledge, skilled mediation abilities, thorough document review, and effective client communication. His civil litigation expertise makes him a valuable advocate for your legal needs.',
+    
     // Service descriptions
     'civilRights': 'Civil Rights Cases',
     'civilRightsDesc': 'Help in cases about your rights and protection.',
@@ -155,7 +177,7 @@ const translations: Record<Language, Record<string, string>> = {
   },
   hi: {
     // Navbar
-    'home': 'होम', // Use 'होम' for homepage in Hindi websites[5]
+    'home': 'होम',
     'services': 'सेवाएं',
     'contact': 'संपर्क',
     'aboutMe': 'मेरे बारे में',
@@ -170,11 +192,21 @@ const translations: Record<Language, Record<string, string>> = {
     'message': 'संदेश',
     'submit': 'सबमिट करें',
     'fullName': 'पूरा नाम',
+    'enterFullName': 'अपना पूरा नाम दर्ज करें',
+    'enterEmail': 'अपना ईमेल पता दर्ज करें',
+    'enterPhone': 'अपना फोन नंबर दर्ज करें',
+    'enterSubject': 'विषय दर्ज करें',
+    'typeMessage': 'अपना संदेश यहां टाइप करें',
+    'sending': 'भेज रहे हैं...',
+    'sendMessage': 'संदेश भेजें',
+    'messageSentSuccess': 'आपका संदेश सफलतापूर्वक भेज दिया गया है!',
+    'errorSendingMessage': 'संदेश भेजने में त्रुटि। कृपया पुनः प्रयास करें।',
 
     // Contact Page
     'address': 'पता',
     'callUs': 'कॉल करें',
     'emailUs': 'ईमेल करें',
+    'whatsappUs': 'व्हाट्सएप पर संपर्क करें',
     'visitUs': 'आइए मिलें',
     'officeHours': 'कार्यालय समय',
     'mondayToSaturday': 'सोम-शनि: सुबह 9 - शाम 7',
@@ -188,6 +220,13 @@ const translations: Record<Language, Record<string, string>> = {
     'connectWhatsapp': 'व्हाट्सएप पर जुड़ें',
     'whatsappResponse': 'जल्दी जवाब के लिए व्हाट्सएप करें (ऑफिस समय में)।',
     'connectOnWhatsapp': 'व्हाट्सएप करें',
+    'whatsappContactDesc': 'जल्दी और सीधी बातचीत के लिए, नीचे दिए गए बटन पर क्लिक करके व्हाट्सएप पर जुड़ें',
+    'whatsappInfo': 'ऑफिस समय के दौरान जल्दी जवाब के लिए व्हाट्सएप पर संपर्क करें',
+    'contactUs': 'संपर्क करें',
+    'contactIntro': 'किसी भी कानूनी परामर्श या सहायता के लिए, नीचे दिए गए विकल्पों के माध्यम से हमसे संपर्क करें',
+    'locationHelp': 'अगर आपको हमारे कार्यालय का रास्ता चाहिए तो कृपया हमें कॉल करें और हम आपका मार्गदर्शन करेंगे',
+    'appointmentInstruction': 'अधिवक्ता जसविंदर सिंह प्लाय के साथ अपॉइंटमेंट तय करने के लिए कृपया नीचे दिए गए बटन पर क्लिक करें',
+    'bookAppointmentNow': 'अपॉइंटमेंट बुक करें',
 
     // Services Page
     'ourLegalServices': 'हमारी कानूनी सेवाएं',
@@ -246,6 +285,19 @@ const translations: Record<Language, Record<string, string>> = {
     'allRightsReserved': 'सर्वाधिकार सुरक्षित।',
     'legalExcellence': 'कानूनी अनुभव',
 
+    // About
+    'advJasvinderSinghPly': 'अधिवक्ता जसविंदर सिंह प्लाय',
+    'aboutHeroTitle': 'अधिवक्ता जसविंदर सिंह प्लाय के बारे में',
+    'aboutHeroDescription': 'नागपुर क्षेत्र में सिविल, आपराधिक, पारिवारिक और संपत्ति मामलों में विशेषज्ञ कानूनी सेवाएं प्रदान करने वाले 12 वर्षों से अधिक के अनुभव के साथ एक अनुभवी कानूनी पेशेवर',
+    'experience': 'अनुभव',
+    'experienceDescription': '12 साल से अधिक के कानूनी अभ्यास के साथ, अधिवक्ता जसविंदर सिंह प्लाय ने नागपुर में एक विश्वसनीय कानूनी सलाहकार के रूप में अपनी स्थिति स्थापित की है। उनका व्यापक अदालती अनुभव और विभिन्न कानूनी क्षेत्रों की गहरी समझ सभी ग्राहकों के लिए प्रभावी प्रतिनिधित्व सुनिश्चित करती है।',
+    'education': 'शिक्षा',
+    'educationDescription': 'अधिवक्ता जसविंदर सिंह प्लाय के पास वाणिज्य में स्नातक (2004) और कानून में स्नातक की डिग्री है। उनकी शैक्षिक पृष्ठभूमि व्यापार समझ को कानूनी विशेषज्ञता के साथ जोड़ती है, जिससे जटिल मामलों पर एक अनूठा दृष्टिकोण मिलता है।',
+    'specialization': 'विशेषज्ञता',
+    'specializationDescription': 'परिवारिक मामले, संपत्ति के दस्तावेज़, सिविल मामले और आपराधिक कानून अधिवक्ता सिंह के अभ्यास के प्राथमिक फोकस क्षेत्र हैं। वे कानूनी दस्तावेजों की तैयारी और अदालती कार्यवाही में ग्राहकों का प्रतिनिधित्व करने में उत्कृष्ट हैं।',
+    'skills': 'कौशल और विशेषज्ञता',
+    'skillsDescription': 'अधिवक्ता सिंह अपने उत्कृष्ट अदालती प्रक्रियाओं के ज्ञान, कुशल मध्यस्थता क्षमताओं, दस्तावेजों की गहन समीक्षा और प्रभावी ग्राहक संचार के लिए जाने जाते हैं। सिविल मुकदमेबाजी में उनकी विशेषज्ञता उन्हें आपकी कानूनी जरूरतों के लिए एक मूल्यवान अधिवक्ता बनाती है।',
+    
     // Service descriptions
     'civilRights': 'नागरिक अधिकार केस',
     'civilRightsDesc': 'आपके अधिकारों की रक्षा के लिए मदद।',
@@ -290,7 +342,7 @@ const translations: Record<Language, Record<string, string>> = {
   },
   mr: {
     // Navbar
-    'home': 'होम', // Use 'होम' for homepage in Marathi as well for clarity
+    'home': 'होम',
     'services': 'सेवा',
     'contact': 'संपर्क',
     'aboutMe': 'माझ्याविषयी',
@@ -305,11 +357,21 @@ const translations: Record<Language, Record<string, string>> = {
     'message': 'संदेश',
     'submit': 'सबमिट करा',
     'fullName': 'पूर्ण नाव',
+    'enterFullName': 'तुमचे पूर्ण नाव प्रविष्ट करा',
+    'enterEmail': 'तुमचा ईमेल पत्ता प्रविष्ट करा',
+    'enterPhone': 'तुमचा फोन नंबर प्रविष्ट करा',
+    'enterSubject': 'विषय प्रविष्ट करा',
+    'typeMessage': 'तुमचा संदेश येथे टाइप करा',
+    'sending': 'पाठवत आहे...',
+    'sendMessage': 'संदेश पाठवा',
+    'messageSentSuccess': 'तुमचा संदेश यशस्वीरित्या पाठवला गेला आहे!',
+    'errorSendingMessage': 'संदेश पाठवण्यात त्रुटी. कृपया पुन्हा प्रयत्न करा.',
 
     // Contact Page
     'address': 'पत्ता',
     'callUs': 'कॉल करा',
     'emailUs': 'ईमेल करा',
+    'whatsappUs': 'व्हॉट्सअ‍ॅप वर संपर्क करा',
     'visitUs': 'भेट द्या',
     'officeHours': 'कार्यालय वेळ',
     'mondayToSaturday': 'सोम-शनि: सकाळी 9 - संध्याकाळी 7',
@@ -323,6 +385,13 @@ const translations: Record<Language, Record<string, string>> = {
     'connectWhatsapp': 'व्हॉट्सअ‍ॅपवर संपर्क करा',
     'whatsappResponse': 'जलद उत्तरासाठी व्हॉट्सअ‍ॅपवर मेसेज करा (ऑफिस वेळेत).',
     'connectOnWhatsapp': 'व्हॉट्सअ‍ॅप करा',
+    'whatsappContactDesc': 'जलद आणि थेट संवादासाठी, व्हॉट्सअ‍ॅपवर जोडण्यासाठी खालील बटणावर क्लिक करा',
+    'whatsappInfo': 'ऑफिस वेळेत जलद प्रतिसाद मिळवण्यासाठी व्हॉट्सअ‍ॅपद्वारे संपर्क साधा',
+    'contactUs': 'संपर्क करा',
+    'contactIntro': 'कोणत्याही कायदेशीर सल्ला किंवा मदतीसाठी, खालील पर्यायांद्वारे आमच्याशी संपर्क साधा',
+    'locationHelp': 'आपल्याला आमच्या कार्यालयापर्यंत मार्गदर्शन हवे असल्यास, कृपया आम्हाला कॉल करा आणि आम्ही आपले मार्गदर्शन करू',
+    'appointmentInstruction': 'अॅड. जसविंदर सिंग प्लाय यांच्यासह अपॉइंटमेंट ठरवण्यासाठी, कृपया खालील बटणावर क्लिक करा',
+    'bookAppointmentNow': 'अपॉइंटमेंट बुक करा',
 
     // Services Page
     'ourLegalServices': 'आमच्या कायदेशीर सेवा',
@@ -381,6 +450,19 @@ const translations: Record<Language, Record<string, string>> = {
     'allRightsReserved': 'सर्व हक्क राखीव.',
     'legalExcellence': 'कायदेशीर अनुभव',
 
+    // About
+    'advJasvinderSinghPly': 'अॅड. जसविंदर सिंग प्लाय',
+    'aboutHeroTitle': 'अॅड. जसविंदर सिंग प्लाय विषयी',
+    'aboutHeroDescription': 'नागपूर क्षेत्रात दिवाणी, फौजदारी, कौटुंबिक आणि मालमत्तेच्या प्रकरणात तज्ञ कायदेशीर सेवा देणारे 12 वर्षांहून अधिक अनुभव असलेले एक अनुभवी कायदेशीर व्यावसायिक',
+    'experience': 'अनुभव',
+    'experienceDescription': '12 वर्षांहून अधिक कायदेशीर अभ्यासासह, अॅड. जसविंदर सिंग प्लाय यांनी नागपुरात एक विश्वासू कायदेशीर सल्लागार म्हणून स्वत:ची प्रतिष्ठा निर्माण केली आहे. त्यांचा विस्तृत न्यायालयीन अनुभव आणि विविध कायदेशीर क्षेत्रांची खोल समज त्यांच्या सर्व ग्राहकांना प्रभावी प्रतिनिधित्व सुनिश्चित करते.',
+    'education': 'शिक्षण',
+    'educationDescription': 'अॅड. जसविंदर सिंग प्लाय यांच्याकडे वाणिज्यातील पदवी (2004) आणि कायद्याची पदवी आहे. त्यांची शैक्षणिक पार्श्वभूमी व्यावसायिक समज कायदेशीर तज्ञतेशी जोडते, जटिल प्रकरणांवर अनोखा दृष्टीकोन देते.',
+    'specialization': 'विशेषीकरण',
+    'specializationDescription': 'कौटुंबिक प्रकरणे, मालमत्ता दस्तऐवज, दीवाणी खटले आणि फौजदारी कायदा हे अॅड. सिंग यांच्या अभ्यासाचे प्राथमिक फोकस क्षेत्र आहेत. ते कायदेशीर दस्तऐवज तयार करण्यात आणि न्यायालयीन कार्यवाहीत ग्राहकांचे प्रतिनिधित्व करण्यात उत्कृष्ट आहेत.',
+    'skills': 'कौशल्य आणि विशेषज्ञता',
+    'skillsDescription': 'अॅड. सिंग हे त्यांच्या उत्कृष्ट न्यायालयीन प्रक्रिया ज्ञान, कुशल मध्यस्थी क्षमता, सखोल दस्तऐवज पुनरावलोकन आणि प्रभावी ग्राहक संवादासाठी ओळखले जातात. त्यांचा दिवाणी खटल्याचा अनुभव त्यांना तुमच्या कायदेशीर गरजांसाठी एक मौल्यवान वकील बनवतो.',
+    
     // Service descriptions
     'civilRights': 'नागरी हक्क प्रकरण',
     'civilRightsDesc': 'तुमच्या हक्कांसाठी मदत.',
