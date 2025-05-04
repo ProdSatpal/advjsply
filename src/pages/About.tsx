@@ -126,25 +126,7 @@ const About = () => {
                 </div>
                 
                 {/* Qualifications Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <Card className="border-l-4 border-theme-blue hover:shadow-md transition-all">
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-lg flex items-center gap-2">
-                        <GraduationCap className="h-5 w-5 text-theme-blue" />
-                        {t('education')}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2 text-gray-700">
-                        <li>Bachelor of Law (LL.B) - 2013</li>
-                        <li>Bachelor of Commerce - 2004</li>
-                        <li>Legal Training under S. J. Kamdi (2004-2010)</li>
-                        <li>Advanced Real Estate Law Training with D. M. Bhujade (2010-2013)</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-            
-                  
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">                  
                   <Card className="border-l-4 border-emerald-500 hover:shadow-md transition-all">
                     <CardHeader className="pb-2">
                       <CardTitle className="text-lg flex items-center gap-2">
