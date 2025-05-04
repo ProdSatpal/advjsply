@@ -65,7 +65,7 @@ const translations: Record<Language, Record<string, string>> = {
     'resolution': 'Solution',
     'resolutionDesc': 'We work for the best result for you.',
     'readyForSupport': 'Need Legal Help?',
-    'scheduleConsultation': 'Book a meeting with Adv. Jasvinder Singh Ply to discuss your legal needs.',
+    'scheduleConsultation': 'Book a meeting.',
     'bookConsultation': 'Book Consultation',
 
     // Home Page
@@ -208,7 +208,7 @@ const translations: Record<Language, Record<string, string>> = {
     'resolution': 'समाधान',
     'resolutionDesc': 'आपके लिए अच्छा हल निकालते हैं।',
     'readyForSupport': 'कानूनी मदद चाहिए?',
-    'scheduleConsultation': 'अपॉइंटमेंट बुक करें और अपनी बात रखें।',
+    'scheduleConsultation': 'अपॉइंटमेंट बुक करें',
     'bookConsultation': 'अपॉइंटमेंट बुक करें',
 
     // Home Page
@@ -343,7 +343,7 @@ const translations: Record<Language, Record<string, string>> = {
     'resolution': 'समाधान',
     'resolutionDesc': 'तुमच्यासाठी चांगला निकाल मिळवतो.',
     'readyForSupport': 'कायदेशीर मदत हवी आहे का?',
-    'scheduleConsultation': 'अपॉइंटमेंट बुक करा आणि समस्या सांगा.',
+    'scheduleConsultation': 'अपॉइंटमेंट बुक करा',
     'bookConsultation': 'अपॉइंटमेंट बुक करा',
 
     // Home Page
