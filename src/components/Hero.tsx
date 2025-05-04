@@ -65,9 +65,13 @@ const Hero = () => {
               <Button asChild size="lg" className="bg-gold hover:bg-gold-dark text-navy font-medium">
                 <Link to="/contact">Book Consultation</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button
+                asChild
+                size="lg"
+                className="bg-black text-white border border-white hover:bg-white hover:text-black transition-colors">
                 <Link to="/services">Explore Services</Link>
               </Button>
+
             </div>
           </div>
 
