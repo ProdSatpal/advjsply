@@ -1,14 +1,15 @@
-# Use a lightweight web server image
 FROM nginx:alpine
 
-# Remove the default nginx website files
+# Remove the default site
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copy your website files to the nginx folder
+# Copy your website content
 COPY . /usr/share/nginx/html
 
-# Expose port 80
-EXPOSE 80
+# Tell Nginx to listen on port 8080 for Cloud Run
+RUN sed -i 's/80;/8080;/g' /etc/nginx/conf.d/default.conf
 
-# Start nginx
+# Expose port 8080
+EXPOSE 8080
+
 CMD ["nginx", "-g", "daemon off;"]
