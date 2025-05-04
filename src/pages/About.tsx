@@ -117,14 +117,11 @@ const About = () => {
                   <div className="w-20 h-1 bg-gold mb-6"></div>
                   <div className="prose max-w-none text-gray-700">
                     <p className="mb-4">
-                      Advocate Jasvinder Singh Ply has been a dedicated legal professional since 2004, embarking on his journey as a legal assistant before establishing his independent practice in 2013. With over 12 years of comprehensive experience in the legal field, he has built a reputation for excellence in family matters and real estate law across Punjab.
-                    </p>
+                    Advocate Jasvinder Singh Ply is a dedicated legal professional practicing in Nagpur. Since starting his independent practice in 2013, he has helped many clients with their legal issues, especially in family matters and real estate law.</p>
                     <p className="mb-4">
-                      Beginning his career as a legal assistant at the office of S. J. Kamdi from 2004 to 2010, he specialized in family matters, developing a deep understanding of the complexities that families face during legal challenges. He later expanded his expertise by working with D. M. Bhujade from 2010 to 2013, focusing on real estate matters and property documentation.
-                    </p>
+                    He is known for his clear legal advice, careful document handling, and strong mediation skills. Whether it’s resolving a family dispute or handling property paperwork, Advocate Jasvinder Singh ensures that each case is treated with honesty, care, and professionalism.</p>
                     <p className="mb-6">
-                      Since establishing his independent practice in 2013, Adv. Singh has successfully represented numerous clients with his meticulous approach to legal procedures, skilled mediation techniques, and thorough document review processes. His commitment to justice and client satisfaction remains the cornerstone of his practice.
-                    </p>
+                    His focus is always on achieving the best results for his clients and guiding them through every step of the legal process.</p>
                   </div>
                 </div>
                 
@@ -146,23 +143,7 @@ const About = () => {
                       </ul>
                     </CardContent>
                   </Card>
-                  
-                  <Card className="border-l-4 border-gold hover:shadow-md transition-all">
-                    <CardHeader className="pb-2">
-                      <CardTitle className="text-lg flex items-center gap-2">
-                        <Award className="h-5 w-5 text-gold" />
-                        {t('memberships')}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-gray-700">{t('membershipDescription')}</p>
-                      <ul className="mt-2 space-y-1 text-gray-700">
-                        <li>Bar Association of Punjab</li>
-                        <li>Real Estate Legal Forum</li>
-                        <li>Family Law Practitioners Association</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
+            
                   
                   <Card className="border-l-4 border-emerald-500 hover:shadow-md transition-all">
                     <CardHeader className="pb-2">

@@ -102,6 +102,14 @@ const translations: Record<Language, Record<string, string>> = {
     'practiceAreas': 'Practice Areas',
     'allRightsReserved': 'All rights reserved.',
     'legalExcellence': 'Years of Legal Excellence',
+    
+    // About
+    'advJasvinderSinghPly': 'Advocate Jasvinder Singh Ply',
+    'experience': 'Experience',
+    'education': 'Education',
+    'specialization': 'Specialization',
+    'professional': 'Professional',
+    'background': 'Background',
 
     // Service descriptions
     'civilRights': 'Civil Rights Cases',
