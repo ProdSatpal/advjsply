@@ -11,10 +11,13 @@ RUN npm run build
 # Step 2: Serve the build using Nginx
 FROM nginx:alpine
 
-# Copy the Vite build output to Nginx's web folder
+# Copy Vite build output to Nginx's HTML directory
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Update nginx to use port 8080
+# Copy public files like sitemap.xml and robots.txt
+COPY public /usr/share/nginx/html
+
+# Change default Nginx port from 80 to 8080
 RUN sed -i 's/80;/8080;/g' /etc/nginx/conf.d/default.conf
 
 EXPOSE 8080
