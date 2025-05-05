@@ -39,27 +39,27 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Contact Page
     'address': 'Address',
-    'callUs': 'Call Us',
-    'emailUs': 'Email Us',
-    'whatsappUs': 'WhatsApp Us',
-    'visitUs': 'Visit Us',
+    'callUs': 'Call Me',
+    'emailUs': 'Email Me',
+    'whatsappUs': 'WhatsApp Me',
+    'visitUs': 'Visit Me',
     'officeHours': 'Office Hours',
     'mondayToSaturday': 'Mon - Sat: 9:00 AM - 7:00 PM',
     'sunday': 'Sunday: Closed',
     'getInTouch': 'Get in Touch',
-    'sendUsMessage': 'Send Us a Message',
+    'sendUsMessage': 'Send Me a Message',
     'scheduleAppointment': 'Book an Appointment',
     'ourLocation': 'Our Location',
     'visitOffice': 'Buddh Nagar, Indora Square, Nagpur, Maharashtra 440017',
-    'convenientlyLocated': 'We are near main landmarks in Nagpur. Call us for directions if needed.',
+    'convenientlyLocated': 'We are near main landmarks in Nagpur. Call me for directions if needed.',
     'connectWhatsapp': 'Connect on WhatsApp',
-    'whatsappResponse': 'Message us on WhatsApp for a quick reply during office hours.',
+    'whatsappResponse': 'Message me on WhatsApp for a quick reply during office hours.',
     'connectOnWhatsapp': 'WhatsApp Me',
     'whatsappContactDesc': 'For quick and direct communication, click the button below to connect via WhatsApp',
     'whatsappInfo': 'Get in touch through WhatsApp for quick responses during office hours',
-    'contactUs': 'Contact Us',
-    'contactIntro': 'For any legal consultation or assistance, feel free to reach out to us through the options below',
-    'locationHelp': 'If you need directions to our office, please call us and we\'ll guide you',
+    'contactUs': 'Contact me',
+    'contactIntro': 'For any legal consultation or assistance, feel free to reach out to me through the options below',
+    'locationHelp': 'If you need directions to our office, please call me and I\'ll guide you',
     'appointmentInstruction': 'To schedule an appointment with Adv. Jasvinder Singh Ply, please click the button below',
     'bookAppointmentNow': 'Book an Appointment',
 
@@ -82,7 +82,7 @@ const translations: Record<Language, Record<string, string>> = {
     'resolution': 'Solution',
     'resolutionDesc': 'We work for the best result for you.',
     'readyForSupport': 'Need Legal Help?',
-    'scheduleConsultation': 'Book a meeting.',
+    'scheduleConsultation': 'Book a meeting',
     'bookConsultation': 'Book Consultation',
 
     // Home Page
@@ -95,7 +95,7 @@ const translations: Record<Language, Record<string, string>> = {
     'servicesPreview': 'Our Services',
     'servicesPreviewDesc': 'We offer a range of legal services for your needs. Our team gives you personal solutions.',
     'viewAllServices': 'See All Services',
-    'whyChooseUs': 'Why Choose Us',
+    'whyChooseUs': 'Why Choose me',
     'expLegalExpertise': 'Experienced Lawyer',
     'expLegalDesc': 'With 12+ years in law, we know how to handle your case.',
     'personalizedApproach': 'Personal Care',
@@ -114,7 +114,7 @@ const translations: Record<Language, Record<string, string>> = {
     'learnMoreServices': 'Learn More About Our Services',
 
     // Footer
-    'contactUs': 'Contact Us',
+    'contactUs': 'Contact Me',
     'quickLinks': 'Quick Links',
     'practiceAreas': 'Practice Areas',
     'allRightsReserved': 'All rights reserved.',
@@ -132,6 +132,8 @@ const translations: Record<Language, Record<string, string>> = {
     'specializationDescription': 'Family matters, property documentation, civil litigation, and criminal law are the primary focus areas of Adv. Singh\'s practice. He excels in preparing legal documents and representing clients in court proceedings.',
     'skills': 'Skills & Expertise',
     'skillsDescription': 'Adv. Singh is known for his excellent court procedures knowledge, skilled mediation abilities, thorough document review, and effective client communication. His civil litigation expertise makes him a valuable advocate for your legal needs.',
+    'professional': 'Professional',
+    'background': 'Background',
     
     // Service descriptions
     'civilRights': 'Civil Rights Cases',
