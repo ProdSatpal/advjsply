@@ -1,8 +1,8 @@
 
 import React from 'react';
-import { Button } from '@/components/ui/button';
 import { MessageSquare } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { ShinyButton } from '@/components/ui/shiny-button';
 
 const ContactForm = () => {
   const { t } = useLanguage();
@@ -20,13 +20,15 @@ const ContactForm = () => {
         {t('whatsappContactDesc')}
       </p>
       
-      <Button 
-        onClick={handleWhatsAppContact}
-        className="bg-green-600 hover:bg-green-700 text-white text-lg py-6 px-8 flex items-center justify-center gap-3"
-      >
-        <MessageSquare size={24} />
-        {t('connectOnWhatsapp')}
-      </Button>
+      <div className="flex justify-center">
+        <ShinyButton 
+          onClick={handleWhatsAppContact}
+          className="bg-[#4285F4] hover:bg-[#3b78dc] text-white text-lg py-3 px-8 flex items-center justify-center gap-3"
+        >
+          <MessageSquare size={24} />
+          {t('connectOnWhatsapp')}
+        </ShinyButton>
+      </div>
     </div>
   );
 };
