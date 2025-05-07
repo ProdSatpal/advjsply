@@ -1,0 +1,143 @@
+
+// English translations
+const enTranslations = {
+  // General translations
+  advocate: 'Advocate',
+  home: 'Home',
+  services: 'Services',
+  aboutMe: 'About Me',
+  contact: 'Contact',
+  bookAppointment: 'Book Appointment',
+  allRightsReserved: 'All Rights Reserved',
+  quickLinks: 'Quick Links',
+  practiceAreas: 'Practice Areas',
+  address: 'Address',
+
+  // Hero section
+  heroTitle: 'Justice Delivered With Excellence',
+  heroSubtitle: 'Experienced Legal Service Provider in Nagpur',
+  heroDescription: 'Advocate Jasvinder Singh Ply is a dedicated legal professional with over 12 years of experience, specializing in family law, civil matters, and property disputes.',
+  learnMore: 'Learn More',
+  
+  // About page
+  about: 'About',
+  Me: 'Me',
+  professional: 'Professional',
+  background: 'Background',
+  experience: 'Experience',
+  years: 'Years',
+  education: 'Education',
+  specialization: 'Specialization',
+  scheduleConsultation: 'Schedule a Consultation',
+  advJasvinderSinghPly: 'Adv. Jasvinder Singh Ply',
+  
+  // Services home page
+  ourServices: 'Our Services',
+  viewAllServices: 'View All Services',
+  servicesIntro: 'Comprehensive legal services tailored to your needs',
+  
+  // Services page - Overview
+  ourLegalServices: 'Our Legal Services',
+  experienceTagline: 'Comprehensive legal support for individuals and businesses, backed by over a decade of expertise.',
+
+  // Services page - Process section
+  ourLegalProcess: 'Our Legal Process',
+  processTagline: 'Our systematic approach ensures thorough handling of your legal matters from start to finish.',
+  initialConsultation: 'Initial Consultation',
+  consultationDesc: 'We discuss your situation and legal needs in detail.',
+  caseAnalysis: 'Case Analysis',
+  analysisDesc: 'Our experts evaluate your case and develop a strategic approach.',
+  legalRepresentation: 'Legal Representation',
+  representationDesc: 'We represent your interests in negotiations and court proceedings.',
+  resolution: 'Resolution',
+  resolutionDesc: 'We work toward a favorable outcome for your legal matter.',
+  readyForSupport: 'Ready for Legal Support?',
+  bookConsultation: 'Book a Consultation',
+  
+  // Services page - Category titles
+  civilLaw: 'Civil Law',
+  criminalLaw: 'Criminal Law',
+  familyLaw: 'Family Law',
+  propertyDocumentation: 'Property Documentation',
+  consumerProtection: 'Consumer Protection',
+  
+  // Services page - Service titles
+  civilRights: 'Civil Rights',
+  disabilityBenefits: 'Disability Benefits',
+  evictionLitigation: 'Eviction Litigation',
+  landlordTenant: 'Landlord Tenant Disputes',
+  recoverySuit: 'Recovery Suit',
+  criminalWrit: 'Criminal Writ',
+  regularBail: 'Regular Bail',
+  anticipatoryBail: 'Anticipatory Bail',
+  chequeBouncing: 'Cheque Bouncing',
+  domesticViolence: 'Domestic Violence',
+  mutualDivorce: 'Mutual Divorce',
+  divorce: 'Divorce',
+  registerMarriage: 'Register Marriage',
+  willWriting: 'Will Writing',
+  partnershipDeed: 'Partnership Deed',
+  legalNotice: 'Legal Notice',
+  propertyRegistry: 'Property Registry',
+  propertyDisputes: 'Property Disputes',
+  agreements: 'Agreements',
+  consumerComplaint: 'Consumer Complaint',
+  
+  // Services page - Service descriptions
+  civilRightsDesc: 'Protecting your fundamental rights through expert legal representation.',
+  disabilityBenefitsDesc: 'Assisting with claims for disability benefits and accident compensation.',
+  evictionDesc: 'Expert legal representation for tenants facing eviction or landlords seeking to evict.',
+  landlordDesc: 'Resolving disputes between landlords and tenants, including lease violations and property damage.',
+  recoveryDesc: 'Legal assistance for recovery of debts, money, and property through effective litigation.',
+  criminalLawDesc: 'Defending clients in criminal matters with strategic legal approaches.',
+  criminalWritDesc: 'Filing and defending criminal writs to protect fundamental rights in criminal proceedings.',
+  regularBailDesc: 'Legal representation for obtaining bail after arrest in criminal cases.',
+  anticipatoryDesc: 'Pre-arrest bail application to prevent arrest in non-bailable offenses.',
+  chequeDesc: 'Legal assistance for cases involving dishonored cheques under Section 138.',
+  familyLawDesc: 'Guiding clients through divorce, custody, and other family matters.',
+  domesticDesc: 'Protection and legal remedies for victims of domestic violence.',
+  mutualDesc: 'Simplified legal process for couples who mutually agree to divorce.',
+  divorceDesc: 'Legal representation in contested divorce cases covering alimony and child custody.',
+  marriageDesc: 'Assistance with legal registration of marriage under various personal laws.',
+  willDesc: 'Drafting legally binding wills to ensure proper distribution of assets.',
+  partnershipDesc: 'Creating legally sound partnership deeds for business relationships.',
+  noticeDesc: 'Drafting and sending formal legal notices for dispute resolution.',
+  registryDesc: 'Assistance with property registration, transfer, and documentation.',
+  disputesDesc: 'Resolution of property boundary, ownership, and inheritance disputes.',
+  propertyDisputesDesc: 'Resolving property conflicts through negotiation and litigation.',
+  agreementsDesc: 'Drafting and reviewing various legal agreements and contracts.',
+  consumerDesc: 'Filing and pursuing consumer complaints against unfair trade practices.',
+  
+  // Why Choose section
+  whyChooseUs: 'Why Choose Us',
+  experienceTitle: 'Experienced',
+  experienceDesc: 'Over 12 years of legal practice in various courts',
+  dedicatedTitle: 'Dedicated',
+  dedicatedDesc: 'Committed to providing personalized attention to each case',
+  affordableTitle: 'Affordable',
+  affordableDesc: 'Fair and transparent fee structure',
+
+  // Contact page
+  contactUs: 'Contact Us',
+  contactIntro: 'Get in touch with Adv. Jasvinder Singh Ply for professional legal assistance',
+  getInTouch: 'Get In Touch',
+  callUs: 'Call Us',
+  whatsappUs: 'WhatsApp Us',
+  emailUs: 'Email Us',
+  visitUs: 'Visit Us',
+  officeHours: 'Office Hours',
+  mondayToSaturday: 'Monday to Saturday: 10:00 AM - 7:00 PM',
+  sunday: 'Sunday: By Appointment Only',
+  connectWhatsapp: 'Connect on WhatsApp',
+  ourLocation: 'Our Location',
+  visitOffice: 'At Buddh Nagar, Indora Square, Nagpur, Maharashtra 440017',
+  locationHelp: 'Need help finding our office? Feel free to contact us for directions.',
+  whatsappInfo: 'Connect directly on WhatsApp for quick responses to your legal queries',
+  whatsappContactDesc: 'Click the button below to connect with Adv. Jasvinder Singh Ply on WhatsApp for immediate assistance',
+  connectOnWhatsapp: 'Connect on WhatsApp',
+  appointmentInstruction: 'To schedule an appointment with Adv. Jasvinder Singh Ply, please click the button below',
+  bookAppointmentNow: 'Book Appointment Now',
+  scheduleAppointment: 'Schedule an Appointment',
+};
+
+export default enTranslations;
