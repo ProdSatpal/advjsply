@@ -6,7 +6,6 @@ import ContactInfo from '@/components/ContactInfo';
 import ContactForm from '@/components/ContactForm';
 import Map from '@/components/Map';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ShinyButton } from '@/components/ui/shiny-button';
 import { MessageSquare } from 'lucide-react';
@@ -93,22 +92,24 @@ const Contact = () => {
                 </TabsList>
                 <TabsContent value="contact">
                   <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                    <h2 className="text-2xl font-serif text-navy mb-6">{t("connectWhatsapp")}</h2>
+                    <h2 className="text-2xl font-serif text-navy mb-6 text-center">{t("connectWhatsapp")}</h2>
                     <ContactForm />
                   </div>
                 </TabsContent>
                 <TabsContent value="appointment">
                   <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                    <h2 className="text-2xl font-serif text-navy mb-6">{t("scheduleAppointment")}</h2>
+                    <h2 className="text-2xl font-serif text-navy mb-6 text-center">{t("scheduleAppointment")}</h2>
                     <div className="text-center py-8">
                       <p className="mb-6 text-lg">{t("appointmentInstruction")}</p>
-                      <ShinyButton 
-                        onClick={handleWhatsAppContact}
-                        className="bg-navy hover:bg-navy-light text-white py-3 px-8 text-lg flex items-center justify-center gap-2"
-                      >
-                        <MessageSquare size={20} />
-                        {t("bookAppointmentNow")}
-                      </ShinyButton>
+                      <div className="flex justify-center">
+                        <ShinyButton 
+                          onClick={handleWhatsAppContact}
+                          className="bg-[#4285F4] hover:bg-[#3b78dc] text-white text-lg py-3 px-8 flex items-center justify-center gap-3"
+                        >
+                          <MessageSquare size={20} />
+                          {t("bookAppointmentNow")}
+                        </ShinyButton>
+                      </div>
                     </div>
                   </div>
                 </TabsContent>
@@ -160,13 +161,15 @@ const Contact = () => {
           <p className="text-gray-300 mb-6">
             {t("whatsappInfo")}
           </p>
-          <ShinyButton
-            onClick={handleWhatsAppContact}
-            className="bg-green-600 hover:bg-green-700 text-white flex items-center justify-center gap-2 mx-auto"
-          >
-            <MessageSquare size={20} />
-            {t("connectOnWhatsapp")}
-          </ShinyButton>
+          <div className="flex justify-center">
+            <ShinyButton
+              onClick={handleWhatsAppContact}
+              className="bg-[#4285F4] hover:bg-[#3b78dc] text-white text-lg py-3 px-8 flex items-center justify-center gap-3"
+            >
+              <MessageSquare size={20} />
+              {t("connectOnWhatsapp")}
+            </ShinyButton>
+          </div>
         </div>
       </section>
 

@@ -20,13 +20,15 @@ const ContactForm = () => {
         {t('whatsappContactDesc')}
       </p>
       
-      <ShinyButton 
-        onClick={handleWhatsAppContact}
-        className="bg-green-600 hover:bg-green-700 text-white text-lg py-6 px-8 flex items-center justify-center gap-3"
-      >
-        <MessageSquare size={24} />
-        {t('connectOnWhatsapp')}
-      </ShinyButton>
+      <div className="flex justify-center">
+        <ShinyButton 
+          onClick={handleWhatsAppContact}
+          className="bg-[#4285F4] hover:bg-[#3b78dc] text-white text-lg py-3 px-8 flex items-center justify-center gap-3"
+        >
+          <MessageSquare size={24} />
+          {t('connectOnWhatsapp')}
+        </ShinyButton>
+      </div>
     </div>
   );
 };
