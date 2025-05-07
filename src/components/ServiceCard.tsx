@@ -1,7 +1,5 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 interface ServiceCardProps {
@@ -28,9 +26,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         animationDelay: `${delay}ms`
       }}
     >
-      {icon && <div className="text-theme-red mb-4">{icon}</div>}
-      <h3 className="text-xl font-serif text-theme-blue mb-3 group-hover:text-theme-red transition-colors">{title}</h3>
-      <p className="text-theme-gray flex-grow mb-4">{description}</p>
+      {icon && <div className="text-navy mb-4">{icon}</div>}
+      <h3 className="text-xl font-serif text-navy mb-3 group-hover:text-gold transition-colors">{title}</h3>
+      <p className="text-gray-700 flex-grow mb-4">{description}</p>
     </div>
   );
 };

@@ -1,10 +1,7 @@
 
-"use client";
-
 import React from "react";
-import { motion } from "framer-motion";
-
 import { cn } from "@/lib/utils";
+import { Button } from "./button";
 
 interface ShinyButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -18,23 +15,15 @@ export const ShinyButton: React.FC<ShinyButtonProps> = ({
   ...props
 }) => {
   return (
-    <motion.button
-      initial={{ scale: 0.98 }}
-      animate={{ scale: 1 }}
-      whileTap={{ scale: 0.95 }}
-      transition={{
-        type: "spring",
-        stiffness: 200,
-        damping: 10,
-      }}
+    <Button
       {...props}
       className={cn(
-        "relative rounded-lg px-6 py-3 font-medium text-white transition-shadow duration-300 ease-in-out hover:shadow bg-[#4285F4] hover:bg-[#3b78dc]",
+        "relative rounded-lg px-6 py-3 font-medium text-white transition-colors duration-300 ease-in-out hover:shadow bg-[#4285F4] hover:bg-[#3b78dc]",
         className
       )}
     >
       {children}
-    </motion.button>
+    </Button>
   );
 };
 
