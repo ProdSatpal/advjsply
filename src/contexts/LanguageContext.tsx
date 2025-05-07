@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState } from 'react';
 
 type Language = 'en' | 'hi' | 'mr';
@@ -10,6 +11,7 @@ interface LanguageContextType {
   translations: Record<Language, Translations>;
 }
 
+// Group translations by feature/page
 const translations: Record<Language, Translations> = {
   en: {
     // General translations
@@ -30,7 +32,7 @@ const translations: Record<Language, Translations> = {
     heroDescription: 'Advocate Jasvinder Singh Ply is a dedicated legal professional with over 12 years of experience, specializing in family law, civil matters, and property disputes.',
     learnMore: 'Learn More',
     
-    // About texts
+    // About page
     about: 'About',
     Me: 'Me',
     professional: 'Professional',
@@ -42,28 +44,39 @@ const translations: Record<Language, Translations> = {
     scheduleConsultation: 'Schedule a Consultation',
     advJasvinderSinghPly: 'Adv. Jasvinder Singh Ply',
     
-    // Services
+    // Services home page
     ourServices: 'Our Services',
     viewAllServices: 'View All Services',
     servicesIntro: 'Comprehensive legal services tailored to your needs',
-    civilRights: 'Civil Rights',
-    disabilityBenefits: 'Disability Benefits',
-    criminalLaw: 'Criminal Law',
-    propertyDisputes: 'Property Disputes',
-    familyLaw: 'Family Law',
-    civilRightsDesc: 'Protecting your fundamental rights through expert legal representation.',
-    disabilityBenefitsDesc: 'Assisting with claims for disability benefits and accident compensation.',
-    criminalLawDesc: 'Defending clients in criminal matters with strategic legal approaches.',
-    propertyDisputesDesc: 'Resolving property conflicts through negotiation and litigation.',
-    familyLawDesc: 'Guiding clients through divorce, custody, and other family matters.',
     
-    // Services Pages - Category Titles
+    // Services page - Overview
+    ourLegalServices: 'Our Legal Services',
+    experienceTagline: 'Comprehensive legal support for individuals and businesses, backed by over a decade of expertise.',
+
+    // Services page - Process section
+    ourLegalProcess: 'Our Legal Process',
+    processTagline: 'Our systematic approach ensures thorough handling of your legal matters from start to finish.',
+    initialConsultation: 'Initial Consultation',
+    consultationDesc: 'We discuss your situation and legal needs in detail.',
+    caseAnalysis: 'Case Analysis',
+    analysisDesc: 'Our experts evaluate your case and develop a strategic approach.',
+    legalRepresentation: 'Legal Representation',
+    representationDesc: 'We represent your interests in negotiations and court proceedings.',
+    resolution: 'Resolution',
+    resolutionDesc: 'We work toward a favorable outcome for your legal matter.',
+    readyForSupport: 'Ready for Legal Support?',
+    bookConsultation: 'Book a Consultation',
+    
+    // Services page - Category titles
     civilLaw: 'Civil Law',
     criminalLaw: 'Criminal Law',
+    familyLaw: 'Family Law',
     propertyDocumentation: 'Property Documentation',
     consumerProtection: 'Consumer Protection',
     
-    // Services Pages - Individual Service Titles
+    // Services page - Service titles
+    civilRights: 'Civil Rights',
+    disabilityBenefits: 'Disability Benefits',
     evictionLitigation: 'Eviction Litigation',
     landlordTenant: 'Landlord Tenant Disputes',
     recoverySuit: 'Recovery Suit',
@@ -79,17 +92,22 @@ const translations: Record<Language, Translations> = {
     partnershipDeed: 'Partnership Deed',
     legalNotice: 'Legal Notice',
     propertyRegistry: 'Property Registry',
+    propertyDisputes: 'Property Disputes',
     agreements: 'Agreements',
     consumerComplaint: 'Consumer Complaint',
     
-    // Services Pages - Individual Service Descriptions
+    // Services page - Service descriptions
+    civilRightsDesc: 'Protecting your fundamental rights through expert legal representation.',
+    disabilityBenefitsDesc: 'Assisting with claims for disability benefits and accident compensation.',
     evictionDesc: 'Expert legal representation for tenants facing eviction or landlords seeking to evict.',
     landlordDesc: 'Resolving disputes between landlords and tenants, including lease violations and property damage.',
     recoveryDesc: 'Legal assistance for recovery of debts, money, and property through effective litigation.',
+    criminalLawDesc: 'Defending clients in criminal matters with strategic legal approaches.',
     criminalWritDesc: 'Filing and defending criminal writs to protect fundamental rights in criminal proceedings.',
     regularBailDesc: 'Legal representation for obtaining bail after arrest in criminal cases.',
     anticipatoryDesc: 'Pre-arrest bail application to prevent arrest in non-bailable offenses.',
     chequeDesc: 'Legal assistance for cases involving dishonored cheques under Section 138.',
+    familyLawDesc: 'Guiding clients through divorce, custody, and other family matters.',
     domesticDesc: 'Protection and legal remedies for victims of domestic violence.',
     mutualDesc: 'Simplified legal process for couples who mutually agree to divorce.',
     divorceDesc: 'Legal representation in contested divorce cases covering alimony and child custody.',
@@ -99,24 +117,9 @@ const translations: Record<Language, Translations> = {
     noticeDesc: 'Drafting and sending formal legal notices for dispute resolution.',
     registryDesc: 'Assistance with property registration, transfer, and documentation.',
     disputesDesc: 'Resolution of property boundary, ownership, and inheritance disputes.',
+    propertyDisputesDesc: 'Resolving property conflicts through negotiation and litigation.',
     agreementsDesc: 'Drafting and reviewing various legal agreements and contracts.',
     consumerDesc: 'Filing and pursuing consumer complaints against unfair trade practices.',
-    
-    // Services Process Section
-    ourLegalServices: 'Our Legal Services',
-    experienceTagline: 'Comprehensive legal support for individuals and businesses, backed by over a decade of expertise.',
-    ourLegalProcess: 'Our Legal Process',
-    processTagline: 'Our systematic approach ensures thorough handling of your legal matters from start to finish.',
-    initialConsultation: 'Initial Consultation',
-    consultationDesc: 'We discuss your situation and legal needs in detail.',
-    caseAnalysis: 'Case Analysis',
-    analysisDesc: 'Our experts evaluate your case and develop a strategic approach.',
-    legalRepresentation: 'Legal Representation',
-    representationDesc: 'We represent your interests in negotiations and court proceedings.',
-    resolution: 'Resolution',
-    resolutionDesc: 'We work toward a favorable outcome for your legal matter.',
-    readyForSupport: 'Ready for Legal Support?',
-    bookConsultation: 'Book a Consultation',
     
     // Why Choose section
     whyChooseUs: 'Why Choose Us',
@@ -181,15 +184,19 @@ const translations: Record<Language, Translations> = {
     scheduleConsultation: 'परामर्श शेड्यूल करें',
     advJasvinderSinghPly: 'अधिवक्ता जसविंदर सिंह प्लाई',
     
-    // Services
+    // Services home page
     ourServices: 'हमारी सेवाएँ',
     viewAllServices: 'सभी सेवाएँ देखें',
     servicesIntro: 'आपकी जरूरतों के अनुसार व्यापक कानूनी सेवाएं',
+    
+    // Services page - Service titles
     civilRights: 'नागरिक अधिकार',
     disabilityBenefits: 'विकलांगता लाभ',
     criminalLaw: 'आपराधिक कानून',
     propertyDisputes: 'संपत्ति विवाद',
     familyLaw: 'पारिवारिक कानून',
+    
+    // Services page - Service descriptions
     civilRightsDesc: 'विशेषज्ञ कानूनी प्रतिनिधित्व के माध्यम से आपके मौलिक अधिकारों की रक्षा करना।',
     disabilityBenefitsDesc: 'विकलांगता लाभ और दुर्घटना मुआवजे के लिए दावों में सहायता।',
     criminalLawDesc: 'रणनीतिक कानूनी दृष्टिकोण के साथ आपराधिक मामलों में ग्राहकों का बचाव।',
@@ -227,14 +234,32 @@ const translations: Record<Language, Translations> = {
     bookAppointmentNow: 'अभी अपॉइंटमेंट बुक करें',
     scheduleAppointment: 'अपॉइंटमेंट निर्धारित करें',
     
-    // Services Pages - Category Titles
+    // Services page - Overview
+    ourLegalServices: 'हमारी कानूनी सेवाएँ',
+    experienceTagline: 'व्यक्तियों और व्यवसायों के लिए व्यापक कानूनी सहायता, एक दशक से अधिक के अनुभव के साथ।',
+    
+    // Services page - Process section
+    ourLegalProcess: 'हमारी कानूनी प्रक्रिया',
+    processTagline: 'हमारा व्यवस्थित दृष्टिकोण शुरू से अंत तक आपके कानूनी मामलों की पूरी तरह से देखभाल सुनिश्चित करता है।',
+    initialConsultation: 'प्रारंभिक परामर्श',
+    consultationDesc: 'हम आपकी स्थिति और कानूनी आवश्यकताओं पर विस्तार से चर्चा करते हैं।',
+    caseAnalysis: 'केस विश्लेषण',
+    analysisDesc: 'हमारे विशेषज्ञ आपके मामले का मूल्यांकन करते हैं और एक रणनीतिक दृष्टिकोण विकसित करते हैं।',
+    legalRepresentation: 'कानूनी प्रतिनिधित्व',
+    representationDesc: 'हम बातचीत और अदालती कार्यवाही में आपके हितों का प्रतिनिधित्व करते हैं।',
+    resolution: 'समाधान',
+    resolutionDesc: 'हम आपके कानूनी मामले के लिए एक अनुकूल परिणाम की ओर काम करते हैं।',
+    readyForSupport: 'कानूनी सहायता के लिए तैयार हैं?',
+    bookConsultation: 'परामर्श बुक करें',
+    
+    // Services page - Category titles
     civilLaw: 'नागरिक कानून',
     criminalLaw: 'आपराधिक कानून',
     familyLaw: 'पारिवारिक कानून',
     propertyDocumentation: 'संपत्ति दस्तावेज़ीकरण',
     consumerProtection: 'उपभोक्ता संरक्षण',
     
-    // Services Pages - Individual Service Titles
+    // Services page - Service titles (continued)
     evictionLitigation: 'बेदखली मुकदमा',
     landlordTenant: 'मकान मालिक-किरायेदार विवाद',
     recoverySuit: 'वसूली वाद',
@@ -253,7 +278,7 @@ const translations: Record<Language, Translations> = {
     agreements: 'अनुबंध',
     consumerComplaint: 'उपभोक्ता शिकायत',
     
-    // Services Pages - Individual Service Descriptions
+    // Services page - Service descriptions (continued)
     evictionDesc: 'बेदखली का सामना कर रहे किरायेदारों या बेदखल करने वाले मकान मालिकों के लिए विशेषज्ञ कानूनी प्रतिनिधित्व।',
     landlordDesc: 'मकान मालिकों और किरायेदारों के बीच विवादों का समाधान, जिसमें लीज उल्लंघन और संपत्ति क्षति शामिल है।',
     recoveryDesc: 'प्रभावी मुकदमेबाजी के माध्यम से ऋण, धन और संपत्ति की वसूली के लिए कानूनी सहायता।',
@@ -272,22 +297,6 @@ const translations: Record<Language, Translations> = {
     disputesDesc: 'संपत्ति सीमा, स्वामित्व और विरासत विवादों का समाधान।',
     agreementsDesc: 'विभिन्न कानूनी समझौतों और अनुबंधों का मसौदा तैयार करना और समीक्षा करना।',
     consumerDesc: 'अनुचित व्यापार प्रथाओं के खिलाफ उपभोक्ता शिकायतें दर्ज करना और आगे बढ़ाना।',
-    
-    // Services Process Section
-    ourLegalServices: 'हमारी कानूनी सेवाएँ',
-    experienceTagline: 'व्यक्तियों और व्यवसायों के लिए व्यापक कानूनी सहायता, एक दशक से अधिक के अनुभव के साथ।',
-    ourLegalProcess: 'हमारी कानूनी प्रक्रिया',
-    processTagline: 'हमारा व्यवस्थित दृष्टिकोण शुरू से अंत तक आपके कानूनी मामलों की पूरी तरह से देखभाल सुनिश्चित करता है।',
-    initialConsultation: 'प्रारंभिक परामर्श',
-    consultationDesc: 'हम आपकी स्थिति और कानूनी आवश्यकताओं पर विस्तार से चर्चा करते हैं।',
-    caseAnalysis: 'केस विश्लेषण',
-    analysisDesc: 'हमारे विशेषज्ञ आपके मामले का मूल्यांकन करते हैं और एक रणनीतिक दृष्टिकोण विकसित करते हैं।',
-    legalRepresentation: 'कानूनी प्रतिनिधित्व',
-    representationDesc: 'हम बातचीत और अदालती कार्यवाही में आपके हितों का प्रतिनिधित्व करते हैं।',
-    resolution: 'समाधान',
-    resolutionDesc: 'हम आपके कानूनी मामले के लिए एक अनुकूल परिणाम की ओर काम करते हैं।',
-    readyForSupport: 'कानूनी सहायता के लिए तैयार हैं?',
-    bookConsultation: 'परामर्श बुक करें',
   },
   
   mr: {
@@ -321,15 +330,19 @@ const translations: Record<Language, Translations> = {
     scheduleConsultation: 'सल्ला शेड्यूल करा',
     advJasvinderSinghPly: 'ॲडव्होकेट जसविंदर सिंग प्लाई',
     
-    // Services
+    // Services home page
     ourServices: 'आमच्या सेवा',
     viewAllServices: 'सर्व सेवा पहा',
     servicesIntro: 'तुमच्या गरजांनुसार सर्वसमावेशक कायदेशीर सेवा',
+    
+    // Services page - Service titles
     civilRights: 'नागरी हक्क',
     disabilityBenefits: 'अपंगत्व लाभ',
     criminalLaw: 'फौजदारी कायदा',
     propertyDisputes: 'मालमत्ता वाद',
     familyLaw: 'कौटुंबिक कायदा',
+    
+    // Services page - Service descriptions
     civilRightsDesc: 'तज्ञ कायदेशीर प्रतिनिधित्वाद्वारे तुमच्या मूलभूत हक्कांचे संरक्षण.',
     disabilityBenefitsDesc: 'अपंगत्व लाभ आणि अपघात भरपाईसाठी दाव्यांमध्ये सहाय्य.',
     criminalLawDesc: 'रणनीतिक कायदेशीर दृष्टिकोनासह फौजदारी प्रकरणांमध्ये क्लायंटचा बचाव.',
@@ -367,14 +380,32 @@ const translations: Record<Language, Translations> = {
     bookAppointmentNow: 'आता अपॉइंटमेंट बुक करा',
     scheduleAppointment: 'अपॉइंटमेंट शेड्यूल करा',
     
-    // Services Pages - Category Titles
+    // Services page - Overview
+    ourLegalServices: 'आमच्या कायदेशीर सेवा',
+    experienceTagline: 'व्यक्ती आणि व्यवसायांसाठी दशकापेक्षा जास्त अनुभवासह व्यापक कायदेशीर सहाय्य.',
+    
+    // Services page - Process section
+    ourLegalProcess: 'आमची कायदेशीर प्रक्रिया',
+    processTagline: 'आमचा पद्धतशीर दृष्टीकोन तुमच्या कायदेशीर प्रकरणांची सुरुवातीपासून शेवटपर्यंत पूर्ण देखभाल सुनिश्चित करतो.',
+    initialConsultation: 'प्राथमिक सल्लामसलत',
+    consultationDesc: 'आम्ही तुमची परिस्थिती आणि कायदेशीर गरजांची सविस्तर चर्चा करतो.',
+    caseAnalysis: 'प्रकरण विश्लेषण',
+    analysisDesc: 'आमचे तज्ञ तुमच्या प्रकरणाचे मूल्यांकन करतात आणि रणनीतिक दृष्टिकोन विकसित करतात.',
+    legalRepresentation: 'कायदेशीर प्रतिनिधित्व',
+    representationDesc: 'आम्ही वाटाघाटी आणि न्यायालयीन कार्यवाहीत तुमच्या हितांचे प्रतिनिधित्व करतो.',
+    resolution: 'निराकरण',
+    resolutionDesc: 'आम्ही तुमच्या कायदेशीर प्रकरणासाठी अनुकूल परिणामासाठी कार्य करतो.',
+    readyForSupport: 'कायदेशीर सहाय्यासाठी तयार आहात?',
+    bookConsultation: 'सल्लामसलत बुक करा',
+    
+    // Services page - Category titles
     civilLaw: 'नागरी कायदा',
     criminalLaw: 'फौजदारी कायदा',
     familyLaw: 'कौटुंबिक कायदा',
     propertyDocumentation: 'मालमत्ता दस्तऐवजीकरण',
     consumerProtection: 'ग्राहक संरक्षण',
     
-    // Services Pages - Individual Service Titles
+    // Services page - Service titles (continued)
     evictionLitigation: 'बेदखल मुकदमा',
     landlordTenant: 'मालक-भाडेकरू वाद',
     recoverySuit: 'वसुली दावा',
@@ -393,7 +424,7 @@ const translations: Record<Language, Translations> = {
     agreements: 'करार',
     consumerComplaint: 'ग्राहक तक्रार',
     
-    // Services Pages - Individual Service Descriptions
+    // Services page - Service descriptions (continued)
     evictionDesc: 'बेदखल होणाऱ्या भाडेकरूंसाठी किंवा बेदखल करू इच्छिणाऱ्या मालकांसाठी तज्ञ कायदेशीर प्रतिनिधित्व.',
     landlordDesc: 'मालक आणि भाडेकरू यांच्यातील वाद सोडवणे, ज्यामध्ये लीज उल्लंघन आणि मालमत्ता नुकसान समाविष्ट आहे.',
     recoveryDesc: 'प्रभावी कायदेशीर कारवाईद्वारे कर्ज, पैसे आणि मालमत्ता वसूल करण्यासाठी कायदेशीर सहाय्य.',
@@ -412,22 +443,6 @@ const translations: Record<Language, Translations> = {
     disputesDesc: 'मालमत्ता सीमा, मालकी आणि वारसा वादांचे निराकरण.',
     agreementsDesc: 'विविध कायदेशीर करार आणि कंत्राटांचे मसुदा तयार करणे आणि पुनरावलोकन करणे.',
     consumerDesc: 'अनुचित व्यापारी पद्धतींविरुद्ध ग्राहक तक्रारी दाखल करणे आणि पाठपुरावा करणे.',
-    
-    // Services Process Section
-    ourLegalServices: 'आमच्या कायदेशीर सेवा',
-    experienceTagline: 'व्यक्ती आणि व्यवसायांसाठी दशकापेक्षा जास्त अनुभवासह व्यापक कायदेशीर सहाय्य.',
-    ourLegalProcess: 'आमची कायदेशीर प्रक्रिया',
-    processTagline: 'आमचा पद्धतशीर दृष्टीकोन तुमच्या कायदेशीर प्रकरणांची सुरुवातीपासून शेवटपर्यंत पूर्ण देखभाल सुनिश्चित करतो.',
-    initialConsultation: 'प्राथमिक सल्लामसलत',
-    consultationDesc: 'आम्ही तुमची परिस्थिती आणि कायदेशीर गरजांची सविस्तर चर्चा करतो.',
-    caseAnalysis: 'प्रकरण विश्लेषण',
-    analysisDesc: 'आमचे तज्ञ तुमच्या प्रकरणाचे मूल्यांकन करतात आणि रणनीतिक दृष्टिकोन विकसित करतात.',
-    legalRepresentation: 'कायदेशीर प्रतिनिधित्व',
-    representationDesc: 'आम्ही वाटाघाटी आणि न्यायालयीन कार्यवाहीत तुमच्या हितांचे प्रतिनिधित्व करतो.',
-    resolution: 'निराकरण',
-    resolutionDesc: 'आम्ही तुमच्या कायदेशीर प्रकरणासाठी अनुकूल परिणामासाठी कार्य करतो.',
-    readyForSupport: 'कायदेशीर सहाय्यासाठी तयार आहात?',
-    bookConsultation: 'सल्लामसलत बुक करा',
   }
 };
 
