@@ -21,7 +21,7 @@ const Map = () => {
 
       {mapLoaded && (
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3357.16973352647!2d79.09843517470432!3d21.17229148283437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c128559a0a73%3A0xbd6d4a01c21fd03a!2s761%2C%20Buddha%20Nagar%2C%20Balabhaupeth%2C%20Nagpur%2C%20Maharashtra%20440002%2C%20India!5e1!3m2!1sen!2sdk!4v1746113426858!5m2!1sen!2sdk"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.500171751012!2d79.1011674!3d21.172280699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c188d5643a45%3A0x79e2fced5b821612!2sAdvocate%20Jasvinder%20Singh%20Ply%20%7C%20Best%20Advocate%2FLawyer!5e0!3m2!1sen!2sdk!4v1746601006216!5m2!1sen!2sdk"
           width="100%"
           height="100%"
           style={{ border: 0 }}
