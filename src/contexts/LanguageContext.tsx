@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState } from 'react';
 
 type Language = 'en' | 'hi' | 'mr';
@@ -57,6 +56,67 @@ const translations: Record<Language, Translations> = {
     criminalLawDesc: 'Defending clients in criminal matters with strategic legal approaches.',
     propertyDisputesDesc: 'Resolving property conflicts through negotiation and litigation.',
     familyLawDesc: 'Guiding clients through divorce, custody, and other family matters.',
+    
+    // Services Pages - Category Titles
+    civilLaw: 'Civil Law',
+    criminalLaw: 'Criminal Law',
+    propertyDocumentation: 'Property Documentation',
+    consumerProtection: 'Consumer Protection',
+    
+    // Services Pages - Individual Service Titles
+    evictionLitigation: 'Eviction Litigation',
+    landlordTenant: 'Landlord Tenant Disputes',
+    recoverySuit: 'Recovery Suit',
+    criminalWrit: 'Criminal Writ',
+    regularBail: 'Regular Bail',
+    anticipatoryBail: 'Anticipatory Bail',
+    chequeBouncing: 'Cheque Bouncing',
+    domesticViolence: 'Domestic Violence',
+    mutualDivorce: 'Mutual Divorce',
+    divorce: 'Divorce',
+    registerMarriage: 'Register Marriage',
+    willWriting: 'Will Writing',
+    partnershipDeed: 'Partnership Deed',
+    legalNotice: 'Legal Notice',
+    propertyRegistry: 'Property Registry',
+    agreements: 'Agreements',
+    consumerComplaint: 'Consumer Complaint',
+    
+    // Services Pages - Individual Service Descriptions
+    evictionDesc: 'Expert legal representation for tenants facing eviction or landlords seeking to evict.',
+    landlordDesc: 'Resolving disputes between landlords and tenants, including lease violations and property damage.',
+    recoveryDesc: 'Legal assistance for recovery of debts, money, and property through effective litigation.',
+    criminalWritDesc: 'Filing and defending criminal writs to protect fundamental rights in criminal proceedings.',
+    regularBailDesc: 'Legal representation for obtaining bail after arrest in criminal cases.',
+    anticipatoryDesc: 'Pre-arrest bail application to prevent arrest in non-bailable offenses.',
+    chequeDesc: 'Legal assistance for cases involving dishonored cheques under Section 138.',
+    domesticDesc: 'Protection and legal remedies for victims of domestic violence.',
+    mutualDesc: 'Simplified legal process for couples who mutually agree to divorce.',
+    divorceDesc: 'Legal representation in contested divorce cases covering alimony and child custody.',
+    marriageDesc: 'Assistance with legal registration of marriage under various personal laws.',
+    willDesc: 'Drafting legally binding wills to ensure proper distribution of assets.',
+    partnershipDesc: 'Creating legally sound partnership deeds for business relationships.',
+    noticeDesc: 'Drafting and sending formal legal notices for dispute resolution.',
+    registryDesc: 'Assistance with property registration, transfer, and documentation.',
+    disputesDesc: 'Resolution of property boundary, ownership, and inheritance disputes.',
+    agreementsDesc: 'Drafting and reviewing various legal agreements and contracts.',
+    consumerDesc: 'Filing and pursuing consumer complaints against unfair trade practices.',
+    
+    // Services Process Section
+    ourLegalServices: 'Our Legal Services',
+    experienceTagline: 'Comprehensive legal support for individuals and businesses, backed by over a decade of expertise.',
+    ourLegalProcess: 'Our Legal Process',
+    processTagline: 'Our systematic approach ensures thorough handling of your legal matters from start to finish.',
+    initialConsultation: 'Initial Consultation',
+    consultationDesc: 'We discuss your situation and legal needs in detail.',
+    caseAnalysis: 'Case Analysis',
+    analysisDesc: 'Our experts evaluate your case and develop a strategic approach.',
+    legalRepresentation: 'Legal Representation',
+    representationDesc: 'We represent your interests in negotiations and court proceedings.',
+    resolution: 'Resolution',
+    resolutionDesc: 'We work toward a favorable outcome for your legal matter.',
+    readyForSupport: 'Ready for Legal Support?',
+    bookConsultation: 'Book a Consultation',
     
     // Why Choose section
     whyChooseUs: 'Why Choose Us',
@@ -166,6 +226,68 @@ const translations: Record<Language, Translations> = {
     appointmentInstruction: 'अधिवक्ता जसविंदर सिंह प्लाई के साथ अपॉइंटमेंट निर्धारित करने के लिए, कृपया नीचे दिए गए बटन पर क्लिक करें',
     bookAppointmentNow: 'अभी अपॉइंटमेंट बुक करें',
     scheduleAppointment: 'अपॉइंटमेंट निर्धारित करें',
+    
+    // Services Pages - Category Titles
+    civilLaw: 'नागरिक कानून',
+    criminalLaw: 'आपराधिक कानून',
+    familyLaw: 'पारिवारिक कानून',
+    propertyDocumentation: 'संपत्ति दस्तावेज़ीकरण',
+    consumerProtection: 'उपभोक्ता संरक्षण',
+    
+    // Services Pages - Individual Service Titles
+    evictionLitigation: 'बेदखली मुकदमा',
+    landlordTenant: 'मकान मालिक-किरायेदार विवाद',
+    recoverySuit: 'वसूली वाद',
+    criminalWrit: 'आपराधिक रिट',
+    regularBail: 'नियमित जमानत',
+    anticipatoryBail: 'अग्रिम जमानत',
+    chequeBouncing: 'चेक बाउंसिंग',
+    domesticViolence: 'घरेलू हिंसा',
+    mutualDivorce: 'आपसी सहमति से तलाक',
+    divorce: 'तलाक',
+    registerMarriage: 'विवाह पंजीकरण',
+    willWriting: 'वसीयत लेखन',
+    partnershipDeed: 'साझेदारी विलेख',
+    legalNotice: 'कानूनी नोटिस',
+    propertyRegistry: 'संपत्ति पंजीकरण',
+    agreements: 'अनुबंध',
+    consumerComplaint: 'उपभोक्ता शिकायत',
+    
+    // Services Pages - Individual Service Descriptions
+    evictionDesc: 'बेदखली का सामना कर रहे किरायेदारों या बेदखल करने वाले मकान मालिकों के लिए विशेषज्ञ कानूनी प्रतिनिधित्व।',
+    landlordDesc: 'मकान मालिकों और किरायेदारों के बीच विवादों का समाधान, जिसमें लीज उल्लंघन और संपत्ति क्षति शामिल है।',
+    recoveryDesc: 'प्रभावी मुकदमेबाजी के माध्यम से ऋण, धन और संपत्ति की वसूली के लिए कानूनी सहायता।',
+    criminalWritDesc: 'आपराधिक कार्यवाही में मौलिक अधिकारों की रक्षा के लिए आपराधिक रिट दायर करना और बचाव करना।',
+    regularBailDesc: 'आपराधिक मामलों में गिरफ्तारी के बाद जमानत प्राप्त करने के लिए कानूनी प्रतिनिधित्व।',
+    anticipatoryDesc: 'गैर-जमानती अपराधों में गिरफ्तारी को रोकने के लिए पूर्व-गिरफ्तारी जमानत आवेदन।',
+    chequeDesc: 'धारा 138 के तहत अस्वीकृत चेकों से जुड़े मामलों के लिए कानूनी सहायता।',
+    domesticDesc: 'घरेलू हिंसा के पीड़ितों के लिए सुरक्षा और कानूनी उपाय।',
+    mutualDesc: 'उन जोड़ों के लिए सरलीकृत कानूनी प्रक्रिया जो आपसी सहमति से तलाक के लिए सहमत होते हैं।',
+    divorceDesc: 'विवादित तलाक के मामलों में कानूनी प्रतिनिधित्व जिसमें भरण-पोषण और बच्चों की हिरासत शामिल है।',
+    marriageDesc: 'विभिन्न व्यक्तिगत कानूनों के तहत विवाह के कानूनी पंजीकरण में सहायता।',
+    willDesc: 'संपत्तियों के उचित वितरण को सुनिश्चित करने के लिए कानूनी रूप से बाध्यकारी वसीयत का मसौदा तैयार करना।',
+    partnershipDesc: 'व्यावसायिक संबंधों के लिए कानूनी रूप से मजबूत साझेदारी विलेख बनाना।',
+    noticeDesc: 'विवाद समाधान के लिए औपचारिक कानूनी नोटिस का मसौदा तैयार करना और भेजना।',
+    registryDesc: 'संपत्ति पंजीकरण, हस्तांतरण और दस्तावेज़ीकरण में सहायता।',
+    disputesDesc: 'संपत्ति सीमा, स्वामित्व और विरासत विवादों का समाधान।',
+    agreementsDesc: 'विभिन्न कानूनी समझौतों और अनुबंधों का मसौदा तैयार करना और समीक्षा करना।',
+    consumerDesc: 'अनुचित व्यापार प्रथाओं के खिलाफ उपभोक्ता शिकायतें दर्ज करना और आगे बढ़ाना।',
+    
+    // Services Process Section
+    ourLegalServices: 'हमारी कानूनी सेवाएँ',
+    experienceTagline: 'व्यक्तियों और व्यवसायों के लिए व्यापक कानूनी सहायता, एक दशक से अधिक के अनुभव के साथ।',
+    ourLegalProcess: 'हमारी कानूनी प्रक्रिया',
+    processTagline: 'हमारा व्यवस्थित दृष्टिकोण शुरू से अंत तक आपके कानूनी मामलों की पूरी तरह से देखभाल सुनिश्चित करता है।',
+    initialConsultation: 'प्रारंभिक परामर्श',
+    consultationDesc: 'हम आपकी स्थिति और कानूनी आवश्यकताओं पर विस्तार से चर्चा करते हैं।',
+    caseAnalysis: 'केस विश्लेषण',
+    analysisDesc: 'हमारे विशेषज्ञ आपके मामले का मूल्यांकन करते हैं और एक रणनीतिक दृष्टिकोण विकसित करते हैं।',
+    legalRepresentation: 'कानूनी प्रतिनिधित्व',
+    representationDesc: 'हम बातचीत और अदालती कार्यवाही में आपके हितों का प्रतिनिधित्व करते हैं।',
+    resolution: 'समाधान',
+    resolutionDesc: 'हम आपके कानूनी मामले के लिए एक अनुकूल परिणाम की ओर काम करते हैं।',
+    readyForSupport: 'कानूनी सहायता के लिए तैयार हैं?',
+    bookConsultation: 'परामर्श बुक करें',
   },
   
   mr: {
@@ -244,9 +366,70 @@ const translations: Record<Language, Translations> = {
     appointmentInstruction: 'ॲडव्होकेट जसविंदर सिंग प्लाई यांच्यासह अपॉइंटमेंट शेड्यूल करण्यासाठी, कृपया खालील बटणावर क्लिक करा',
     bookAppointmentNow: 'आता अपॉइंटमेंट बुक करा',
     scheduleAppointment: 'अपॉइंटमेंट शेड्यूल करा',
+    
+    // Services Pages - Category Titles
+    civilLaw: 'नागरी कायदा',
+    criminalLaw: 'फौजदारी कायदा',
+    familyLaw: 'कौटुंबिक कायदा',
+    propertyDocumentation: 'मालमत्ता दस्तऐवजीकरण',
+    consumerProtection: 'ग्राहक संरक्षण',
+    
+    // Services Pages - Individual Service Titles
+    evictionLitigation: 'बेदखल मुकदमा',
+    landlordTenant: 'मालक-भाडेकरू वाद',
+    recoverySuit: 'वसुली दावा',
+    criminalWrit: 'फौजदारी रिट',
+    regularBail: 'नियमित जामीन',
+    anticipatoryBail: 'अग्रिम जामीन',
+    chequeBouncing: 'चेक बाउन्सिंग',
+    domesticViolence: 'कौटुंबिक हिंसाचार',
+    mutualDivorce: 'सामंजस्य घटस्फोट',
+    divorce: 'घटस्फोट',
+    registerMarriage: 'विवाह नोंदणी',
+    willWriting: 'मृत्युपत्र लेखन',
+    partnershipDeed: 'भागीदारी करार',
+    legalNotice: 'कायदेशीर नोटीस',
+    propertyRegistry: 'मालमत्ता नोंदणी',
+    agreements: 'करार',
+    consumerComplaint: 'ग्राहक तक्रार',
+    
+    // Services Pages - Individual Service Descriptions
+    evictionDesc: 'बेदखल होणाऱ्या भाडेकरूंसाठी किंवा बेदखल करू इच्छिणाऱ्या मालकांसाठी तज्ञ कायदेशीर प्रतिनिधित्व.',
+    landlordDesc: 'मालक आणि भाडेकरू यांच्यातील वाद सोडवणे, ज्यामध्ये लीज उल्लंघन आणि मालमत्ता नुकसान समाविष्ट आहे.',
+    recoveryDesc: 'प्रभावी कायदेशीर कारवाईद्वारे कर्ज, पैसे आणि मालमत्ता वसूल करण्यासाठी कायदेशीर सहाय्य.',
+    criminalWritDesc: 'फौजदारी प्रक्रियेमध्ये मूलभूत हक्कांच्या संरक्षणासाठी फौजदारी रिट दाखल करणे आणि बचाव करणे.',
+    regularBailDesc: 'फौजदारी प्रकरणात अटक केल्यानंतर जामीन मिळवण्यासाठी कायदेशीर प्रतिनिधित्व.',
+    anticipatoryDesc: 'बिगर-जामिनपात्र गुन्ह्यांमध्ये अटकेला प्रतिबंधित करण्यासाठी अटकपूर्व जामीन अर्ज.',
+    chequeDesc: 'कलम 138 अंतर्गत अनादरित धनादेशांशी संबंधित प्रकरणांसाठी कायदेशीर सहाय्य.',
+    domesticDesc: 'कौटुंबिक हिंसाचाराच्या पीडितांसाठी संरक्षण आणि कायदेशीर उपाय.',
+    mutualDesc: 'जी जोडपी परस्पर संमतीने घटस्फोटास सहमत होतात त्यांच्यासाठी सुलभ कायदेशीर प्रक्रिया.',
+    divorceDesc: 'पोटगी आणि मुलांच्या ताब्यासह वादग्रस्त घटस्फोट प्रकरणांमध्ये कायदेशीर प्रतिनिधित्व.',
+    marriageDesc: 'विविध वैयक्तिक कायद्यांअंतर्गत विवाहाच्या कायदेशीर नोंदणीसाठी सहाय्य.',
+    willDesc: 'मालमत्तेचे योग्य वितरण सुनिश्चित करण्यासाठी कायदेशीर बंधनकारक मृत्युपत्र तयार करणे.',
+    partnershipDesc: 'व्यावसायिक संबंधांसाठी कायदेशीर मजबूत भागीदारी कराराची निर्मिती.',
+    noticeDesc: 'वाद निराकरणासाठी औपचारिक कायदेशीर नोटीसचे मसुदा तयार करणे आणि पाठवणे.',
+    registryDesc: 'मालमत्ता नोंदणी, हस्तांतरण आणि दस्तऐवजीकरणामध्ये सहाय्य.',
+    disputesDesc: 'मालमत्ता सीमा, मालकी आणि वारसा वादांचे निराकरण.',
+    agreementsDesc: 'विविध कायदेशीर करार आणि कंत्राटांचे मसुदा तयार करणे आणि पुनरावलोकन करणे.',
+    consumerDesc: 'अनुचित व्यापारी पद्धतींविरुद्ध ग्राहक तक्रारी दाखल करणे आणि पाठपुरावा करणे.',
+    
+    // Services Process Section
+    ourLegalServices: 'आमच्या कायदेशीर सेवा',
+    experienceTagline: 'व्यक्ती आणि व्यवसायांसाठी दशकापेक्षा जास्त अनुभवासह व्यापक कायदेशीर सहाय्य.',
+    ourLegalProcess: 'आमची कायदेशीर प्रक्रिया',
+    processTagline: 'आमचा पद्धतशीर दृष्टीकोन तुमच्या कायदेशीर प्रकरणांची सुरुवातीपासून शेवटपर्यंत पूर्ण देखभाल सुनिश्चित करतो.',
+    initialConsultation: 'प्राथमिक सल्लामसलत',
+    consultationDesc: 'आम्ही तुमची परिस्थिती आणि कायदेशीर गरजांची सविस्तर चर्चा करतो.',
+    caseAnalysis: 'प्रकरण विश्लेषण',
+    analysisDesc: 'आमचे तज्ञ तुमच्या प्रकरणाचे मूल्यांकन करतात आणि रणनीतिक दृष्टिकोन विकसित करतात.',
+    legalRepresentation: 'कायदेशीर प्रतिनिधित्व',
+    representationDesc: 'आम्ही वाटाघाटी आणि न्यायालयीन कार्यवाहीत तुमच्या हितांचे प्रतिनिधित्व करतो.',
+    resolution: 'निराकरण',
+    resolutionDesc: 'आम्ही तुमच्या कायदेशीर प्रकरणासाठी अनुकूल परिणामासाठी कार्य करतो.',
+    readyForSupport: 'कायदेशीर सहाय्यासाठी तयार आहात?',
+    bookConsultation: 'सल्लामसलत बुक करा',
   }
 };
-
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 

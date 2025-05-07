@@ -42,107 +42,107 @@ const Services = () => {
 
   const serviceCategories = [
     {
-      title: t('civilLaw'),
+      title: 'civilLaw',
       services: [
         {
-          title: t('civilRights'),
-          description: t('civilRightsDesc')
+          title: 'civilRights',
+          description: 'civilRightsDesc'
         },
         {
-          title: t('disabilityBenefits'),
-          description: t('disabilityDesc')
+          title: 'disabilityBenefits',
+          description: 'disabilityBenefitsDesc'
         },
         {
-          title: t('evictionLitigation'),
-          description: t('evictionDesc')
+          title: 'evictionLitigation',
+          description: 'evictionDesc'
         },
         {
-          title: t('landlordTenant'),
-          description: t('landlordDesc')
+          title: 'landlordTenant',
+          description: 'landlordDesc'
         },
         {
-          title: t('recoverySuit'),
-          description: t('recoveryDesc')
+          title: 'recoverySuit',
+          description: 'recoveryDesc'
         }
       ]
     },
     {
-      title: t('criminalLaw'),
+      title: 'criminalLaw',
       services: [
         {
-          title: t('criminalWrit'),
-          description: t('criminalWritDesc')
+          title: 'criminalWrit',
+          description: 'criminalWritDesc'
         },
         {
-          title: t('regularBail'),
-          description: t('regularBailDesc')
+          title: 'regularBail',
+          description: 'regularBailDesc'
         },
         {
-          title: t('anticipatoryBail'),
-          description: t('anticipatoryDesc')
+          title: 'anticipatoryBail',
+          description: 'anticipatoryDesc'
         },
         {
-          title: t('chequeBouncing'),
-          description: t('chequeDesc')
+          title: 'chequeBouncing',
+          description: 'chequeDesc'
         }
       ]
     },
     {
-      title: t('familyLaw'),
+      title: 'familyLaw',
       services: [
         {
-          title: t('domesticViolence'),
-          description: t('domesticDesc')
+          title: 'domesticViolence',
+          description: 'domesticDesc'
         },
         {
-          title: t('mutualDivorce'),
-          description: t('mutualDesc')
+          title: 'mutualDivorce',
+          description: 'mutualDesc'
         },
         {
-          title: t('divorce'),
-          description: t('divorceDesc')
+          title: 'divorce',
+          description: 'divorceDesc'
         },
         {
-          title: t('registerMarriage'),
-          description: t('marriageDesc')
+          title: 'registerMarriage',
+          description: 'marriageDesc'
         }
       ]
     },
     {
-      title: t('propertyDocumentation'),
+      title: 'propertyDocumentation',
       services: [
         {
-          title: t('willWriting'),
-          description: t('willDesc')
+          title: 'willWriting',
+          description: 'willDesc'
         },
         {
-          title: t('partnershipDeed'),
-          description: t('partnershipDesc')
+          title: 'partnershipDeed',
+          description: 'partnershipDesc'
         },
         {
-          title: t('legalNotice'),
-          description: t('noticeDesc')
+          title: 'legalNotice',
+          description: 'noticeDesc'
         },
         {
-          title: t('propertyRegistry'),
-          description: t('registryDesc')
+          title: 'propertyRegistry',
+          description: 'registryDesc'
         },
         {
-          title: t('propertyDisputes'),
-          description: t('disputesDesc')
+          title: 'propertyDisputes',
+          description: 'disputesDesc'
         },
         {
-          title: t('agreements'),
-          description: t('agreementsDesc')
+          title: 'agreements',
+          description: 'agreementsDesc'
         }
       ]
     },
     {
-      title: t('consumerProtection'),
+      title: 'consumerProtection',
       services: [
         {
-          title: t('consumerComplaint'),
-          description: t('consumerDesc')
+          title: 'consumerComplaint',
+          description: 'consumerDesc'
         }
       ]
     }
@@ -178,7 +178,7 @@ const Services = () => {
               ref={addToRefs}
               className="mb-12 animated-element"
             >
-              <h2 className="text-3xl font-serif text-navy mb-4">{category.title}</h2>
+              <h2 className="text-3xl font-serif text-navy mb-4">{t(category.title)}</h2>
               <div className="w-20 h-1 bg-gold mb-6"></div>
             </div>
 
