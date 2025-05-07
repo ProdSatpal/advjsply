@@ -35,6 +35,8 @@ const hiTranslations = {
   ourServices: 'हमारी सेवाएँ',
   viewAllServices: 'सभी सेवाएँ देखें',
   servicesIntro: 'आपकी जरूरतों के अनुसार व्यापक कानूनी सेवाएं',
+  servicesPreview: 'हमारी कानूनी सेवाएँ',
+  servicesPreviewDesc: 'हम आपकी विशिष्ट आवश्यकताओं के अनुरूप व्यापक कानूनी सहायता प्रदान करते हैं',
   
   // Services page - Overview
   ourLegalServices: 'हमारी कानूनी सेवाएँ',
@@ -104,17 +106,27 @@ const hiTranslations = {
   noticeDesc: 'विवाद समाधान के लिए औपचारिक कानूनी नोटिस का मसौदा तैयार करना और भेजना।',
   registryDesc: 'संपत्ति पंजीकरण, हस्तांतरण और दस्तावेज़ीकरण में सहायता।',
   disputesDesc: 'संपत्ति सीमा, स्वामित्व और विरासत विवादों का समाधान।',
+  propertyDisputesDesc: 'संपत्ति विवादों का बातचीत और मुकदमेबाजी के माध्यम से समाधान।',
   agreementsDesc: 'विभिन्न कानूनी समझौतों और अनुबंधों का मसौदा तैयार करना और समीक्षा करना।',
   consumerDesc: 'अनुचित व्यापार प्रथाओं के खिलाफ उपभोक्ता शिकायतें दर्ज करना और आगे बढ़ाना।',
   
   // Why Choose section
   whyChooseUs: 'हमें क्यों चुनें',
-  experienceTitle: 'अनुभवी',
-  experienceDesc: 'विभिन्न अदालतों में 12 वर्षों से अधिक का कानूनी अभ्यास',
-  dedicatedTitle: 'समर्पित',
-  dedicatedDesc: 'प्रत्येक मामले पर व्यक्तिगत ध्यान देने के लिए प्रतिबद्ध',
-  affordableTitle: 'किफायती',
-  affordableDesc: 'निष्पक्ष और पारदर्शी शुल्क संरचना',
+  expLegalExpertise: 'अनुभवी कानूनी विशेषज्ञता',
+  expLegalDesc: 'विभिन्न अदालतों में 12 वर्षों से अधिक का कानूनी अभ्यास',
+  personalizedApproach: 'व्यक्तिगत दृष्टिकोण',
+  personalizedDesc: 'प्रत्येक मामले पर केंद्रित ध्यान देने के लिए प्रतिबद्ध',
+  clearCommunication: 'स्पष्ट संचार',
+  clearCommDesc: 'नियमित अपडेट और जटिल कानूनी मामलों का सरल स्पष्टीकरण',
+  accessibility: 'सुलभता',
+  accessibilityDesc: 'आसानी से पहुंच योग्य और ग्राहक की जरूरतों के प्रति प्रतिक्रियाशील',
+  
+  // Testimonials
+  clientTestimonials: 'ग्राहक प्रशंसापत्र',
+  testimonial1: 'अधिवक्ता सिंह ने असाधारण कौशल के साथ मेरे संपत्ति विवाद को संभाला, जब अन्य वकील असफल रहे थे तो एक अनुकूल परिणाम सुरक्षित किया।',
+  testimonial1Author: 'राहुल पटेल, नागपुर',
+  testimonial2: 'मेरे तलाक के मामले के प्रति सहानुभूतिपूर्ण दृष्टिकोण ने एक कठिन प्रक्रिया को बहुत आसान बना दिया। अत्यधिक अनुशंसित।',
+  testimonial2Author: 'अंजलि देसाई, नागपुर',
 
   // Contact page
   contactUs: 'संपर्क करें',
@@ -136,7 +148,12 @@ const hiTranslations = {
   connectOnWhatsapp: 'व्हाट्सएप पर जुड़ें',
   appointmentInstruction: 'अधिवक्ता जसविंदर सिंह प्लाई के साथ अपॉइंटमेंट निर्धारित करने के लिए, कृपया नीचे दिए गए बटन पर क्लिक करें',
   bookAppointmentNow: 'अभी अपॉइंटमेंट बुक करें',
-  scheduleAppointment: 'अपॉइंटमेंट निर्धारित करें'
+  scheduleAppointment: 'अपॉइंटमेंट निर्धारित करें',
+  
+  // CTA Section
+  needLegal: 'कानूनी सहायता की आवश्यकता है?',
+  needLegalDesc: 'अपनी कानूनी जरूरतों पर चर्चा करने और यह पता लगाने के लिए कि हम आपको सर्वोत्तम संभव परिणाम प्राप्त करने में कैसे मदद कर सकते हैं, एक परामर्श निर्धारित करें।',
+  learnMoreServices: 'हमारी सेवाएँ देखें'
 };
 
 export default hiTranslations;

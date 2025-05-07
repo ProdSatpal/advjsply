@@ -51,20 +51,20 @@ const Index = () => {
 
   const services = [
     {
-      title: t('civilRights'),
-      description: t('civilRightsDesc')
+      title: 'civilRights',
+      description: 'civilRightsDesc'
     },
     {
-      title: t('criminalLaw'),
-      description: t('criminalWritDesc')
+      title: 'criminalLaw',
+      description: 'criminalWritDesc'
     },
     {
-      title: t('familyLaw'),
-      description: t('familyLaw')
+      title: 'familyLaw',
+      description: 'familyLawDesc'
     },
     {
-      title: t('propertyDisputes'),
-      description: t('propertyDocumentation')
+      title: 'propertyDisputes',
+      description: 'propertyDisputesDesc'
     }
   ];
 

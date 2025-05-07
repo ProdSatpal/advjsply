@@ -35,6 +35,8 @@ const enTranslations = {
   ourServices: 'Our Services',
   viewAllServices: 'View All Services',
   servicesIntro: 'Comprehensive legal services tailored to your needs',
+  servicesPreview: 'Our Legal Services',
+  servicesPreviewDesc: 'We provide comprehensive legal support tailored to your specific needs',
   
   // Services page - Overview
   ourLegalServices: 'Our Legal Services',
@@ -110,12 +112,21 @@ const enTranslations = {
   
   // Why Choose section
   whyChooseUs: 'Why Choose Us',
-  experienceTitle: 'Experienced',
-  experienceDesc: 'Over 12 years of legal practice in various courts',
-  dedicatedTitle: 'Dedicated',
-  dedicatedDesc: 'Committed to providing personalized attention to each case',
-  affordableTitle: 'Affordable',
-  affordableDesc: 'Fair and transparent fee structure',
+  expLegalExpertise: 'Experienced Legal Expertise',
+  expLegalDesc: 'Over 12 years of legal practice in various courts',
+  personalizedApproach: 'Personalized Approach',
+  personalizedDesc: 'Committed to providing focused attention to each case',
+  clearCommunication: 'Clear Communication',
+  clearCommDesc: 'Regular updates and simple explanation of complex legal matters',
+  accessibility: 'Accessibility',
+  accessibilityDesc: 'Easily reachable and responsive to client needs',
+  
+  // Testimonials
+  clientTestimonials: 'Client Testimonials',
+  testimonial1: 'Adv. Singh handled my property dispute with exceptional skill, securing a favorable outcome when other lawyers had failed.',
+  testimonial1Author: 'Rahul Patel, Nagpur',
+  testimonial2: 'The compassionate approach to my divorce case made a difficult process much easier. Highly recommend.',
+  testimonial2Author: 'Anjali Desai, Nagpur',
 
   // Contact page
   contactUs: 'Contact Us',
@@ -138,6 +149,11 @@ const enTranslations = {
   appointmentInstruction: 'To schedule an appointment with Adv. Jasvinder Singh Ply, please click the button below',
   bookAppointmentNow: 'Book Appointment Now',
   scheduleAppointment: 'Schedule an Appointment',
+  
+  // CTA Section
+  needLegal: 'Need Legal Assistance?',
+  needLegalDesc: 'Schedule a consultation to discuss your legal needs and explore how we can help you achieve the best possible outcome.',
+  learnMoreServices: 'Explore Our Services'
 };
 
 export default enTranslations;
