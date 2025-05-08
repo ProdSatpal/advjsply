@@ -36,9 +36,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2">
             <img 
-              src="/lovable-uploads/6795a458-ebea-458e-94bf-ab9fa91a8700.png" 
-              alt="Legal Symbol" 
-              className="h-8 w-8"
+              src="/lovable-uploads/d70651df-f613-40b0-a4f6-beab02d1f3de.png" 
+              alt="Advocate Logo" 
+              className="h-10 w-10"
             />
             <div className="py-0">
               <span className="text-2xl font-serif font-bold text-theme-blue">Jasvinder Singh Ply</span>
