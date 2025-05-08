@@ -35,11 +35,11 @@ const Navbar = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <div className="py-0 text-3xl">
-              <span className="text-2xl font-serif font-bold text-theme-blue">Jasvinder Singh Ply</span>
-              <div className="text-sm font-medium text-theme-red">{t('advocate')}</div>
-            </div>
-            
+            <img 
+              src="/lovable-uploads/cef6e4bc-a749-401d-823e-e500949b4640.png" 
+              alt="Jasvinder Singh Advocate Logo" 
+              className="h-14 md:h-16"
+            />
           </Link>
 
           {/* Desktop Menu */}
