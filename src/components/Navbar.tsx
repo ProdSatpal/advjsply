@@ -32,14 +32,18 @@ const Navbar = () => {
   const whatsappUrl = "https://wa.me/918857972717?text=I%20need%20your%20legal%20assistance%20on%20below%20matter%0A";
 
   return <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center">
-            <div className="py-0 text-3xl">
+          <Link to="/" className="flex items-center gap-2">
+            <img 
+              src="/lovable-uploads/d70651df-f613-40b0-a4f6-beab02d1f3de.png" 
+              alt="Advocate Logo" 
+              className="h-10 w-10"
+            />
+            <div className="py-0">
               <span className="text-2xl font-serif font-bold text-theme-blue">Jasvinder Singh Ply</span>
               <div className="text-sm font-medium text-theme-red">{t('advocate')}</div>
             </div>
-            
           </Link>
 
           {/* Desktop Menu */}
