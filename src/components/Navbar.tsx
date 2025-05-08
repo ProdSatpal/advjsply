@@ -34,12 +34,16 @@ const Navbar = () => {
   return <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center">
+          <Link to="/" className="flex items-center gap-2">
             <img 
-              src="/lovable-uploads/cef6e4bc-a749-401d-823e-e500949b4640.png" 
-              alt="Jasvinder Singh Advocate Logo" 
-              className="h-14 md:h-16"
+              src="/lovable-uploads/6795a458-ebea-458e-94bf-ab9fa91a8700.png" 
+              alt="Legal Symbol" 
+              className="h-8 w-8"
             />
+            <div className="py-0">
+              <span className="text-2xl font-serif font-bold text-theme-blue">Jasvinder Singh Ply</span>
+              <div className="text-sm font-medium text-theme-red">{t('advocate')}</div>
+            </div>
           </Link>
 
           {/* Desktop Menu */}
