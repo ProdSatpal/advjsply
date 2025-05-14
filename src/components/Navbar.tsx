@@ -23,10 +23,10 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: t('home'), path: '/' },
-    { name: t('services'), path: '/services' },
-    { name: t('aboutMe'), path: '/about' },
-    { name: t('contact'), path: '/contact' }
+    { name: t('home'), path: '/', ariaLabel: 'Go to home page' },
+    { name: t('services'), path: '/services', ariaLabel: 'View our legal services' },
+    { name: t('aboutMe'), path: '/about', ariaLabel: 'Learn about Advocate Jasvinder Singh Ply' },
+    { name: t('contact'), path: '/contact', ariaLabel: 'Contact Advocate Jasvinder Singh Ply' }
   ];
 
   const whatsappUrl = "https://wa.me/918857972717?text=I%20need%20your%20legal%20assistance%20on%20below%20matter%0A";
@@ -34,7 +34,7 @@ const Navbar = () => {
   return <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-2" aria-label="Advocate Jasvinder Singh Ply - Go to home page">
             <img 
               src="/lovable-uploads/d70651df-f613-40b0-a4f6-beab02d1f3de.png" 
               alt="Advocate Logo" 
@@ -50,8 +50,12 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-1">
             <ul className="flex space-x-2">
               {navLinks.map(link => <li key={link.name}>
-                  <Link to={link.path} className={`px-3 py-2 rounded-md text-base font-medium transition-colors hover:text-theme-red
-                      ${location.pathname === link.path ? 'text-theme-red font-semibold' : 'text-theme-blue'}`}>
+                  <Link 
+                    to={link.path} 
+                    className={`px-3 py-2 rounded-md text-base font-medium transition-colors hover:text-theme-red
+                      ${location.pathname === link.path ? 'text-theme-red font-semibold' : 'text-theme-blue'}`}
+                    aria-label={link.ariaLabel}
+                  >
                     {link.name}
                   </Link>
                 </li>)}
@@ -60,7 +64,7 @@ const Navbar = () => {
               <LanguageSelector />
             </div>
             <Button asChild className="ml-4 bg-theme-blue hover:bg-theme-blue-dark text-white">
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="Book an appointment via WhatsApp" className="flex items-center">
                 <MessageSquare size={18} className="mr-2" />
                 {t('bookAppointment')}
               </a>
@@ -70,7 +74,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-2">
             <LanguageSelector />
-            <Button variant="outline" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="border-theme-blue text-theme-blue">
+            <Button variant="outline" size="icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="border-theme-blue text-theme-blue" aria-label="Toggle mobile menu">
               <Menu />
             </Button>
           </div>
@@ -80,14 +84,26 @@ const Navbar = () => {
         {mobileMenuOpen && <div className="md:hidden mt-3 animate-fade-in">
             <ul className="bg-white rounded-lg shadow-lg py-2">
               {navLinks.map(link => <li key={link.name}>
-                  <Link to={link.path} className={`block px-4 py-2 text-base font-medium transition-colors hover:bg-muted
-                      ${location.pathname === link.path ? 'text-theme-red font-semibold' : 'text-theme-blue'}`} onClick={() => setMobileMenuOpen(false)}>
+                  <Link 
+                    to={link.path} 
+                    className={`block px-4 py-2 text-base font-medium transition-colors hover:bg-muted
+                      ${location.pathname === link.path ? 'text-theme-red font-semibold' : 'text-theme-blue'}`} 
+                    onClick={() => setMobileMenuOpen(false)}
+                    aria-label={link.ariaLabel}
+                  >
                     {link.name}
                   </Link>
                 </li>)}
               <li className="mt-2 px-4 py-2">
                 <Button asChild className="w-full bg-theme-blue hover:bg-theme-blue-dark">
-                  <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} className="flex items-center justify-center">
+                  <a 
+                    href={whatsappUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    onClick={() => setMobileMenuOpen(false)} 
+                    className="flex items-center justify-center"
+                    aria-label="Book an appointment via WhatsApp"
+                  >
                     <MessageSquare size={18} className="mr-2" />
                     {t('bookAppointment')}
                   </a>
