@@ -20,11 +20,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Phone size={18} className="mr-2 mt-1 text-gold" />
-                <a href="tel:+918857972717" className="hover:text-gold transition-colors">+91 8857972717</a>
+                <a href="tel:+918857972717" className="hover:text-gold transition-colors" aria-label="Call us at +91 8857972717">+91 8857972717</a>
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="mr-2 mt-1 text-gold" />
-                <a href="mailto:adv.jsply@gmail.com" className="hover:text-gold transition-colors">adv.jsply@gmail.com</a>
+                <a href="mailto:adv.jsply@gmail.com" className="hover:text-gold transition-colors" aria-label="Email us at adv.jsply@gmail.com">adv.jsply@gmail.com</a>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="mr-2 mt-1 text-gold" />
@@ -41,6 +41,7 @@ const Footer = () => {
                   className="hover:text-gold transition-colors flex items-center"
                   target="_blank" 
                   rel="noopener noreferrer"
+                  aria-label="Contact us on WhatsApp for legal assistance"
                 >
                   {t('connectOnWhatsapp')}
                   <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 text-green-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -59,19 +60,19 @@ const Footer = () => {
             <h3 className="text-xl font-serif mb-4 text-gold">{t('quickLinks')}</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="hover:text-gold transition-colors">{t('home')}</Link>
+                <Link to="/" className="hover:text-gold transition-colors" aria-label="Go to home page">{t('home')}</Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-gold transition-colors">{t('services')}</Link>
+                <Link to="/services" className="hover:text-gold transition-colors" aria-label="View our legal services">{t('services')}</Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-gold transition-colors">{t('aboutMe')}</Link>
+                <Link to="/about" className="hover:text-gold transition-colors" aria-label="Learn about Advocate Jasvinder Singh Ply">{t('aboutMe')}</Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-gold transition-colors">{t('contact')}</Link>
+                <Link to="/contact" className="hover:text-gold transition-colors" aria-label="Contact Advocate Jasvinder Singh Ply">{t('contact')}</Link>
               </li>
               <li>
-                <a href={whatsappUrl} className="hover:text-gold transition-colors flex items-center" target="_blank" rel="noopener noreferrer">
+                <a href={whatsappUrl} className="hover:text-gold transition-colors flex items-center" target="_blank" rel="noopener noreferrer" aria-label="Book an appointment via WhatsApp">
                   {t('bookAppointment')}
                   <svg xmlns="http://www.w3.org/2000/svg" className="ml-2 text-green-400" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
@@ -89,19 +90,19 @@ const Footer = () => {
             <h3 className="text-xl font-serif mb-4 text-gold">{t('practiceAreas')}</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services" className="hover:text-gold transition-colors">{t('civilRights')}</Link>
+                <Link to="/services" className="hover:text-gold transition-colors" aria-label="Learn about our civil rights legal services">{t('civilRights')}</Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-gold transition-colors">{t('disabilityBenefits')}</Link>
+                <Link to="/services" className="hover:text-gold transition-colors" aria-label="Learn about our disability benefits legal services">{t('disabilityBenefits')}</Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-gold transition-colors">{t('criminalLaw')}</Link>
+                <Link to="/services" className="hover:text-gold transition-colors" aria-label="Learn about our criminal law services">{t('criminalLaw')}</Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-gold transition-colors">{t('propertyDisputes')}</Link>
+                <Link to="/services" className="hover:text-gold transition-colors" aria-label="Learn about our property dispute services">{t('propertyDisputes')}</Link>
               </li>
               <li>
-                <Link to="/services" className="hover:text-gold transition-colors">{t('familyLaw')}</Link>
+                <Link to="/services" className="hover:text-gold transition-colors" aria-label="Learn about our family law services">{t('familyLaw')}</Link>
               </li>
             </ul>
           </div>
