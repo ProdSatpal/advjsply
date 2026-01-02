@@ -1,0 +1,8 @@
+_legacy/
+.git/
+check_links.py
+server.log
+.DS_Store
+*.md
+Dockerfile
+.gitignore
