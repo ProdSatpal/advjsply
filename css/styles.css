@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Custom Animations */
+.animated-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay classes */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-500 { transition-delay: 500ms; }
+.delay-700 { transition-delay: 700ms; }
+
+/* Tailwind Custom Colors fallback if variables fail */
+:root {
+    --navy: #0F2C4D;
+    --navy-light: #1A4978;
+    --gold: #E0B251;
+    --gold-dark: #BE8C2C;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@keyframes soft-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.bounce-animation {
+    animation: soft-bounce 2s infinite ease-in-out;
+}

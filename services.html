@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Adv. Jasvinder Singh Ply</title>
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { light: '#1A4978', DEFAULT: '#0F2C4D', dark: '#061C37' },
+                        gold: { light: '#F0D48A', DEFAULT: '#E0B251', dark: '#BE8C2C' },
+                        theme: { blue: { DEFAULT: '#3B88EB' }, red: { DEFAULT: '#B23850' } }
+                    },
+                    fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Poppins', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="bg-gray-50 text-slate-900">
+
+    <div id="navbar-container"></div>
+
+    <!-- Header -->
+    <div class="bg-navy py-20 text-center text-white">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4" data-i18n="ourLegalServices">Our Legal Services
+            </h1>
+            <div class="w-20 h-1 bg-gold mx-auto mb-6"></div>
+            <p class="text-xl max-w-2xl mx-auto text-gray-300" data-i18n="experienceTagline">Comprehensive legal support
+                for individuals and businesses, backed by over a decade of expertise.</p>
+        </div>
+    </div>
+
+    <!-- Services List -->
+    <section class="py-16">
+        <div class="container mx-auto px-6 space-y-20">
+
+            <!-- Category: Civil Law -->
+            <div class="animated-element">
+                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2"
+                    data-i18n="civilLaw">Civil Law</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="civilRights">Civil Rights</h3>
+                        <p class="text-gray-600" data-i18n="civilRightsDesc">Protecting your fundamental rights through
+                            expert legal representation.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="disabilityBenefits">Disability Benefits
+                        </h3>
+                        <p class="text-gray-600" data-i18n="disabilityBenefitsDesc">Assisting with claims for disability
+                            benefits.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="evictionLitigation">Eviction Litigation
+                        </h3>
+                        <p class="text-gray-600" data-i18n="evictionDesc">Expert legal representation for tenants facing
+                            eviction or landlords seeking to evict.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="landlordTenant">Landlord Tenant Disputes
+                        </h3>
+                        <p class="text-gray-600" data-i18n="landlordDesc">Resolving disputes between landlords and
+                            tenants.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="recoverySuit">Recovery Suit</h3>
+                        <p class="text-gray-600" data-i18n="recoveryDesc">Legal assistance for recovery of debts, money,
+                            and property.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Criminal Law -->
+            <div class="animated-element">
+                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2"
+                    data-i18n="criminalLaw">Criminal Law</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="criminalWrit">Criminal Writ</h3>
+                        <p class="text-gray-600" data-i18n="criminalWritDesc">Filing and defending criminal writs.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="regularBail">Regular Bail</h3>
+                        <p class="text-gray-600" data-i18n="regularBailDesc">Legal representation for obtaining bail
+                            after arrest.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="anticipatoryBail">Anticipatory Bail</h3>
+                        <p class="text-gray-600" data-i18n="anticipatoryDesc">Pre-arrest bail application to prevent
+                            arrest.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="chequeBouncing">Cheque Bouncing</h3>
+                        <p class="text-gray-600" data-i18n="chequeDesc">Legal assistance for cases involving dishonored
+                            cheques.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Family Law -->
+            <div class="animated-element">
+                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2"
+                    data-i18n="familyLaw">Family Law</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="domesticViolence">Domestic Violence</h3>
+                        <p class="text-gray-600" data-i18n="domesticDesc">Protection and legal remedies for victims of
+                            domestic violence.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="mutualDivorce">Mutual Divorce</h3>
+                        <p class="text-gray-600" data-i18n="mutualDesc">Simplified legal process for couples who
+                            mutually agree to divorce.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="divorce">Divorce</h3>
+                        <p class="text-gray-600" data-i18n="divorceDesc">Legal representation in contested divorce
+                            cases.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="registerMarriage">Register Marriage</h3>
+                        <p class="text-gray-600" data-i18n="marriageDesc">Assistance with legal registration of
+                            marriage.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Property & Business -->
+            <div class="animated-element">
+                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2"
+                    data-i18n="propertyDocumentation">Property Documentation</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="willWriting">Will Writing</h3>
+                        <p class="text-gray-600" data-i18n="willDesc">Drafting legally binding wills.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="propertyRegistry">Property Registry</h3>
+                        <p class="text-gray-600" data-i18n="registryDesc">Assistance with property registration.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="propertyDisputes">Property Disputes</h3>
+                        <p class="text-gray-600" data-i18n="propertyDisputesDesc">Resolving property conflicts through
+                            negotiation.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="partnershipDeed">Partnership Deed</h3>
+                        <p class="text-gray-600" data-i18n="partnershipDeedDesc">Drafting legal deeds for partnerships
+                            and business firms.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="agreements">Agreements</h3>
+                        <p class="text-gray-600" data-i18n="agreementsDesc">Drafting various legal agreements and
+                            contracts.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category: Consumer Protection -->
+            <div class="animated-element">
+                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2"
+                    data-i18n="consumerProtection">Consumer Protection</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="consumerComplaint">Consumer Complaint
+                        </h3>
+                        <p class="text-gray-600" data-i18n="consumerComplaintDesc">Filing complaints and representing
+                            clients in consumer courts.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Consultation Process -->
+    <section class="py-16 bg-navy text-white">
+        <div class="container mx-auto px-6 text-center animated-element">
+            <h2 class="text-3xl font-serif mb-8" data-i18n="ourLegalProcess">Our Legal Process</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="p-6 border border-gray-700 rounded-lg">
+                    <div class="text-4xl font-bold text-gold mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="initialConsultation">Initial Consultation</h3>
+                </div>
+                <div class="p-6 border border-gray-700 rounded-lg">
+                    <div class="text-4xl font-bold text-gold mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="caseAnalysis">Case Analysis</h3>
+                </div>
+                <div class="p-6 border border-gray-700 rounded-lg">
+                    <div class="text-4xl font-bold text-gold mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="legalRepresentation">Legal Representation</h3>
+                </div>
+                <div class="p-6 border border-gray-700 rounded-lg">
+                    <div class="text-4xl font-bold text-gold mb-4">4</div>
+                    <h3 class="text-xl font-bold mb-2" data-i18n="resolution">Resolution</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
