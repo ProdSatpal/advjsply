@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft a Legal Notice | Adv. Jasvinder Singh Ply</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0F2C4D',
+                        gold: '#E0B251',
+                        'theme-blue': '#3B88EB',
+                        'theme-red': '#B23850',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <nav id="main-nav" class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-6 md:px-8">
+            <div class="flex items-center justify-between">
+                <a href="../index.html" class="flex items-center gap-2">
+                    <img src="../assets/images/logo.png" alt="Logo" class="h-10 w-10">
+                    <div class="py-0">
+                        <span class="text-2xl font-serif font-bold text-theme-blue">Jasvinder Singh Ply</span>
+                        <div class="text-sm font-medium text-theme-red uppercase tracking-wider">Advocate</div>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="../index.html" class="font-medium text-gray-600 hover:text-theme-blue">Home</a>
+                    <a href="../services.html" class="font-medium text-gray-600 hover:text-theme-blue">Services</a>
+                    <a href="../legal-notices.html" class="font-medium text-theme-red font-semibold">Legal Notice</a>
+                    <a href="../contact.html"
+                        class="bg-theme-blue text-white px-5 py-2 rounded-md transition-all hover:bg-navy">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-8 max-w-4xl">
+        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+
+            <!-- Progress Stepper -->
+            <div class="bg-navy p-10 text-white relative">
+                <div
+                    class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]">
+                </div>
+                <div class="flex justify-between items-center relative z-10">
+                    <div class="absolute inset-x-12 top-5 h-0.5 bg-gray-700 -z-10"></div>
+                    <div class="absolute inset-x-12 top-5 h-0.5 bg-theme-blue transition-all duration-500 -z-10"
+                        id="progress-bar" style="width: 0%;"></div>
+
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="step-indicator w-12 h-12 rounded-full border-2 border-gray-600 flex items-center justify-center font-bold bg-navy transition-all duration-300 shadow-lg"
+                            id="ind-1">1</div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-400" id="txt-1">Type</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="step-indicator w-12 h-12 rounded-full border-2 border-gray-600 flex items-center justify-center font-bold bg-navy transition-all duration-300 shadow-lg"
+                            id="ind-2">2</div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-400" id="txt-2">Details</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="step-indicator w-12 h-12 rounded-full border-2 border-gray-600 flex items-center justify-center font-bold bg-navy transition-all duration-300 shadow-lg"
+                            id="ind-3">3</div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-400" id="txt-3">Preview</span>
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="step-indicator w-12 h-12 rounded-full border-2 border-gray-600 flex items-center justify-center font-bold bg-navy transition-all duration-300 shadow-lg"
+                            id="ind-4">4</div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-gray-400" id="txt-4">Payment</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8 md:p-12 min-h-[500px] flex flex-col">
+
+                <!-- Step 1: Selection -->
+                <div id="step-1" class="step-content animate-fade-in">
+                    <h2 class="text-3xl font-serif font-bold mb-3 text-navy">Select Notice Category</h2>
+                    <p class="text-gray-500 mb-10 text-lg">Choose the type of legal issue you are facing to get started
+                        with the draft.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="type-selection">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+
+                <!-- Step 2: Form -->
+                <div id="step-2" class="step-content hidden animate-fade-in">
+                    <button onclick="document.prevStep()"
+                        class="text-theme-blue font-bold mb-8 flex items-center gap-2 hover:text-navy transition-colors">
+                        <i data-lucide="arrow-left" class="w-5 h-5"></i>
+                        Back to Categories
+                    </button>
+                    <h2 class="text-3xl font-serif font-bold mb-3 text-navy" id="notice-type-title">Enter Details</h2>
+                    <p class="text-gray-500 mb-10 text-lg">Fill in the accurate details to generate a professional
+                        preview.</p>
+
+                    <div class="space-y-10">
+                        <!-- User Details Section (Persistent) -->
+                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                            <h3 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Your Information
+                                (Saved Locally)</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-navy mb-2 uppercase tracking-wide">Your
+                                        Full Name</label>
+                                    <input type="text" id="senderName"
+                                        class="form-input focus:ring-2 focus:ring-theme-blue"
+                                        placeholder="e.g. Satpal Singh">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-navy mb-2 uppercase tracking-wide">Phone
+                                        Number</label>
+                                    <input type="tel" id="senderPhone"
+                                        class="form-input focus:ring-2 focus:ring-theme-blue"
+                                        placeholder="e.g. +91 88579 72717">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dynamic Notice Fields Section -->
+                        <div id="details-form" class="space-y-6">
+                            <!-- Populated by JS based on type -->
+                        </div>
+                    </div>
+
+                    <div class="mt-12 pt-8 border-t border-gray-100 flex justify-end">
+                        <button onclick="document.nextStep()"
+                            class="btn-primary px-12 py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all text-lg">
+                            Review Draft Notice
+                            <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3: Preview -->
+                <div id="step-3" class="step-content hidden animate-fade-in">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-10">
+                        <div>
+                            <h2 class="text-3xl font-serif font-bold text-navy mb-2">Notice Preview</h2>
+                            <p class="text-gray-500">Professional legal draft based on your inputs.</p>
+                        </div>
+                        <div class="flex gap-3">
+                            <button onclick="document.prevStep()" class="btn-secondary px-6">
+                                <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Edit
+                            </button>
+                            <button onclick="document.nextStep()" class="btn-primary px-8">
+                                Looks Good <i data-lucide="check-circle" class="w-4 h-4 ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Authentic Document Preview -->
+                    <div class="bg-gray-200 p-4 md:p-8 rounded-2xl shadow-inner mb-10 overflow-x-auto">
+                        <div id="preview-content"
+                            class="bg-white shadow-2xl mx-auto min-h-[1000px] w-full max-w-[800px] relative">
+                            <!-- Authentically styled notice rendered here -->
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center mb-12">
+                        <p class="text-gray-500 italic flex items-center gap-2">
+                            <i data-lucide="info" class="w-5 h-5"></i>
+                            This is an educational draft. For legal validity, it requires an advocate's signature.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4: Finish/Payment -->
+                <div id="step-4" class="step-content hidden animate-fade-in text-center py-8">
+                    <div
+                        class="w-24 h-24 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
+                        <i data-lucide="check" class="w-12 h-12"></i>
+                    </div>
+                    <h2 class="text-4xl font-serif font-bold mb-4 text-navy">Draft Finalized!</h2>
+                    <p class="text-xl text-gray-500 mb-12 max-w-lg mx-auto leading-relaxed">
+                        Your legal notice draft is ready. Choose how you would like to proceed for legal validity and
+                        dispatch.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-16">
+                        <!-- Option 1: Professional Service -->
+                        <div
+                            class="bg-white p-8 rounded-3xl border-2 border-theme-blue shadow-xl relative overflow-hidden group">
+                            <div
+                                class="absolute top-0 right-0 bg-theme-blue text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg uppercase tracking-widest">
+                                Recommended</div>
+                            <h3 class="text-2xl font-bold text-navy mb-4">Professional Filing</h3>
+                            <p class="text-gray-600 mb-8 text-sm leading-relaxed">Adv. Jasvinder Singh will review,
+                                sign, and dispatch your notice via Registered Post (RPAD).</p>
+                            <div class="text-4xl font-bold text-theme-blue mb-8">₹499<span
+                                    class="text-sm text-gray-400 font-normal"> / notice</span></div>
+                            <button
+                                onclick="window.open('https://wa.me/918857972717?text=Hi,%20I%20have%20drafted%20a%20notice%20for%20' + formData.type + '%20and%20want%20professional%20filing%20service.')"
+                                class="w-full bg-theme-blue text-white py-4 rounded-xl font-bold shadow-lg hover:bg-navy transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                                Send Notice - ₹499
+                            </button>
+                        </div>
+
+                        <!-- Option 2: Free Consultation -->
+                        <div
+                            class="bg-gray-50 p-8 rounded-3xl border border-gray-200 hover:border-gold transition-all group">
+                            <h3 class="text-2xl font-bold text-navy mb-4">Need Help?</h3>
+                            <p class="text-gray-600 mb-8 text-sm leading-relaxed">Not sure about the details? Book a
+                                free callback to discuss your case with the expert.</p>
+                            <div class="w-16 h-1 bg-gold mx-auto mb-8"></div>
+                            <button
+                                onclick="window.open('https://wa.me/918857972717?text=Hi,%20I%20need%20help%20with%20a%20legal%20notice.')"
+                                class="w-full border-2 border-navy text-navy py-4 rounded-xl font-bold hover:bg-navy hover:text-white transition-all flex items-center justify-center gap-2">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                                Free Lawyer Callback
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-6">
+                        <button onclick="document.generatePDF()"
+                            class="text-gray-500 font-bold hover:text-navy flex items-center gap-2">
+                            <i data-lucide="download" class="w-5 h-5"></i>
+                            Download Draft PDF (Free)
+                        </button>
+                        <a href="../index.html" class="text-theme-blue font-bold hover:underline">Return to Homepage</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">© 2026 Advocate Jasvinder Singh Ply. All Rights Reserved</p>
+            <div class="mt-4 flex justify-center gap-6">
+                <a href="../services.html" class="hover:text-gold">Services</a>
+                <a href="../legal-notices.html" class="hover:text-gold">Legal Notices</a>
+                <a href="../contact.html" class="hover:text-gold">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
