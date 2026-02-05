@@ -4,22 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Draft a Legal Notice | Adv. Jasvinder Singh Ply</title>
+    <title>Draft Legal Notice Online | Cheque Bounce, Recovery, Consumer</title>
+    <meta name="description"
+        content="Free online tool to draft legal notices for Cheque Bounce, Money Recovery, and Consumer Disputes in India. Instant educational preview draft.">
+    <meta name="keywords"
+        content="Online Legal Notice, Draft Legal Notice, Cheque Bounce Notice Format, Legal Notice Template">
+    <link rel="canonical" href="https://advocatejsply.com/notice.html">
+    <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/notice.css">
+
+    <!-- Fonts & Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        navy: '#0F2C4D',
-                        gold: '#E0B251',
-                        'theme-blue': '#3B88EB',
-                        'theme-red': '#B23850',
+                        navy: { light: '#1A4978', DEFAULT: '#0F2C4D', dark: '#061C37' },
+                        gold: { light: '#F0D48A', DEFAULT: '#E0B251', dark: '#BE8C2C' },
+                        theme: { blue: { DEFAULT: '#3B88EB' }, red: { DEFAULT: '#B23850' } }
                     },
                     fontFamily: {
                         serif: ['Playfair Display', 'serif'],
@@ -34,29 +47,10 @@
 <body class="bg-gray-50 min-h-screen flex flex-col">
 
     <!-- Header -->
-    <nav id="main-nav" class="bg-white shadow-sm py-4">
-        <div class="container mx-auto px-6 md:px-8">
-            <div class="flex items-center justify-between">
-                <a href="../index.html" class="flex items-center gap-2">
-                    <img src="../assets/images/logo.png" alt="Logo" class="h-10 w-10">
-                    <div class="py-0">
-                        <span class="text-2xl font-serif font-bold text-theme-blue">Jasvinder Singh Ply</span>
-                        <div class="text-sm font-medium text-theme-red uppercase tracking-wider">Advocate</div>
-                    </div>
-                </a>
-                <div class="hidden md:flex items-center space-x-6">
-                    <a href="../index.html" class="font-medium text-gray-600 hover:text-theme-blue">Home</a>
-                    <a href="../services.html" class="font-medium text-gray-600 hover:text-theme-blue">Services</a>
-                    <a href="../legal-notices.html" class="font-medium text-theme-red font-semibold">Legal Notice</a>
-                    <a href="../contact.html"
-                        class="bg-theme-blue text-white px-5 py-2 rounded-md transition-all hover:bg-navy">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-container"></div>
 
     <!-- Main Content -->
-    <main class="flex-grow container mx-auto px-4 py-8 max-w-4xl">
+    <main class="flex-grow pt-24 pb-12 container mx-auto px-4 max-w-4xl">
         <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
 
             <!-- Progress Stepper -->
@@ -96,9 +90,9 @@
 
                 <!-- Step 1: Selection -->
                 <div id="step-1" class="step-content animate-fade-in">
-                    <h2 class="text-3xl font-serif font-bold mb-3 text-navy">Select Notice Category</h2>
-                    <p class="text-gray-500 mb-10 text-lg">Choose the type of legal issue you are facing to get started
-                        with the draft.</p>
+                    <h2 class="text-3xl font-serif font-bold mb-3 text-navy">1. Choose Type of Notice</h2>
+                    <p class="text-gray-500 mb-10 text-lg">Select the appropriate category below to begin your
+                        educational draft. Each template contains specific required fields.</p>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="type-selection">
                         <!-- Populated by JS -->
                     </div>
@@ -116,28 +110,6 @@
                         preview.</p>
 
                     <div class="space-y-10">
-                        <!-- User Details Section (Persistent) -->
-                        <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                            <h3 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Your Information
-                                (Saved Locally)</h3>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label class="block text-sm font-bold text-navy mb-2 uppercase tracking-wide">Your
-                                        Full Name</label>
-                                    <input type="text" id="senderName"
-                                        class="form-input focus:ring-2 focus:ring-theme-blue"
-                                        placeholder="e.g. Satpal Singh">
-                                </div>
-                                <div>
-                                    <label class="block text-sm font-bold text-navy mb-2 uppercase tracking-wide">Phone
-                                        Number</label>
-                                    <input type="tel" id="senderPhone"
-                                        class="form-input focus:ring-2 focus:ring-theme-blue"
-                                        placeholder="e.g. +91 88579 72717">
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- Dynamic Notice Fields Section -->
                         <div id="details-form" class="space-y-6">
                             <!-- Populated by JS based on type -->
@@ -240,7 +212,7 @@
                             <i data-lucide="download" class="w-5 h-5"></i>
                             Download Draft PDF (Free)
                         </button>
-                        <a href="../index.html" class="text-theme-blue font-bold hover:underline">Return to Homepage</a>
+                        <a href="index.html" class="text-theme-blue font-bold hover:underline">Return to Homepage</a>
                     </div>
                 </div>
 
@@ -249,18 +221,13 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-navy text-white py-12">
-        <div class="container mx-auto px-6 text-center">
-            <p class="text-gray-400">© 2026 Advocate Jasvinder Singh Ply. All Rights Reserved</p>
-            <div class="mt-4 flex justify-center gap-6">
-                <a href="../services.html" class="hover:text-gold">Services</a>
-                <a href="../legal-notices.html" class="hover:text-gold">Legal Notices</a>
-                <a href="../contact.html" class="hover:text-gold">Contact</a>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <div id="footer-container"></div>
 
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/notice.js"></script>
 </body>
 
 </html>

@@ -50,28 +50,20 @@ let formData = {
 };
 
 function init() {
-  loadSavedUserData();
   renderNoticeTypes();
   updateStepUI();
-}
-
-function loadSavedUserData() {
-  const savedName = localStorage.getItem('adv_notice_senderName');
-  const savedPhone = localStorage.getItem('adv_notice_senderPhone');
-  if (savedName) document.getElementById('senderName').value = savedName;
-  if (savedPhone) document.getElementById('senderPhone').value = savedPhone;
 }
 
 function renderNoticeTypes() {
   const container = document.getElementById('type-selection');
   container.innerHTML = Object.entries(noticeTypes).map(([id, data]) => `
-    <button onclick="document.selectType('${id}')" class="p-8 border-2 border-gray-100 rounded-3xl hover:border-theme-blue hover:bg-blue-50 transition-all text-left shadow-sm hover:shadow-xl group">
-      <div class="w-16 h-16 bg-gray-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-theme-blue transition-colors">
-        <i data-lucide="${data.icon}" class="w-8 h-8 text-navy group-hover:text-white transition-colors"></i>
+    <div onclick="document.selectType('${id}')" class="notice-type-card ${formData.type === id ? 'active' : ''}">
+      <div class="notice-type-icon">
+        <i data-lucide="${data.icon}" class="w-5 h-5"></i>
       </div>
-      <h3 class="text-2xl font-bold mb-2 text-navy">${data.title}</h3>
-      <p class="text-sm text-gray-500 leading-relaxed">${data.description}</p>
-    </button>
+      <h3 class="notice-type-title">${data.title}</h3>
+      <p class="notice-type-desc">${data.description}</p>
+    </div>
   `).join('');
   lucide.createIcons();
 }
@@ -87,20 +79,50 @@ function renderFields(id) {
   const typeData = noticeTypes[id];
   document.getElementById('notice-type-title').innerText = typeData.title + ' Details';
 
-  container.innerHTML = typeData.fields.map(field => `
-    <div class="animate-fade-in">
-      <label class="block text-sm font-bold text-navy mb-2 uppercase tracking-wide">${field.label}</label>
+  let html = `
+    <div class="bg-blue-50/50 p-6 rounded-2xl border border-blue-100 mb-8 animate-fade-in shadow-sm">
+        <h3 class="text-navy font-bold mb-4 flex items-center gap-2">
+            <i data-lucide="user" class="w-5 h-5 text-gold"></i>
+            1. Your Contact Information
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="input-container">
+                <label class="label-premium">Full Name</label>
+                <input type="text" id="senderName" class="form-input" placeholder="Enter your full name" value="${localStorage.getItem('adv_notice_senderName') || ''}">
+            </div>
+            <div class="input-container">
+                <label class="label-premium">Phone Number</label>
+                <input type="tel" id="senderPhone" class="form-input" placeholder="Enter mobile number" value="${localStorage.getItem('adv_notice_senderPhone') || ''}">
+            </div>
+        </div>
+    </div>
+
+    <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm animate-fade-in" style="animation-delay: 0.1s">
+        <h3 class="text-navy font-bold mb-6 flex items-center gap-2">
+            <i data-lucide="file-text" class="w-5 h-5 text-gold"></i>
+            2. Notice Specific Details
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  `;
+
+  html += typeData.fields.map(field => `
+    <div class="${field.type === 'textarea' ? 'md:col-span-2' : ''} input-container">
+      <label class="label-premium">${field.label}</label>
       ${field.type === 'select' ? `
         <select id="${field.id}" class="form-input">
           ${field.options.map(opt => `<option value="${opt}">${opt}</option>`).join('')}
         </select>
       ` : field.type === 'textarea' ? `
-        <textarea id="${field.id}" class="form-input h-32" placeholder="${field.placeholder || ''}"></textarea>
+        <textarea id="${field.id}" class="form-input h-32" placeholder="${field.placeholder || 'Provide details here...'}"></textarea>
       ` : `
         <input type="${field.type}" id="${field.id}" class="form-input" placeholder="${field.placeholder || ''}">
       `}
     </div>
   `).join('');
+
+  html += `</div></div>`;
+  container.innerHTML = html;
+  lucide.createIcons();
 }
 
 function nextStep() {
@@ -120,31 +142,77 @@ function prevStep() {
   }
 }
 
-function saveStepData() {
-  const senderName = document.getElementById('senderName').value.trim();
-  const senderPhone = document.getElementById('senderPhone').value.trim();
+function validateField(id, label) {
+  const el = document.getElementById(id);
+  const val = el.value.trim();
+  const parent = el.parentElement;
 
-  if (!senderName || !senderPhone) {
-    alert("Please enter your name and phone number.");
+  // Remove existing error
+  const existingMsg = parent.querySelector('.error-msg');
+  if (existingMsg) existingMsg.remove();
+  el.classList.remove('error');
+
+  if (!val) {
+    el.classList.add('error');
+    const msg = document.createElement('div');
+    msg.className = 'error-msg animate-fade-in';
+    msg.innerHTML = `<i data-lucide="alert-circle" class="w-3 h-3"></i> ${label} is required`;
+    parent.appendChild(msg);
+    lucide.createIcons();
+    return false;
+  }
+  return true;
+}
+
+function saveStepData() {
+  let isValid = true;
+  let firstError = null;
+
+  // Validate Sender Info
+  if (!validateField('senderName', 'Full Name')) {
+    isValid = false;
+    if (!firstError) firstError = document.getElementById('senderName');
+  }
+  if (!validateField('senderPhone', 'Phone Number')) {
+    isValid = false;
+    if (!firstError) firstError = document.getElementById('senderPhone');
+  }
+
+  // Stop if basic info invalid
+  if (!isValid) {
+    if (firstError) {
+      firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      firstError.focus();
+    }
     return false;
   }
 
-  // Save to local storage (Mini DB)
-  localStorage.setItem('adv_notice_senderName', senderName);
-  localStorage.setItem('adv_notice_senderPhone', senderPhone);
+  // Save basic info
+  localStorage.setItem('adv_notice_senderName', document.getElementById('senderName').value.trim());
+  localStorage.setItem('adv_notice_senderPhone', document.getElementById('senderPhone').value.trim());
 
-  formData.senderName = senderName;
-  formData.senderPhone = senderPhone;
+  formData.senderName = document.getElementById('senderName').value.trim();
+  formData.senderPhone = document.getElementById('senderPhone').value.trim();
 
+  // Validate Dynamic Fields
   const fields = noticeTypes[formData.type].fields;
   for (const f of fields) {
-    const val = document.getElementById(f.id).value.trim();
-    if (!val) {
-      alert(`Please enter ${f.label}`);
-      return false;
+    if (!validateField(f.id, f.label)) {
+      isValid = false;
+      if (!firstError) firstError = document.getElementById(f.id);
+    } else {
+      formData[f.id] = document.getElementById(f.id).value.trim();
     }
-    formData[f.id] = val;
   }
+
+  if (!isValid) {
+    if (firstError) {
+      firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      firstError.focus();
+    }
+    return false;
+  }
+
   return true;
 }
 
@@ -212,7 +280,7 @@ function renderPreview() {
     <div class="preview-watermark">PREVIEW ONLY</div>
     <div class="document-header flex items-center justify-between">
       <div class="flex items-center gap-4">
-        <img src="../assets/images/logo.png" class="letterhead-logo" alt="Seal">
+        <img src="assets/images/logo.png" class="letterhead-logo" alt="Seal">
         <div>
           <h1 class="text-2xl font-bold uppercase tracking-tighter">Jasvinder Singh Ply</h1>
           <p class="text-xs uppercase tracking-widest font-bold text-gray-500">Advocate | High Court</p>

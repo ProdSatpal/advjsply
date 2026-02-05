@@ -106,6 +106,7 @@ const translations = {
     propertyDocumentation: 'Property Documentation',
     consumerProtection: 'Consumer Protection',
     civilRights: 'Civil Rights',
+    propertyDisputes: 'Property Disputes',
     disabilityBenefits: 'Disability Benefits',
     evictionLitigation: 'Eviction Litigation',
     landlordTenant: 'Landlord Tenant Disputes',

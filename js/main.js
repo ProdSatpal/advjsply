@@ -161,7 +161,7 @@ function getFooterHTML(t) {
             <ul class="space-y-2">
                 <li><a href="/" class="hover:text-gold" data-i18n="home">${t.home}</a></li>
                 <li><a href="/services.html" class="hover:text-gold" data-i18n="services">${t.services}</a></li>
-                <li><a href="https://notice.advocatejsply.com/" target="_blank" class="hover:text-gold" data-i18n="legalNotice">${t.legalNotice}</a></li>
+                <li><a href="/notice.html" class="hover:text-gold" data-i18n="legalNotice">${t.legalNotice}</a></li>
                 <li><a href="/about.html" class="hover:text-gold" data-i18n="aboutMe">${t.aboutMe}</a></li>
                 <li><a href="/contact.html" class="hover:text-gold" data-i18n="contact">${t.contact}</a></li>
             </ul>
