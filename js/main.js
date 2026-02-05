@@ -3,26 +3,26 @@
 
 // --- HTML Components ---
 const NAV_LINKS = [
-    { key: 'home', path: '/' },
-    { key: 'services', path: '/services.html' },
-    { key: 'legalNotice', path: 'https://notice.advocatejsply.com/', external: true },
-    { key: 'aboutMe', path: '/about.html' },
-    { key: 'contact', path: '/contact.html' }
+  { key: 'home', path: '/' },
+  { key: 'services', path: '/services.html' },
+  { key: 'legalNotice', path: '/legal-notices.html' },
+  { key: 'aboutMe', path: '/about.html' },
+  { key: 'contact', path: '/contact.html' }
 ];
 
 const WHATSAPP_URL = "https://wa.me/918857972717?text=I%20need%20your%20legal%20assistance%20on%20below%20matter%0A";
 
 function getNavbarHTML(activePath, t) {
-    const linksHTML = NAV_LINKS.map(link => {
-        // Simple active check. Handle root / and index.html
-        const isActive = !link.external && ((activePath === link.path) ||
-            (activePath.endsWith('index.html') && link.path === '/') ||
-            (activePath === '/' && link.path === '/'));
+  const linksHTML = NAV_LINKS.map(link => {
+    // Simple active check. Handle root / and index.html
+    const isActive = !link.external && ((activePath === link.path) ||
+      (activePath.endsWith('index.html') && link.path === '/') ||
+      (activePath === '/' && link.path === '/'));
 
-        const activeClass = isActive ? 'text-theme-red font-semibold' : 'text-theme-blue';
-        const targetAttr = link.external ? 'target="_blank" rel="noopener noreferrer"' : '';
+    const activeClass = isActive ? 'text-theme-red font-semibold' : 'text-theme-blue';
+    const targetAttr = link.external ? 'target="_blank" rel="noopener noreferrer"' : '';
 
-        return `
+    return `
             <li>
                 <a href="${link.path}" ${targetAttr}
                    class="px-3 py-2 rounded-md text-base font-medium transition-colors hover:text-theme-red ${activeClass}"
@@ -31,15 +31,15 @@ function getNavbarHTML(activePath, t) {
                 </a>
             </li>
         `;
-    }).join('');
+  }).join('');
 
-    const mobileLinksHTML = NAV_LINKS.map(link => {
-        const isActive = !link.external && ((activePath === link.path) ||
-            (activePath.endsWith('index.html') && link.path === '/') ||
-            (activePath === '/' && link.path === '/'));
-        const activeClass = isActive ? 'text-theme-red font-semibold' : 'text-theme-blue';
-        const targetAttr = link.external ? 'target="_blank" rel="noopener noreferrer"' : '';
-        return `
+  const mobileLinksHTML = NAV_LINKS.map(link => {
+    const isActive = !link.external && ((activePath === link.path) ||
+      (activePath.endsWith('index.html') && link.path === '/') ||
+      (activePath === '/' && link.path === '/'));
+    const activeClass = isActive ? 'text-theme-red font-semibold' : 'text-theme-blue';
+    const targetAttr = link.external ? 'target="_blank" rel="noopener noreferrer"' : '';
+    return `
             <li>
                 <a href="${link.path}" ${targetAttr}
                    class="block px-4 py-2 text-base font-medium transition-colors hover:bg-muted ${activeClass}"
@@ -48,9 +48,9 @@ function getNavbarHTML(activePath, t) {
                 </a>
             </li>
         `;
-    }).join('');
+  }).join('');
 
-    return `
+  return `
     <nav id="main-nav" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
       <div class="container mx-auto px-6 md:px-8">
         <div class="flex items-center justify-between">
@@ -132,8 +132,8 @@ function getNavbarHTML(activePath, t) {
 }
 
 function getFooterHTML(t) {
-    const year = new Date().getFullYear();
-    return `
+  const year = new Date().getFullYear();
+  return `
     <footer class="bg-navy text-white pt-12 pb-6">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -189,126 +189,126 @@ function getFooterHTML(t) {
 // --- App State ---
 
 function getCurrentLang() {
-    return localStorage.getItem('language') || 'en';
+  return localStorage.getItem('language') || 'en';
 }
 
 function t_data() {
-    return translations[getCurrentLang()] || translations['en'];
+  return translations[getCurrentLang()] || translations['en'];
 }
 
 function changeLanguage(lang) {
-    localStorage.setItem('language', lang);
-    // Reload components to update active state/text
-    renderComponents();
-    // Update all data-i18n elements in the page content
-    updatePageTranslations();
+  localStorage.setItem('language', lang);
+  // Reload components to update active state/text
+  renderComponents();
+  // Update all data-i18n elements in the page content
+  updatePageTranslations();
 }
 
 function updatePageTranslations() {
-    const t = t_data();
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (t[key]) {
-            el.textContent = t[key];
-        }
-    });
+  const t = t_data();
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key]) {
+      el.textContent = t[key];
+    }
+  });
 }
 
 function renderComponents() {
-    const t = t_data();
-    const activePath = window.location.pathname;
+  const t = t_data();
+  const activePath = window.location.pathname;
 
-    // Navbar
-    const navContainer = document.getElementById('navbar-container');
-    if (navContainer) {
-        navContainer.innerHTML = getNavbarHTML(activePath, t);
-        initMobileMenu();
-        initLangDropdown();
-        initScroll();
-    }
+  // Navbar
+  const navContainer = document.getElementById('navbar-container');
+  if (navContainer) {
+    navContainer.innerHTML = getNavbarHTML(activePath, t);
+    initMobileMenu();
+    initLangDropdown();
+    initScroll();
+  }
 
-    // Footer
-    const footerContainer = document.getElementById('footer-container');
-    if (footerContainer) {
-        footerContainer.innerHTML = getFooterHTML(t);
-    }
+  // Footer
+  const footerContainer = document.getElementById('footer-container');
+  if (footerContainer) {
+    footerContainer.innerHTML = getFooterHTML(t);
+  }
 
-    // Re-initialize icons
-    if (window.lucide) {
-        window.lucide.createIcons();
-    }
+  // Re-initialize icons
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
 }
 
 function initMobileMenu() {
-    const btn = document.getElementById('mobile-menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    if (btn && menu) {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            menu.classList.toggle('hidden');
-        });
-    }
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  if (btn && menu) {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      menu.classList.toggle('hidden');
+    });
+  }
 }
 
 function initLangDropdown() {
-    const btn = document.getElementById('lang-menu-btn');
-    const dropdown = document.getElementById('lang-dropdown');
-    if (btn && dropdown) {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            dropdown.classList.toggle('hidden');
-        });
+  const btn = document.getElementById('lang-menu-btn');
+  const dropdown = document.getElementById('lang-dropdown');
+  if (btn && dropdown) {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('hidden');
+    });
 
-        // Close dropdown when clicking outside
-        document.addEventListener('click', () => {
-            dropdown.classList.add('hidden');
-        });
-    }
+    // Close dropdown when clicking outside
+    document.addEventListener('click', () => {
+      dropdown.classList.add('hidden');
+    });
+  }
 }
 
 function initScroll() {
-    const nav = document.getElementById('main-nav');
-    if (nav) {
-        const handleScroll = () => {
-            if (window.scrollY > 20) {
-                nav.classList.add('bg-white', 'shadow-md', 'py-2');
-                nav.classList.remove('bg-transparent', 'py-4');
-            } else {
-                nav.classList.remove('bg-white', 'shadow-md', 'py-2');
-                nav.classList.add('bg-transparent', 'py-4');
-            }
-        };
-        window.addEventListener('scroll', handleScroll);
-        // Initial check
-        handleScroll();
-    }
+  const nav = document.getElementById('main-nav');
+  if (nav) {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        nav.classList.add('bg-white', 'shadow-md', 'py-2');
+        nav.classList.remove('bg-transparent', 'py-4');
+      } else {
+        nav.classList.remove('bg-white', 'shadow-md', 'py-2');
+        nav.classList.add('bg-transparent', 'py-4');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
+  }
 }
 
 function initAnimations() {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.animated-element').forEach(el => {
-        observer.observe(el);
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
     });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.animated-element').forEach(el => {
+    observer.observe(el);
+  });
 }
 
 // --- Initialization ---
 
 document.addEventListener('DOMContentLoaded', () => {
-    renderComponents();
-    updatePageTranslations(); // For body content
-    initAnimations();
+  renderComponents();
+  updatePageTranslations(); // For body content
+  initAnimations();
 
-    // Initialize icons
-    if (window.lucide) {
-        window.lucide.createIcons();
-    }
+  // Initialize icons
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
 });
 
 // Expose to window for inline onclicks

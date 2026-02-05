@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy: #0F2C4D;
+  --color-gold: #E0B251;
+  --color-theme-blue: #3B88EB;
+  --color-theme-red: #B23850;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-navy);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+.bg-navy {
+  background-color: var(--color-navy);
+}
+
+.text-navy {
+  color: var(--color-navy);
+}
+
+.bg-gold {
+  background-color: var(--color-gold);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.bg-theme-blue {
+  background-color: var(--color-theme-blue);
+}
+
+.text-theme-blue {
+  color: var(--color-theme-blue);
+}
+
+.bg-theme-red {
+  background-color: var(--color-theme-red);
+}
+
+.text-theme-red {
+  color: var(--color-theme-red);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Stepper Enhancements */
+.step-indicator {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.step-indicator.active {
+  background-color: var(--color-theme-blue);
+  color: white;
+  border-color: var(--color-theme-blue);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(59, 136, 235, 0.4);
+}
+
+.step-indicator.completed {
+  background-color: #10B981;
+  color: white;
+  border-color: #10B981;
+}
+
+/* Form Styles */
+.form-input {
+  @apply block w-full px-5 py-4 rounded-xl border border-gray-200 focus:ring-2 focus:ring-theme-blue focus:border-theme-blue transition-all bg-white text-navy font-medium placeholder-gray-400;
+  outline: none;
+}
+
+.btn-primary {
+  @apply bg-theme-blue text-white px-8 py-3 rounded-lg font-bold hover:bg-navy transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.btn-secondary {
+  @apply bg-gray-100 text-navy px-8 py-3 rounded-xl font-bold hover:bg-gray-200 transition-all duration-300 flex items-center justify-center gap-2;
+}
+
+/* Document Preview Styles */
+#preview-content {
+  font-family: 'Times New Roman', Times, serif;
+  color: #1a1a1a;
+  line-height: 1.6;
+  padding: 60px 80px;
+}
+
+.preview-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  font-size: 80px;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.document-header {
+  border-bottom: 2px solid #000;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+.letterhead-logo {
+  height: 60px;
+  width: 60px;
+  filter: grayscale(100%);
+}
