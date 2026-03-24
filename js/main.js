@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { key: 'home', path: '/' },
   { key: 'services', path: '/services.html' },
   { key: 'legalNotice', path: '/legal-notices.html' },
+  { key: 'blogs', path: '/blogs.html' },
   { key: 'aboutMe', path: '/about.html' },
   { key: 'contact', path: '/contact.html' }
 ];
@@ -55,7 +56,7 @@ function getNavbarHTML(activePath, t) {
       <div class="container mx-auto px-6 md:px-8">
         <div class="flex items-center justify-between">
           <a href="/" class="flex items-center gap-2">
-            <img src="assets/images/logo.png" 
+            <img src="/assets/images/logo.png" 
                  alt="Advocate Logo" class="h-10 w-10"/>
             <div class="py-0">
               <span class="text-2xl font-serif font-bold text-theme-blue">Jasvinder Singh Ply</span>
@@ -161,6 +162,7 @@ function getFooterHTML(t) {
             <ul class="space-y-2">
                 <li><a href="/" class="hover:text-gold" data-i18n="home">${t.home}</a></li>
                 <li><a href="/services.html" class="hover:text-gold" data-i18n="services">${t.services}</a></li>
+                <li><a href="/blogs.html" class="hover:text-gold" data-i18n="blogs">${t.blogs}</a></li>
                 <li><a href="/notice.html" class="hover:text-gold" data-i18n="legalNotice">${t.legalNotice}</a></li>
                 <li><a href="/about.html" class="hover:text-gold" data-i18n="aboutMe">${t.aboutMe}</a></li>
                 <li><a href="/contact.html" class="hover:text-gold" data-i18n="contact">${t.contact}</a></li>
