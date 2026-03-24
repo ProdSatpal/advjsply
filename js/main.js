@@ -298,6 +298,16 @@ function initAnimations() {
   document.querySelectorAll('.animated-element').forEach(el => {
     observer.observe(el);
   });
+
+  // Simple Parallax for Hero Image
+  window.addEventListener('scroll', () => {
+    const photo = document.querySelector('.parallax-img');
+    if (photo) {
+      const scrolled = window.scrollY;
+      const rate = scrolled * 0.05;
+      photo.style.transform = `translateY(${rate}px) scale(1.1)`;
+    }
+  });
 }
 
 // --- Initialization ---

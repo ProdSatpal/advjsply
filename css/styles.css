@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
     background: #555;
 }
 
+
 @keyframes soft-bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -58,4 +59,39 @@ h1, h2, h3, h4, h5, h6 {
 
 .bounce-animation {
     animation: soft-bounce 2s infinite ease-in-out;
+}
+
+/* Advocate Portrait Styling - High-Definition & Clear */
+.hero-photo-container {
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+}
+
+.parallax-img {
+    will-change: transform;
+    transition: transform 0.5s cubic-bezier(0.1, 0, 0.3, 1);
+}
+
+.floating-photo {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animated-scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px) rotate(3deg);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animated-scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0) rotate(3deg);
+}
+
+.animated-scroll-reveal:hover {
+    transform: translateY(-5px) scale(1.05) rotate(0deg);
 }

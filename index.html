@@ -162,35 +162,33 @@
                     </div>
                 </div>
 
-                <div class="animated-element delay-700 hidden md:block">
-                    <div class="relative">
-                        <div
-                            class="absolute -inset-0.5 rounded-lg bg-gradient-to-r from-gold to-gold-light opacity-75 blur">
+                <!-- Advocate Photo Section (Tilted Pose & Larger Size) -->
+                <div class="animated-element delay-700 block mb-10 md:mb-0">
+                    <div class="relative group cursor-pointer overflow-hidden rounded-2xl max-w-[320px] mx-auto md:max-w-none md:w-[450px] ml-auto">
+                        <!-- Glow effect -->
+                        <div class="absolute -inset-1 bg-gold opacity-10 blur-2xl group-hover:opacity-30 transition-opacity duration-700"></div>
+                        
+                        <!-- Advocate Photo Container -->
+                        <div class="relative overflow-hidden rounded-2xl group-hover:shadow-2xl transition-shadow duration-500 hero-photo-container">
+                            <img src="assets/images/advocate.png" alt="Advocate Jasvinder Singh Ply" 
+                                 class="w-full h-auto object-cover transform scale-100 group-hover:scale-105 transition-transform duration-[2000ms] parallax-img">
+                            
+                            <!-- Overlay Text (Visible on Hover/Scroll) -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-navy/95 via-navy/60 to-transparent opacity-0 group-hover:opacity-100 flex flex-col justify-end p-6 transition-all duration-700 transform translate-y-8 group-hover:translate-y-0">
+                                <span class="text-gold font-bold tracking-widest uppercase text-[10px] mb-1">Lead Counsel</span>
+                                <h3 class="text-xl font-serif text-white font-bold" data-i18n="practiceAreas">Practice Areas</h3>
+                                <div class="w-10 h-0.5 bg-gold my-3"></div>
+                                <ul class="space-y-1.5 text-white/90 text-xs">
+                                    <li class="flex items-center"><div class="w-1 h-1 bg-gold rounded-full mr-2"></div> <span data-i18n="familyLaw">Family Law</span></li>
+                                    <li class="flex items-center"><div class="w-1 h-1 bg-gold rounded-full mr-2"></div> <span data-i18n="propertyDisputes">Property Matters</span></li>
+                                    <li class="flex items-center"><div class="w-1 h-1 bg-gold rounded-full mr-2"></div> <span data-i18n="criminalLaw">Criminal Defense</span></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="relative bg-navy p-6 rounded-lg shadow-xl">
-                            <h3 class="text-xl font-serif text-gold mb-4" data-i18n="practiceAreas">Practice Areas</h3>
-                            <ul class="space-y-2 text-white">
-                                <li class="flex items-center">
-                                    <div class="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                                    <span data-i18n="civilRights">Civil Rights</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                                    <span data-i18n="disabilityBenefits">Disability Benefits</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                                    <span data-i18n="propertyDisputes">Property Disputes</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                                    <span data-i18n="familyLaw">Family Law</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <div class="w-2 h-2 bg-gold rounded-full mr-2"></div>
-                                    <span data-i18n="criminalLaw">Criminal Law</span>
-                                </li>
-                            </ul>
+
+                        <!-- Scroll-floating badge -->
+                        <div class="absolute -bottom-2 -right-2 bg-white p-3 rounded-xl shadow-xl transform rotate-3 hover:rotate-0 transition-all duration-500 animated-scroll-reveal border border-gray-100 z-10">
+                             <p class="text-navy font-bold text-[10px] whitespace-nowrap">12+ Years Excellence</p>
                         </div>
                     </div>
                 </div>
