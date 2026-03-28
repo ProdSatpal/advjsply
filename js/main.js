@@ -56,7 +56,7 @@ function getNavbarHTML(activePath, t) {
       <div class="container mx-auto px-6 md:px-8">
         <div class="flex items-center justify-between">
           <a href="/" class="flex items-center gap-2">
-            <img src="/assets/images/logo.png" 
+            <img src="${window.location.pathname.includes('/blogs/') ? '../' : ''}assets/images/logo.png" 
                  alt="Advocate Logo" class="h-10 w-10"/>
             <div class="py-0">
               <span class="text-2xl font-serif font-bold text-theme-blue">Jasvinder Singh Ply</span>

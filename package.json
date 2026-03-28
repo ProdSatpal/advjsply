@@ -1,0 +1,9 @@
+{
+  "name": "advocate-jsply",
+  "version": "1.0.0",
+  "description": "Static website for Adv. Jasvinder Singh Ply",
+  "scripts": {
+    "dev": "npx live-server .",
+    "start": "npx live-server ."
+  }
+}
