@@ -15,6 +15,7 @@
     <title>Common Mistakes in Legal Notices | Adv. Jasvinder Singh Ply</title>
     <meta name="description"
         content="Learn about the 5 most common mistakes people make while sending a legal notice in India. Expert legal guide by Advocate Jasvinder Singh Ply.">
+    <meta name="keywords" content="Legal Notice Mistakes, Drafting Legal Notice, RPAD Notice India, Legal Notice Procedure, वकील, advocate near me, advocate general of maharashtra">
     <link rel="icon" href="../assets/images/logo.png" type="image/png">
 
     <!-- CSS -->
@@ -81,7 +82,7 @@
             <div class="flex justify-center mb-8">
                 <div class="inline-flex bg-gray-100 p-1 rounded-xl shadow-inner">
                     <button onclick="setBlogLang('en')" id="btn-en" class="px-6 py-2 rounded-lg font-bold transition-all duration-300">English</button>
-                    <button onclick="setBlogLang('hinglish')" id="btn-hinglish" class="px-6 py-2 rounded-lg font-bold transition-all duration-300">Hinglish</button>
+                    <button onclick="setBlogLang('hi')" id="btn-hi" class="px-6 py-2 rounded-lg font-bold transition-all duration-300">Hindi</button>
                 </div>
             </div>
 
@@ -98,6 +99,10 @@
                             <div class="flex items-center justify-center text-gray-500 gap-4">
                                 <span class="flex items-center"><i data-lucide="calendar" class="h-4 w-4 mr-1"></i> March 24, 2026</span>
                                 <span class="flex items-center"><i data-lucide="user" class="h-4 w-4 mr-1"></i> Adv. Jasvinder Singh Ply</span>
+                                <div class="flex items-center">
+                                    <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
+                                    <span>3 min read</span>
+                                </div>
                             </div>
                         </header>
 
@@ -136,13 +141,17 @@
                         </div>
                     </div>
 
-                    <!-- Hinglish Content -->
-                    <div id="content-hinglish" class="lang-content prose prose-slate max-w-none">
+                    <!-- Hindi (Hinglish) Content -->
+                    <div id="content-hi" class="lang-content prose prose-slate max-w-none">
                         <header class="mb-10 text-center">
                             <h1 class="text-3xl md:text-5xl font-serif font-bold text-navy mb-4">Legal Notice bhijne se pehle ye 5 galtiyaan bilkul na karein</h1>
                             <div class="flex items-center justify-center text-gray-500 gap-4">
                                 <span class="flex items-center"><i data-lucide="calendar" class="h-4 w-4 mr-1"></i> March 24, 2026</span>
                                 <span class="flex items-center"><i data-lucide="user" class="h-4 w-4 mr-1"></i> Adv. Jasvinder Singh Ply</span>
+                                <div class="flex items-center">
+                                    <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
+                                    <span>3 min read</span>
+                                </div>
                             </div>
                         </header>
 
@@ -217,16 +226,16 @@
             
             // Highlight button
             const btnEn = document.getElementById('btn-en');
-            const btnHinglish = document.getElementById('btn-hinglish');
+            const btnHi = document.getElementById('btn-hi');
             
             if (lang === 'en') {
                 btnEn.classList.add('bg-navy', 'text-white');
                 btnEn.classList.remove('text-navy');
-                btnHinglish.classList.remove('bg-navy', 'text-white');
-                btnHinglish.classList.add('text-navy');
+                btnHi.classList.remove('bg-navy', 'text-white');
+                btnHi.classList.add('text-navy');
             } else {
-                btnHinglish.classList.add('bg-navy', 'text-white');
-                btnHinglish.classList.remove('text-navy');
+                btnHi.classList.add('bg-navy', 'text-white');
+                btnHi.classList.remove('text-navy');
                 btnEn.classList.remove('bg-navy', 'text-white');
                 btnEn.classList.add('text-navy');
             }
