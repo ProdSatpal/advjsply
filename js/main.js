@@ -208,10 +208,19 @@ function changeLanguage(lang) {
 
 function updatePageTranslations() {
   const t = t_data();
+  const lang = getCurrentLang();
+  document.documentElement.lang = lang;
+
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (t[key]) {
-      el.textContent = t[key];
+      if (el.tagName === 'TITLE') {
+        document.title = t[key];
+      } else if (el.tagName === 'META') {
+        el.setAttribute('content', t[key]);
+      } else {
+        el.textContent = t[key];
+      }
     }
   });
 }
