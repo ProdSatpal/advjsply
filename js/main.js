@@ -172,9 +172,10 @@ function getFooterHTML(t) {
           <div>
              <h3 class="text-xl font-serif mb-4 text-gold" data-i18n="practiceAreas">${t.practiceAreas}</h3>
              <ul class="space-y-2">
-                <li><a href="/services.html" class="hover:text-gold" data-i18n="civilRights">${t.civilRights}</a></li>
-                <li><a href="/services.html" class="hover:text-gold" data-i18n="criminalLaw">${t.criminalLaw}</a></li>
-                <li><a href="/services.html" class="hover:text-gold" data-i18n="propertyDisputes">${t.propertyDisputes}</a></li>
+                <li><a href="/divorce-lawyer-nagpur.html" class="hover:text-gold" data-i18n="divorce">${t.divorce}</a></li>
+                <li><a href="/mutual-divorce-lawyer-nagpur.html" class="hover:text-gold" data-i18n="mutualDivorce">${t.mutualDivorce}</a></li>
+                <li><a href="/domestic-violence-lawyer-nagpur.html" class="hover:text-gold" data-i18n="domesticViolence">${t.domesticViolence}</a></li>
+                <li><a href="/marriage-registration-lawyer-nagpur.html" class="hover:text-gold" data-i18n="registerMarriage">${t.registerMarriage}</a></li>
              </ul>
           </div>
         </div>

@@ -197,6 +197,8 @@ const translations = {
     needLegalDesc: 'Schedule a consultation to discuss your legal needs and explore how we can help you achieve the best possible outcome.',
     learnMoreServices: 'Explore Our Services',
     // Mutual Divorce
+    mdMetaTitle: 'Mutual Consent Divorce Lawyer in Nagpur | Adv. Jasvinder Singh Ply',
+    mdMetaDesc: 'Looking for a mutual consent divorce lawyer in Nagpur? Get fast, confidential, and effective legal solutions with top family court attorney Adv. Jasvinder Singh Ply.',
     mdHeroTitle: 'Mutual Consent Divorce Lawyer in Nagpur',
     mdHeroSubtitle: 'Fast, dignified, and confidential resolution for your matrimonial disputes.',
     mdContentTitle: 'Navigating Divorce with Dignity',
@@ -219,6 +221,8 @@ const translations = {
     mdCtaTitle: 'Connect With Nagpur\'s Legal Experts',
     mdCtaDesc: 'Don\'t let legal complexities weigh you down. Contact the premier family law firm in Nagpur for a seamless mutual consent divorce process.',
     // Contested Divorce
+    cdMetaTitle: 'Top Contested Divorce Lawyer in Nagpur | Adv. Jasvinder Singh Ply',
+    cdMetaDesc: 'Facing a contested divorce or child custody battle? Consult the best family court lawyer in Nagpur for strong, strategic representation.',
     cdHeroTitle: 'Top Divorce Advocate in Nagpur',
     cdHeroSubtitle: 'Fierce, strategic representation for contested divorce and complex child custody battles.',
     cdContentTitle: 'Protecting Your Rights & Future',
@@ -518,6 +522,8 @@ const translations = {
     cdCtaTitle: 'अदालत का सामना अकेले न करें',
     cdCtaDesc: 'आक्रामक प्रतिनिधित्व प्राप्त करें जो आपकी संपत्ति, आपके बच्चे और आपकी गरिमा की रक्षा करे। नागपुर की शीर्ष फैमिली लॉ फर्म से संपर्क करें।',
     // Domestic Violence
+    dvMetaTitle: 'Alimony & Domestic Violence Lawyer in Nagpur | Adv. Jasvinder Singh Ply',
+    dvMetaDesc: 'Facing domestic abuse or fighting for fair alimony? Consult the top alimony and domestic violence lawyer in Nagpur for immediate court protection.',
     dvHeroTitle: 'घरेलू हिंसा और भरण-पोषण कानूनी सहायता',
     dvHeroSubtitle: 'आपकी सुरक्षा, गरिमा और वित्तीय भविष्य को सुरक्षित करने के लिए अडिग कानूनी सुरक्षा।',
     dvContentTitle: 'आपकी आवाज़, आपकी सुरक्षा, आपका अधिकार',
@@ -538,6 +544,8 @@ const translations = {
     dvCtaTitle: 'सुरक्षा और सुरक्षा की ओर पहला कदम उठाएं',
     dvCtaDesc: 'वित्तीय सहायता की कमी को न्याय मांगने से न रोकें। नागपुर की प्रमुख फैमिली लॉ फर्म के साथ अपना गुजारा भत्ता सुरक्षित करें।',
     // Marriage Registration
+    mrMetaTitle: 'Court Marriage & Registration Lawyer in Nagpur | Adv. Jasvinder Singh Ply',
+    mrMetaDesc: 'Fast, hassle-free, and legally sound marriage registration in Nagpur. Consult top court marriage advocate Jasvinder Singh Ply.',
     mrHeroTitle: 'कोर्ट मैरिज और पंजीकरण वकील',
     mrHeroSubtitle: 'पूरे नागपुर में तेज़, परेशानी मुक्त, कानूनी रूप से मजबूत विवाह पंजीकरण।',
     mrContentTitle: 'आपके वैवाहिक अधिकारों को कानूनी रूप से सुरक्षित करना',
@@ -797,6 +805,8 @@ const translations = {
     cdCtaTitle: 'न्यायालयाचा सामना एकटे करू नका',
     cdCtaDesc: 'आक्रमक प्रतिनिधित्व मिळवा जे तुमची मालमत्ता, तुमचे मूल आणि तुमच्या प्रतिष्ठेचे रक्षण करेल. नागपूरमधील प्रमुख फॅमिली लॉ फर्मशी संपर्क साधा.',
     // Domestic Violence
+    dvMetaTitle: 'पोटगी आणि कौटुंबिक हिंसाचार वकील नागपूर | ॲडव्होकेट जसविंदर सिंग प्लाई',
+    dvMetaDesc: 'कौटुंबिक हिंसाचाराचा सामना करत आहात किंवा न्याय्य पोटगीसाठी लढत आहात? तात्काळ न्यायालयीन संरक्षणासाठी नागपूरमधील प्रमुख पोटगी आणि कौटुंबिक हिंसाचार वकीलाचा सल्ला घ्या.',
     dvHeroTitle: 'कौटुंबिक हिंसाचार आणि पोटगी कायदेशीर सहाय्य',
     dvHeroSubtitle: 'तुमची सुरक्षा, प्रतिष्ठा आणि आर्थिक भविष्य सुरक्षित करण्यासाठी अविचल कायदेशीर संरक्षण.',
     dvContentTitle: 'तुमचा आवाज, तुमची सुरक्षा, तुमचा अधिकार',
@@ -817,6 +827,8 @@ const translations = {
     dvCtaTitle: 'सुरक्षा आणि सुरक्षिततेच्या दिशेने पहिले पाऊल टाका',
     dvCtaDesc: 'आर्थिक मदतीचा अभाव तुम्हाला न्याय मिळवण्यापासून रोखू देऊ नका. नागपूरमधील प्रमुख फॅमिली लॉ फर्मसह आपली पोटगी सुरक्षित करा.',
     // Marriage Registration
+    mrMetaTitle: 'कोर्ट मॅरेज आणि नोंदणी वकील नागपूर | ॲडव्होकेट जसविंदर सिंग प्लाई',
+    mrMetaDesc: 'नागपूरमध्ये जलद, त्रासमुक्त आणि कायदेशीररित्या सक्षम विवाह नोंदणी. प्रमुख कोर्ट मॅरेज वकील जसविंदर सिंग प्लाई यांचा सल्ला घ्या.',
     mrHeroTitle: 'कोर्ट मॅरेज आणि नोंदणी वकील',
     mrHeroSubtitle: 'सर्व नागपुरात जलद, त्रासमुक्त, कायदेशीरदृष्ट्या मजबूत विवाह नोंदणी.',
     mrContentTitle: 'तुमचे वैवाहिक अधिकार कायदेशीररित्या सुरक्षित करणे',
