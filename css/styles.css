@@ -92,6 +92,89 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(0) rotate(3deg);
 }
 
+
 .animated-scroll-reveal:hover {
     transform: translateY(-5px) scale(1.05) rotate(0deg);
 }
+
+/* Premium UI Elements */
+.glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(224, 178, 81, 0.2);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(224, 178, 81, 0.6);
+    box-shadow: 0 25px 50px -12px rgba(15, 44, 77, 0.15);
+}
+
+.premium-gradient {
+    background: linear-gradient(135deg, #0F2C4D 0%, #1A4978 40%, #0F2C4D 70%, #061C37 100%);
+    background-size: 200% 200%;
+    animation: gradient-flow 15s ease infinite;
+}
+
+@keyframes gradient-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.glass-btn {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.glass-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(224, 178, 81, 0.5);
+    transform: translateY(-2px);
+}
+
+.carbon-pattern {
+    background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+}
+
+/* Language Context Utilities */
+.lang-content {
+    display: none;
+}
+
+.lang-content.active {
+    display: block;
+}
+
+/* --- Dynamic Navbar Contrast --- */
+#main-nav {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Default (Over Dark Hero) */
+.nav-link-idle { color: rgba(255, 255, 255, 0.85); transition: color 0.3s; }
+.nav-link-active { color: #E0B251 !important; }
+.nav-logo-text { color: #FFFFFF; transition: color 0.3s; }
+.nav-logo-sub { color: #E0B251; transition: color 0.3s; }
+.nav-mobile-btn { border-color: rgba(255, 255, 255, 0.3) !important; color: white !important; }
+
+/* Scrolled (Over White Page) */
+#main-nav.bg-white .nav-link-idle { color: #0F2C4D; }
+#main-nav.bg-white .nav-link-active { color: #B23850 !important; }
+#main-nav.bg-white .nav-logo-text { color: #0F2C4D; }
+#main-nav.bg-white .nav-logo-sub { color: #B23850; }
+#main-nav.bg-white .nav-mobile-btn { border-color: #0F2C4D !important; color: #0F2C4D !important; }
+
+/* Language Dropdown Adjustment */
+#main-nav.bg-white #lang-menu-btn { 
+    color: #0F2C4D; 
+    border-color: rgba(15, 44, 77, 0.1); 
+}
+#main-nav.bg-white #lang-menu-btn:hover { background-color: rgba(15, 44, 77, 0.05); }
+
+/* Mobile Menu Popup Fix */
+#mobile-menu .nav-link-idle { color: #0F2C4D; }
+#mobile-menu .nav-link-active { color: #B23850 !important; }

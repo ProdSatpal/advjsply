@@ -40,6 +40,18 @@
     </script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://advocatejsply.com/about.html">
+    <meta property="og:title" content="About Adv. Jasvinder Singh Ply | Lawyer in Nagpur">
+    <meta property="og:description" content="Meet Adv. Jasvinder Singh Ply, a dedicated legal professional in Nagpur with expertise in family law, real estate, and civil litigation.">
+    <meta property="og:image" content="https://advocatejsply.com/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="Advocate Jasvinder Singh Ply">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Adv. Jasvinder Singh Ply | Lawyer in Nagpur">
+    <meta name="twitter:description" content="Meet Adv. Jasvinder Singh Ply, a dedicated legal professional in Nagpur with expertise in family law, real estate, and civil litigation.">
+    <meta name="twitter:image" content="https://advocatejsply.com/assets/images/og-image.jpg">
 </head>
 
 <body class="bg-gray-50 text-slate-900">
@@ -47,135 +59,171 @@
     <div id="navbar-container"></div>
 
     <!-- Hero Section -->
-    <section class="relative bg-navy py-20 px-6">
-        <div class="absolute inset-0 overflow-hidden">
-            <div
-                class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMwMDAiIGZpbGwtb3BhY2l0eT0iLjAyIj48cGF0aCBkPSJNMzYgMzRjMC0yLjItMS44LTQtNC00cy00IDEuOC00IDQgMS44IDQgNCA0IDQtMS44IDQtNHptMC0xOGMwLTIuMi0xLjgtNC00LTRzLTQgMS44LTQgNCAxLjggNCA0IDQgNC0xLjggNC00em0wIDM2YzAtMi4yLTEuOC00LTQtNHMtNCAxLjgtNCA0IDEuOCA0IDQgNCA0LTEuOCA0LTR6Ii8+PC9nPjwvZz48L3N2Zz4=')] opacity-10">
+    <div class="premium-gradient py-24 text-center text-white relative border-b-8 border-gold overflow-hidden pt-32">
+        <div class="absolute inset-0 carbon-pattern opacity-10"></div>
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-navy-light/20 rounded-full blur-3xl"></div>
+        
+        <!-- Language Switcher Pill -->
+        <div class="absolute top-10 right-6 z-20 flex justify-center">
+            <div class="bg-navy-dark/40 backdrop-blur-md rounded-full p-1.5 border border-white/20 shadow-2xl flex gap-1">
+                <button onclick="setPageLang('en')" id="btn-en" class="px-5 py-2 rounded-full text-xs font-bold transition-all duration-300 bg-gold text-navy shadow-inner">English</button>
+                <button onclick="setPageLang('hi')" id="btn-hi" class="px-5 py-2 rounded-full text-xs font-bold transition-all duration-300 text-white hover:bg-white/10">Hindi</button>
             </div>
         </div>
-        <div class="container mx-auto relative z-10 text-center">
-            <h1 class="text-4xl md:text-5xl font-serif font-bold text-white mb-4 animated-element">
+
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-4xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
                 <span data-i18n="about">About</span> <span class="text-gold" data-i18n="Me">Me</span>
             </h1>
-            <div class="w-24 h-1 bg-gold mx-auto mb-6"></div>
-            <p class="text-gray-200 max-w-2xl mx-auto animated-element">
-                Providing expert legal navigation for over 12 years. Specialized in high-stakes family and real estate
-                matters,
-                committed to protecting your interests with unwavering integrity and professional excellence.
+            <div class="w-24 h-1.5 bg-gold mx-auto mb-10 rounded-full shadow-2xl"></div>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto text-gray-300 font-light leading-relaxed drop-shadow-xl">
+                Providing expert legal navigation for over 12 years. Specialized in high-stakes family and real estate matters, committed to protecting your interests with unwavering integrity.
             </p>
         </div>
-    </section>
+    </div>
 
     <!-- About Content -->
-    <section class="py-16 bg-white">
+    <section class="py-20 -mt-12 bg-transparent relative z-10">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
                 <!-- Profile Section -->
-                <div class="md:col-span-1">
+                <div class="lg:col-span-1">
                     <div class="sticky top-24">
-                        <div class="animated-element">
-                            <div class="rounded-xl overflow-hidden shadow-lg bg-white border border-gray-100">
-                                <div class="aspect-[4/3] relative rounded-t-xl overflow-hidden shadow-inner">
-                                    <img src="assets/images/profile.jpg" alt="Adv. Jasvinder Singh Ply"
-                                        class="w-full h-full object-cover" />
+                        <div class="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl border border-gold/20 overflow-hidden transform hover:-translate-y-2 transition-all duration-500">
+                            <div class="aspect-[4/5] relative overflow-hidden">
+                                <img src="assets/images/profile.jpg" alt="Adv. Jasvinder Singh Ply" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 transform hover:scale-105" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+                                <div class="absolute bottom-6 left-6 right-6 text-white">
+                                    <p class="text-gold font-bold text-sm tracking-widest uppercase mb-1" data-i18n="advocate">Advocate</p>
+                                    <h3 class="text-2xl font-serif font-bold">Jasvinder Singh Ply</h3>
                                 </div>
-                                <div class="p-6">
-                                    <h3 class="text-xl font-serif font-bold text-navy mb-2" data-i18n="advocate">
-                                        Advocate</h3>
-                                    <div class="text-sm space-y-3 text-gray-600">
-                                        <p><strong><span data-i18n="experience">Experience</span>:</strong> 12+ <span
-                                                data-i18n="years">Years</span></p>
-                                        <p><strong><span data-i18n="education">Education</span>:</strong> B.Com, LL.B
-                                        </p>
-                                        <p><strong><span data-i18n="specialization">Specialization</span>:</strong>
-                                            Family Law, Real Estate</p>
+                            </div>
+                            <div class="p-8 space-y-6">
+                                <div class="space-y-4">
+                                    <div class="flex items-center gap-4 text-gray-700">
+                                        <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center border border-gold/20">
+                                            <i data-lucide="award" class="w-5 h-5 text-gold"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs text-gray-500 uppercase tracking-wider font-bold" data-i18n="experience">Experience</p>
+                                            <p class="font-bold text-navy">12+ <span data-i18n="years">Years</span></p>
+                                        </div>
                                     </div>
+                                    <div class="flex items-center gap-4 text-gray-700">
+                                        <div class="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center border border-gold/20">
+                                            <i data-lucide="graduation-cap" class="w-5 h-5 text-gold"></i>
+                                        </div>
+                                        <div>
+                                            <p class="text-xs text-gray-500 uppercase tracking-wider font-bold" data-i18n="education">Education</p>
+                                            <p class="font-bold text-navy">B.Com, LL.B</p>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                    <div class="mt-6">
-                                        <a href="/contact.html"
-                                            class="w-full bg-navy hover:bg-navy-light text-white flex items-center justify-center gap-2 py-2 rounded-md transition-colors">
-                                            <span data-i18n="scheduleConsultation">Schedule a Consultation</span>
-                                        </a>
-                                    </div>
-                                </div>
+                                <a href="contact.html" class="block w-full bg-navy hover:bg-navy-light text-white font-bold py-4 rounded-xl text-center transition-all shadow-lg hover:shadow-xl transform active:scale-95" data-i18n="scheduleConsultation">
+                                    Schedule a Consultation
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Main Content -->
-                <div class="md:col-span-2">
-                    <div class="animated-element space-y-8">
-                        <div>
-                            <h2 class="text-3xl font-serif text-navy mb-4"><span
-                                    data-i18n="professional">Professional</span> <span class="text-gold"
-                                    data-i18n="background">Background</span></h2>
-                            <div class="w-20 h-1 bg-gold mb-6"></div>
-                            <div class="prose max-w-none text-gray-700">
-                                <p class="mb-4">
-                                    Advocate Jasvinder Singh Ply is a dedicated legal professional practicing in Nagpur.
-                                    Since starting his independent practice in 2013, he has helped many clients with
-                                    their legal issues, especially in family matters and real estate law.</p>
-                                <p class="mb-4">
-                                    He is known for his clear legal advice, careful document handling, and strong
-                                    mediation skills. Whether it’s resolving a family dispute or handling property
-                                    paperwork, Advocate Jasvinder Singh ensures that each case is treated with honesty,
-                                    care, and professionalism.</p>
-                                <p class="mb-6">
-                                    His focus is always on achieving the best results for his clients and guiding them
-                                    through every step of the legal process.</p>
+                <div class="lg:col-span-2 space-y-12">
+                    <div class="glass-card p-10 md:p-12 rounded-[40px] relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-48 h-48 bg-gold/5 rounded-full -mr-24 -mt-24 transition-transform group-hover:scale-150 duration-1000"></div>
+                        
+                        <h2 class="text-3xl md:text-4xl font-serif text-navy mb-10 flex items-center gap-4">
+                            <span class="w-16 h-1.5 bg-gold rounded-full shadow-md"></span>
+                            <span><span data-i18n="professional">Professional</span> <span class="text-gold" data-i18n="background">Background</span></span>
+                        </h2>
+                        
+                        <div class="space-y-8 text-gray-700 text-lg leading-relaxed relative z-10 font-light">
+                            <p>
+                                Advocate Jasvinder Singh Ply is a dedicated legal professional practicing in Nagpur. Since starting his independent practice in 2013, he has helped many clients with their legal issues, especially in family matters and real estate law.
+                            </p>
+                            <div class="bg-navy p-10 rounded-[32px] border-l-8 border-gold italic text-white shadow-2xl relative overflow-hidden group/quote">
+                                <div class="absolute inset-0 carbon-pattern opacity-10"></div>
+                                <i data-lucide="quote" class="absolute top-6 right-10 w-20 h-20 text-white/5 -rotate-12"></i>
+                                <p class="relative z-10 text-xl font-medium leading-relaxed">
+                                    He is known for his clear legal advice, careful document handling, and strong mediation skills. Whether it’s resolving a family dispute or handling property paperwork, Advocate Jasvinder Singh ensures that each case is treated with honesty, care, and professionalism.
+                                </p>
                             </div>
+                            <p>
+                                His focus is always on achieving the best results for his clients and guiding them through every step of the legal process.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Skills & Expertise -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="glass-card p-10 rounded-[32px] group hover:border-gold/50 transition-all duration-500 shadow-xl">
+                            <div class="flex items-center gap-5 mb-10">
+                                <div class="w-14 h-14 bg-navy rounded-2xl flex items-center justify-center text-gold shadow-2xl group-hover:rotate-12 transition-transform border border-gold/20">
+                                    <i data-lucide="briefcase" class="w-7 h-7"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-navy" data-i18n="practiceAreas">Practice Areas</h3>
+                            </div>
+                            <ul class="space-y-5">
+                                <li class="flex items-center gap-4 text-gray-700 font-medium">
+                                    <span class="w-2.5 h-2.5 bg-gold rounded-full shadow-[0_0_8px_rgba(224,178,81,0.6)]"></span>
+                                    <span>Family Law</span>
+                                </li>
+                                <li class="flex items-center gap-4 text-gray-700 font-medium">
+                                    <span class="w-2.5 h-2.5 bg-gold rounded-full shadow-[0_0_8px_rgba(224,178,81,0.6)]"></span>
+                                    <span>Real Estate Law</span>
+                                </li>
+                                <li class="flex items-center gap-4 text-gray-700 font-medium">
+                                    <span class="w-2.5 h-2.5 bg-gold rounded-full shadow-[0_0_8px_rgba(224,178,81,0.6)]"></span>
+                                    <span>Civil Litigation</span>
+                                </li>
+                                <li class="flex items-center gap-4 text-gray-700 font-medium">
+                                    <span class="w-2.5 h-2.5 bg-gold rounded-full shadow-[0_0_8px_rgba(224,178,81,0.6)]"></span>
+                                    <span>Property Documentation</span>
+                                </li>
+                                <li class="flex items-center gap-4 text-gray-700 font-medium">
+                                    <span class="w-2.5 h-2.5 bg-gold rounded-full shadow-[0_0_8px_rgba(224,178,81,0.6)]"></span>
+                                    <span>Legal Consultation</span>
+                                </li>
+                                <li class="flex items-center gap-4 text-gray-700 font-medium">
+                                    <span class="w-2.5 h-2.5 bg-gold rounded-full shadow-[0_0_8px_rgba(224,178,81,0.6)]"></span>
+                                    <span>Document Review</span>
+                                </li>
+                            </ul>
                         </div>
 
-                        <!-- Qualifications Cards -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div
-                                class="bg-white rounded-lg border-l-4 border-emerald-500 shadow-sm p-6 hover:shadow-md transition-all">
-                                <h3 class="text-lg font-bold flex items-center gap-2 mb-4">
-                                    <i data-lucide="briefcase" class="h-5 w-5 text-emerald-600"></i>
-                                    <span data-i18n="practiceAreas">Practice Areas</span>
-                                </h3>
-                                <ul class="grid grid-cols-2 gap-x-4 gap-y-2 text-gray-700 list-disc ml-5">
-                                    <li>Family Law</li>
-                                    <li>Real Estate Law</li>
-                                    <li>Civil Litigation</li>
-                                    <li>Property Documentation</li>
-                                    <li>Legal Consultation</li>
-                                    <li>Document Review</li>
-                                </ul>
+                        <div class="glass-card p-10 rounded-[32px] group hover:border-gold/50 transition-all duration-500 shadow-xl">
+                            <div class="flex items-center gap-5 mb-10">
+                                <div class="w-14 h-14 bg-gold rounded-2xl flex items-center justify-center text-navy shadow-2xl group-hover:rotate-12 transition-transform border border-navy/20">
+                                    <i data-lucide="shield-check" class="w-7 h-7"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-navy">Skills & Expertise</h3>
                             </div>
-
-                            <div
-                                class="bg-white rounded-lg border-l-4 border-theme-red shadow-sm p-6 hover:shadow-md transition-all">
-                                <h3 class="text-lg font-bold flex items-center gap-2 mb-4">
-                                    <i data-lucide="file-text" class="h-5 w-5 text-theme-red"></i>
-                                    Skills & Expertise
-                                </h3>
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
-                                    <div class="flex items-start gap-2"><i data-lucide="check"
-                                            class="h-4 w-4 text-emerald-600 mt-1"></i> <span>Expert in Court
-                                            Procedures</span></div>
-                                    <div class="flex items-start gap-2"><i data-lucide="check"
-                                            class="h-4 w-4 text-emerald-600 mt-1"></i> <span>Skilled Mediator</span>
+                            <div class="grid grid-cols-1 gap-5">
+                                <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-navy/5 transition-all group/item">
+                                    <div class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
                                     </div>
-                                    <div class="flex items-start gap-2"><i data-lucide="check"
-                                            class="h-4 w-4 text-emerald-600 mt-1"></i> <span>Thorough Document
-                                            Review</span></div>
-                                    <div class="flex items-start gap-2"><i data-lucide="check"
-                                            class="h-4 w-4 text-emerald-600 mt-1"></i> <span>Legal Documentation</span>
+                                    <span class="text-gray-700 font-bold text-lg">Expert in Court Procedures</span>
+                                </div>
+                                <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-navy/5 transition-all group/item">
+                                    <div class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
                                     </div>
-                                    <div class="flex items-start gap-2"><i data-lucide="check"
-                                            class="h-4 w-4 text-emerald-600 mt-1"></i> <span>Client Communication</span>
+                                    <span class="text-gray-700 font-bold text-lg">Skilled Mediator</span>
+                                </div>
+                                <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-navy/5 transition-all group/item">
+                                    <div class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
                                     </div>
-                                    <div class="flex items-start gap-2"><i data-lucide="check"
-                                            class="h-4 w-4 text-emerald-600 mt-1"></i> <span>Civil Litigation</span>
+                                    <span class="text-gray-700 font-bold text-lg">Legal Documentation</span>
+                                </div>
+                                <div class="flex items-start gap-4 p-4 rounded-2xl hover:bg-navy/5 transition-all group/item">
+                                    <div class="w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                        <i data-lucide="check" class="w-5 h-5 text-emerald-600"></i>
                                     </div>
-                                    <div class="flex items-start gap-2"><i data-lucide="check"
-                                            class="h-4 w-4 text-emerald-600 mt-1"></i> <span>Drafting Affidavits</span>
-                                    </div>
-                                    <div class="flex items-start gap-2"><i data-lucide="check"
-                                            class="h-4 w-4 text-emerald-600 mt-1"></i> <span>Systematic File
-                                            Management</span></div>
+                                    <span class="text-gray-700 font-bold text-lg">Civil Litigation</span>
                                 </div>
                             </div>
                         </div>

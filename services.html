@@ -40,20 +40,36 @@
     </script>
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://advocatejsply.com/services.html">
+    <meta property="og:title" content="Legal Services | Advocate Jasvinder Singh Ply">
+    <meta property="og:description" content="Comprehensive legal services in Nagpur: family law, property, partnership deeds, legal notices, and more. Expert guidance at every step.">
+    <meta property="og:image" content="https://advocatejsply.com/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="Advocate Jasvinder Singh Ply">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Legal Services | Advocate Jasvinder Singh Ply">
+    <meta name="twitter:description" content="Comprehensive legal services in Nagpur: family law, property, partnership deeds, legal notices, and more. Expert guidance at every step.">
+    <meta name="twitter:image" content="https://advocatejsply.com/assets/images/og-image.jpg">
 </head>
 
 <body class="bg-gray-50 text-slate-900">
 
     <div id="navbar-container"></div>
 
-    <!-- Header -->
-    <div class="bg-navy py-20 text-center text-white">
-        <div class="container mx-auto px-6">
-            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4" data-i18n="ourLegalServices">Our Legal Services
-            </h1>
-            <div class="w-20 h-1 bg-gold mx-auto mb-6"></div>
-            <p class="text-xl max-w-2xl mx-auto text-gray-300" data-i18n="experienceTagline">Comprehensive legal support
-                for individuals and businesses, backed by over a decade of expertise.</p>
+    <div id="navbar-container"></div>
+
+    <!-- Hero Section -->
+    <div class="premium-gradient py-28 text-center text-white relative border-b-8 border-gold overflow-hidden">
+        <div class="absolute inset-0 carbon-pattern opacity-10"></div>
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-gold/5 rounded-full blur-3xl"></div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <h1 class="text-4xl md:text-7xl font-serif font-bold text-white mb-6 drop-shadow-2xl leading-tight" data-i18n="ourLegalServices">Our Legal Services</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto text-gray-300 font-light leading-relaxed drop-shadow-md" data-i18n="experienceTagline">Comprehensive legal support for individuals and businesses, backed by over a decade of expertise.</p>
+            <div class="w-24 h-1.5 bg-gold mx-auto mt-12 rounded-full shadow-2xl"></div>
         </div>
     </div>
 
@@ -61,54 +77,149 @@
     <section class="py-16">
         <div class="container mx-auto px-6 space-y-20">
 
-            <!-- Category: Family Law (Top Priority) -->
+            <!-- Category: Family Law -->
             <div class="animated-element">
-                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2 flex items-center gap-2">
-                    <i data-lucide="scale" class="w-8 h-8 text-gold"></i>
-                    <span data-i18n="familyLaw">Family Law</span>
-                </h2>
+                <div class="flex items-center gap-6 mb-12">
+                    <div class="w-16 h-16 bg-navy rounded-2xl flex items-center justify-center shadow-xl border border-gold/20 transform rotate-3">
+                        <i data-lucide="scale" class="w-8 h-8 text-gold"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-serif text-navy font-bold" data-i18n="familyLaw">Family Law</h2>
+                        <div class="w-12 h-1 bg-gold mt-2 rounded-full"></div>
+                    </div>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-                    <a href="mutual-divorce-lawyer-nagpur.html" class="block bg-navy text-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gold border-opacity-30 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <i data-lucide="users" class="w-16 h-16"></i>
+                    <a href="mutual-divorce-lawyer-nagpur.html" class="block bg-white/95 backdrop-blur-md p-8 rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 group relative overflow-hidden transform hover:-translate-y-2">
+                        <div class="absolute -top-12 -right-12 w-24 h-24 bg-gold/5 rounded-full transition-transform group-hover:scale-150 duration-700"></div>
+                        <div class="bg-navy/5 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-500 shadow-inner">
+                            <i data-lucide="users" class="w-7 h-7"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gold mb-3" data-i18n="mutualDivorce">Mutual Divorce</h3>
-                        <p class="text-gray-300 mb-4" data-i18n="mutualDesc">Simplified legal process for couples who mutually agree to divorce.</p>
-                        <div class="flex items-center text-sm font-semibold text-white group-hover:text-gold transition-colors">
-                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors" data-i18n="mutualDivorce">Mutual Divorce</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed" data-i18n="mutualDesc">Simplified legal process for couples who mutually agree to divorce.</p>
+                        <div class="flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors gap-2">
+                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-2 transition-transform"></i>
                         </div>
                     </a>
                     
-                    <a href="divorce-lawyer-nagpur.html" class="block bg-navy text-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gold border-opacity-30 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <i data-lucide="gavel" class="w-16 h-16"></i>
+                    <a href="divorce-lawyer-nagpur.html" class="block bg-white/95 backdrop-blur-md p-8 rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 group relative overflow-hidden transform hover:-translate-y-2">
+                        <div class="absolute -top-12 -right-12 w-24 h-24 bg-gold/5 rounded-full transition-transform group-hover:scale-150 duration-700"></div>
+                        <div class="bg-navy/5 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-500 shadow-inner">
+                            <i data-lucide="gavel" class="w-7 h-7"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gold mb-3" data-i18n="divorce">Contested Divorce</h3>
-                        <p class="text-gray-300 mb-4" data-i18n="divorceDesc">Legal representation in contested divorce cases & child custody.</p>
-                        <div class="flex items-center text-sm font-semibold text-white group-hover:text-gold transition-colors">
-                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
-                        </div>
-                    </a>
-
-                    <a href="domestic-violence-lawyer-nagpur.html" class="block bg-navy text-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gold border-opacity-30 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <i data-lucide="shield-alert" class="w-16 h-16"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gold mb-3" data-i18n="domesticViolence">Domestic Violence</h3>
-                        <p class="text-gray-300 mb-4" data-i18n="domesticDesc">Protection and legal remedies for victims of domestic violence.</p>
-                        <div class="flex items-center text-sm font-semibold text-white group-hover:text-gold transition-colors">
-                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors" data-i18n="divorce">Contested Divorce</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed" data-i18n="divorceDesc">Legal representation in contested divorce cases & child custody.</p>
+                        <div class="flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors gap-2">
+                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-2 transition-transform"></i>
                         </div>
                     </a>
 
-                    <a href="marriage-registration-lawyer-nagpur.html" class="block bg-navy text-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gold border-opacity-30 relative overflow-hidden group">
-                        <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                            <i data-lucide="file-check-2" class="w-16 h-16"></i>
+                    <a href="domestic-violence-lawyer-nagpur.html" class="block bg-white/95 backdrop-blur-md p-8 rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 group relative overflow-hidden transform hover:-translate-y-2">
+                        <div class="absolute -top-12 -right-12 w-24 h-24 bg-gold/5 rounded-full transition-transform group-hover:scale-150 duration-700"></div>
+                        <div class="bg-navy/5 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-500 shadow-inner">
+                            <i data-lucide="shield-alert" class="w-7 h-7"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gold mb-3" data-i18n="registerMarriage">Register Marriage</h3>
-                        <p class="text-gray-300 mb-4" data-i18n="marriageDesc">Assistance with legal registration of marriage & court marriage.</p>
-                        <div class="flex items-center text-sm font-semibold text-white group-hover:text-gold transition-colors">
-                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                        <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors" data-i18n="domesticViolence">Domestic Violence</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed" data-i18n="domesticDesc">Protection and legal remedies for victims of domestic violence.</p>
+                        <div class="flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors gap-2">
+                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </a>
+
+                    <a href="marriage-registration-lawyer-nagpur.html" class="block bg-white/95 backdrop-blur-md p-8 rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 group relative overflow-hidden transform hover:-translate-y-2">
+                        <div class="absolute -top-12 -right-12 w-24 h-24 bg-gold/5 rounded-full transition-transform group-hover:scale-150 duration-700"></div>
+                        <div class="bg-navy/5 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-500 shadow-inner">
+                            <i data-lucide="file-check-2" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors" data-i18n="registerMarriage">Register Marriage</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed" data-i18n="marriageDesc">Assistance with legal registration of marriage & court marriage.</p>
+                        <div class="flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors gap-2">
+                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Category: Property Documentation -->
+            <div class="animated-element">
+                <div class="flex items-center gap-6 mb-12">
+                    <div class="w-16 h-16 bg-navy rounded-2xl flex items-center justify-center shadow-xl border border-gold/20 transform -rotate-3">
+                        <i data-lucide="building-2" class="w-8 h-8 text-gold"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-serif text-navy font-bold" data-i18n="propertyDocumentation">Property Documentation</h2>
+                        <div class="w-12 h-1 bg-gold mt-2 rounded-full"></div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Will Writing -->
+                    <a href="will-writing-nagpur.html" class="block bg-white/95 backdrop-blur-md p-8 rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 group relative overflow-hidden transform hover:-translate-y-2">
+                        <div class="bg-navy/5 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-500 shadow-inner">
+                            <i data-lucide="scroll" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors" data-i18n="willWriting">Will Writing</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed" data-i18n="willDesc">Drafting privileged wills and family trusts to ensure smooth asset transfer.</p>
+                        <div class="flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors gap-2">
+                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </a>
+
+                    <!-- Property Registry -->
+                    <a href="property-registry-nagpur.html" class="block bg-white/95 backdrop-blur-md p-8 rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 group relative overflow-hidden transform hover:-translate-y-2">
+                        <div class="bg-navy/5 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-500 shadow-inner">
+                            <i data-lucide="file-key" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors" data-i18n="propertyRegistry">Property Registry</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed" data-i18n="registryDesc">Sale Deeds, Gift Deeds, and expert Title Verification services in Nagpur.</p>
+                        <div class="flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors gap-2">
+                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </a>
+
+                    <!-- Property Disputes -->
+                    <a href="property-disputes-nagpur.html" class="block bg-white/95 backdrop-blur-md p-8 rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 group relative overflow-hidden transform hover:-translate-y-2">
+                        <div class="bg-navy/5 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-500 shadow-inner">
+                            <i data-lucide="gavel" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors" data-i18n="propertyDisputes">Property Disputes</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed" data-i18n="propertyDisputesDesc">Resolving conflicts through MahaRERA representation and civil litigation.</p>
+                        <div class="flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors gap-2">
+                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </a>
+
+                    <!-- Partnership Deed -->
+                    <a href="partnership-deeds-nagpur.html" class="block bg-white/95 backdrop-blur-md p-8 rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 group relative overflow-hidden transform hover:-translate-y-2">
+                        <div class="bg-navy/5 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-500 shadow-inner">
+                            <i data-lucide="briefcase" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors" data-i18n="partnershipDeed">Partnership Deed</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed" data-i18n="partnershipDeedDesc">Drafting partnership deeds and managing registration with RoF Maharashtra.</p>
+                        <div class="flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors gap-2">
+                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </a>
+
+                    <!-- Agreements -->
+                    <a href="legal-agreements-nagpur.html" class="block bg-white/95 backdrop-blur-md p-8 rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 group relative overflow-hidden transform hover:-translate-y-2">
+                        <div class="bg-navy/5 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-500 shadow-inner">
+                            <i data-lucide="pen-tool" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors" data-i18n="agreements">Agreements</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed" data-i18n="agreementsDesc">Leave & License, Loan, and Service agreements tailored for your needs.</p>
+                        <div class="flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors gap-2">
+                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-2 transition-transform"></i>
+                        </div>
+                    </a>
+
+                    <!-- Legal Notice -->
+                    <a href="legal-notice-service-nagpur.html" class="block bg-white/95 backdrop-blur-md p-8 rounded-[32px] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 group relative overflow-hidden transform hover:-translate-y-2">
+                        <div class="bg-navy/5 w-14 h-14 rounded-2xl flex items-center justify-center mb-6 text-navy group-hover:bg-navy group-hover:text-gold transition-all duration-500 shadow-inner">
+                            <i data-lucide="send" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3 group-hover:text-gold transition-colors" data-i18n="legalNotice">Legal Notice</h3>
+                        <p class="text-gray-600 mb-6 font-light leading-relaxed" data-i18n="legalNoticeDesc">Strategic legal notices under Sec 138 NI Act and Sec 80 CPC.</p>
+                        <div class="flex items-center text-sm font-bold text-navy group-hover:text-gold transition-colors gap-2">
+                            Explore Service <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-2 transition-transform"></i>
                         </div>
                     </a>
                 </div>
@@ -116,119 +227,110 @@
 
             <!-- Category: Civil Law -->
             <div class="animated-element">
-                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2"
-                    data-i18n="civilLaw">Civil Law</h2>
+                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2 flex items-center gap-2">
+                    <i data-lucide="briefcase" class="w-8 h-8 text-gold"></i>
+                    <span data-i18n="civilLaw">Civil Law</span>
+                </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="civilRights">Civil Rights</h3>
-                        <p class="text-gray-600" data-i18n="civilRightsDesc">Protecting your fundamental rights through
-                            expert legal representation.</p>
+                    <div class="glass-card p-10 rounded-[32px] shadow-lg border border-gold/10 relative overflow-hidden group">
+                        <div class="bg-navy p-4 rounded-2xl w-14 h-14 flex items-center justify-center mb-6 text-gold group-hover:rotate-12 transition-transform shadow-lg">
+                            <i data-lucide="justice-scale" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3" data-i18n="civilRights">Civil Rights</h3>
+                        <p class="text-gray-600 font-light" data-i18n="civilRightsDesc">Protecting fundamental rights through expert legal representation.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="disabilityBenefits">Disability Benefits
-                        </h3>
-                        <p class="text-gray-600" data-i18n="disabilityBenefitsDesc">Assisting with claims for disability
-                            benefits.</p>
+
+                    <div class="glass-card p-10 rounded-[32px] shadow-lg border border-gold/10 relative overflow-hidden group">
+                        <div class="bg-navy p-4 rounded-2xl w-14 h-14 flex items-center justify-center mb-6 text-gold group-hover:rotate-12 transition-transform shadow-lg">
+                            <i data-lucide="accessibility" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3" data-i18n="disabilityBenefits">Disability Benefits</h3>
+                        <p class="text-gray-600 font-light" data-i18n="disabilityBenefitsDesc">Assisting with claims for disability benefits and inclusion.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="evictionLitigation">Eviction Litigation
-                        </h3>
-                        <p class="text-gray-600" data-i18n="evictionDesc">Expert legal representation for tenants facing
-                            eviction or landlords seeking to evict.</p>
+
+                    <div class="glass-card p-10 rounded-[32px] shadow-lg border border-gold/10 relative overflow-hidden group">
+                        <div class="bg-navy p-4 rounded-2xl w-14 h-14 flex items-center justify-center mb-6 text-gold group-hover:rotate-12 transition-transform shadow-lg">
+                            <i data-lucide="key" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3" data-i18n="evictionLitigation">Eviction Litigation</h3>
+                        <p class="text-gray-600 font-light" data-i18n="evictionDesc">Expert legal representation for tenants and landlords in eviction cases.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="landlordTenant">Landlord Tenant Disputes
-                        </h3>
-                        <p class="text-gray-600" data-i18n="landlordDesc">Resolving disputes between landlords and
-                            tenants.</p>
+
+                    <div class="glass-card p-10 rounded-[32px] shadow-lg border border-gold/10 relative overflow-hidden group">
+                        <div class="bg-navy p-4 rounded-2xl w-14 h-14 flex items-center justify-center mb-6 text-gold group-hover:rotate-12 transition-transform shadow-lg">
+                            <i data-lucide="home" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3" data-i18n="landlordTenant">Landlord Tenant</h3>
+                        <p class="text-gray-600 font-light" data-i18n="landlordDesc">Resolving complex disputes between landlords and tenants.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="recoverySuit">Recovery Suit</h3>
-                        <p class="text-gray-600" data-i18n="recoveryDesc">Legal assistance for recovery of debts, money,
-                            and property.</p>
+
+                    <div class="glass-card p-10 rounded-[32px] shadow-lg border border-gold/10 relative overflow-hidden group">
+                        <div class="bg-navy p-4 rounded-2xl w-14 h-14 flex items-center justify-center mb-6 text-gold group-hover:rotate-12 transition-transform shadow-lg">
+                            <i data-lucide="wallet" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3" data-i18n="recoverySuit">Recovery Suit</h3>
+                        <p class="text-gray-600 font-light" data-i18n="recoveryDesc">Legal assistance for recovery of debts, money, and assets.</p>
                     </div>
                 </div>
             </div>
 
             <!-- Category: Criminal Law -->
             <div class="animated-element">
-                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2"
-                    data-i18n="criminalLaw">Criminal Law</h2>
+                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2 flex items-center gap-2">
+                    <i data-lucide="shield" class="w-8 h-8 text-gold"></i>
+                    <span data-i18n="criminalLaw">Criminal Law</span>
+                </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="criminalWrit">Criminal Writ</h3>
-                        <p class="text-gray-600" data-i18n="criminalWritDesc">Filing and defending criminal writs.</p>
+                    <div class="glass-card p-10 rounded-[32px] shadow-lg border border-gold/10 relative overflow-hidden group">
+                        <div class="bg-navy p-4 rounded-2xl w-14 h-14 flex items-center justify-center mb-6 text-gold group-hover:rotate-12 transition-transform shadow-lg">
+                            <i data-lucide="file-text" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3" data-i18n="criminalWrit">Criminal Writ</h3>
+                        <p class="text-gray-600 font-light" data-i18n="criminalWritDesc">Expert filing and defense of criminal writs in Nagpur courts.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="regularBail">Regular Bail</h3>
-                        <p class="text-gray-600" data-i18n="regularBailDesc">Legal representation for obtaining bail
-                            after arrest.</p>
+
+                    <div class="glass-card p-10 rounded-[32px] shadow-lg border border-gold/10 relative overflow-hidden group">
+                        <div class="bg-navy p-4 rounded-2xl w-14 h-14 flex items-center justify-center mb-6 text-gold group-hover:rotate-12 transition-transform shadow-lg">
+                            <i data-lucide="unlock" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3" data-i18n="regularBail">Regular Bail</h3>
+                        <p class="text-gray-600 font-light" data-i18n="regularBailDesc">Legal representation for securing bail from custody after arrest.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="anticipatoryBail">Anticipatory Bail</h3>
-                        <p class="text-gray-600" data-i18n="anticipatoryDesc">Pre-arrest bail application to prevent
-                            arrest.</p>
+
+                    <div class="glass-card p-10 rounded-[32px] shadow-lg border border-gold/10 relative overflow-hidden group">
+                        <div class="bg-navy p-4 rounded-2xl w-14 h-14 flex items-center justify-center mb-6 text-gold group-hover:rotate-12 transition-transform shadow-lg">
+                            <i data-lucide="shield-check" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3" data-i18n="anticipatoryBail">Anticipatory Bail</h3>
+                        <p class="text-gray-600 font-light" data-i18n="anticipatoryDesc">Pre-arrest bail protection to prevent detention.</p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="chequeBouncing">Cheque Bouncing</h3>
-                        <p class="text-gray-600" data-i18n="chequeDesc">Legal assistance for cases involving dishonored
-                            cheques.</p>
+
+                    <div class="glass-card p-10 rounded-[32px] shadow-lg border border-gold/10 relative overflow-hidden group">
+                        <div class="bg-navy p-4 rounded-2xl w-14 h-14 flex items-center justify-center mb-6 text-gold group-hover:rotate-12 transition-transform shadow-lg">
+                            <i data-lucide="alert-octagon" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3" data-i18n="chequeBouncing">Cheque Bouncing</h3>
+                        <p class="text-gray-600 font-light" data-i18n="chequeDesc">Specialized defense in Sec 138 NI Act cheque bounce cases.</p>
                     </div>
                 </div>
             </div>
 
 
-            <!-- Category: Property & Business -->
-            <div class="animated-element">
-                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2"
-                    data-i18n="propertyDocumentation">Property Documentation</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="willWriting">Will Writing</h3>
-                        <p class="text-gray-600" data-i18n="willDesc">Drafting legally binding wills.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="propertyRegistry">Property Registry</h3>
-                        <p class="text-gray-600" data-i18n="registryDesc">Assistance with property registration.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="propertyDisputes">Property Disputes</h3>
-                        <p class="text-gray-600" data-i18n="propertyDisputesDesc">Resolving property conflicts through
-                            negotiation.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="partnershipDeed">Partnership Deed</h3>
-                        <p class="text-gray-600" data-i18n="partnershipDeedDesc">Drafting legal deeds for partnerships
-                            and business firms.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="agreements">Agreements</h3>
-                        <p class="text-gray-600" data-i18n="agreementsDesc">Drafting various legal agreements and
-                            contracts.</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="legalNotice">Legal Notice</h3>
-                        <p class="text-gray-600 mb-4" data-i18n="legalNoticeDesc">Drafting and sending formal legal
-                            notices to parties.</p>
-                        <a href="notice.html"
-                            class="inline-flex items-center gap-2 text-gold font-bold hover:text-navy transition-colors">
-                            <i data-lucide="pen-tool" class="w-4 h-4"></i>
-                            <span data-i18n="lnTryDrafting">Try Drafting a Notice</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+
 
             <!-- Category: Consumer Protection -->
             <div class="animated-element">
-                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2"
-                    data-i18n="consumerProtection">Consumer Protection</h2>
+                <h2 class="text-3xl font-serif text-navy mb-8 border-b-2 border-gold inline-block pb-2 flex items-center gap-2">
+                    <i data-lucide="shopping-bag" class="w-8 h-8 text-gold"></i>
+                    <span data-i18n="consumerProtection">Consumer Protection</span>
+                </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-xl font-bold text-navy mb-2" data-i18n="consumerComplaint">Consumer Complaint
-                        </h3>
-                        <p class="text-gray-600" data-i18n="consumerComplaintDesc">Filing complaints and representing
-                            clients in consumer courts.</p>
+                    <div class="glass-card p-10 rounded-[32px] shadow-lg border border-gold/10 relative overflow-hidden group">
+                        <div class="bg-navy p-4 rounded-2xl w-14 h-14 flex items-center justify-center mb-6 text-gold group-hover:rotate-12 transition-transform shadow-lg">
+                            <i data-lucide="clipboard-list" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-navy mb-3" data-i18n="consumerComplaint">Consumer Complaint</h3>
+                        <p class="text-gray-600 font-light" data-i18n="consumerComplaintDesc">Protecting consumer rights in state and national forums.</p>
                     </div>
                 </div>
             </div>
@@ -237,25 +339,30 @@
     </section>
 
     <!-- Consultation Process -->
-    <section class="py-16 bg-navy text-white">
-        <div class="container mx-auto px-6 text-center animated-element">
-            <h2 class="text-3xl font-serif mb-8" data-i18n="ourLegalProcess">Our Legal Process</h2>
+    <section class="py-24 bg-gradient-to-br from-navy via-navy-light to-navy-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl font-serif font-bold mb-16" data-i18n="ourLegalProcess">Our Legal Process</h2>
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div class="p-6 border border-gray-700 rounded-lg">
-                    <div class="text-4xl font-bold text-gold mb-4">1</div>
-                    <h3 class="text-xl font-bold mb-2" data-i18n="initialConsultation">Initial Consultation</h3>
+                <div class="p-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-[32px] relative group hover:bg-gold/10 transition-all duration-500">
+                    <div class="text-6xl font-bold text-gold/20 absolute top-4 right-8 group-hover:text-gold/40 transition-colors">01</div>
+                    <h3 class="text-xl font-bold mb-4 text-gold" data-i18n="initialConsultation">Initial Consultation</h3>
+                    <p class="text-gray-400 text-sm font-light">Discuss your case in detail with our legal experts.</p>
                 </div>
-                <div class="p-6 border border-gray-700 rounded-lg">
-                    <div class="text-4xl font-bold text-gold mb-4">2</div>
-                    <h3 class="text-xl font-bold mb-2" data-i18n="caseAnalysis">Case Analysis</h3>
+                <div class="p-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-[32px] relative group hover:bg-gold/10 transition-all duration-500">
+                    <div class="text-6xl font-bold text-gold/20 absolute top-4 right-8 group-hover:text-gold/40 transition-colors">02</div>
+                    <h3 class="text-xl font-bold mb-4 text-gold" data-i18n="caseAnalysis">Case Analysis</h3>
+                    <p class="text-gray-400 text-sm font-light">Comprehensive review of all facts and documentation.</p>
                 </div>
-                <div class="p-6 border border-gray-700 rounded-lg">
-                    <div class="text-4xl font-bold text-gold mb-4">3</div>
-                    <h3 class="text-xl font-bold mb-2" data-i18n="legalRepresentation">Legal Representation</h3>
+                <div class="p-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-[32px] relative group hover:bg-gold/10 transition-all duration-500">
+                    <div class="text-6xl font-bold text-gold/20 absolute top-4 right-8 group-hover:text-gold/40 transition-colors">03</div>
+                    <h3 class="text-xl font-bold mb-4 text-gold" data-i18n="legalRepresentation">Legal Representation</h3>
+                    <p class="text-gray-400 text-sm font-light">Expert advocacy in and out of the courtroom.</p>
                 </div>
-                <div class="p-6 border border-gray-700 rounded-lg">
-                    <div class="text-4xl font-bold text-gold mb-4">4</div>
-                    <h3 class="text-xl font-bold mb-2" data-i18n="resolution">Resolution</h3>
+                <div class="p-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-[32px] relative group hover:bg-gold/10 transition-all duration-500">
+                    <div class="text-6xl font-bold text-gold/20 absolute top-4 right-8 group-hover:text-gold/40 transition-colors">04</div>
+                    <h3 class="text-xl font-bold mb-4 text-gold" data-i18n="resolution">Resolution</h3>
+                    <p class="text-gray-400 text-sm font-light">Achieving the best possible outcome for your case.</p>
                 </div>
             </div>
         </div>
