@@ -20,13 +20,13 @@ function getNavbarHTML(activePath, t) {
       (activePath.endsWith('index.html') && link.path === '/') ||
       (activePath === '/' && link.path === '/'));
 
-    const activeClass = isActive ? 'text-theme-red font-semibold' : 'text-theme-blue';
+    const activeClass = isActive ? 'nav-link-active font-semibold' : 'nav-link-idle';
     const targetAttr = link.external ? 'target="_blank" rel="noopener noreferrer"' : '';
 
     return `
             <li>
                 <a href="${link.path}" ${targetAttr}
-                   class="px-3 py-2 rounded-md text-base font-medium transition-colors hover:text-theme-red ${activeClass}"
+                   class="px-3 py-2 rounded-md text-base font-medium transition-all duration-300 hover:text-gold ${activeClass}"
                    data-i18n="${link.key}">
                    ${t[link.key]}
                 </a>
@@ -59,8 +59,8 @@ function getNavbarHTML(activePath, t) {
             <img src="${window.location.pathname.includes('/blogs/') ? '../' : ''}assets/images/logo.png" 
                  alt="Advocate Logo" class="h-10 w-10"/>
             <div class="py-0">
-              <span class="text-2xl font-serif font-bold text-theme-blue">Jasvinder Singh Ply</span>
-              <div class="text-sm font-medium text-theme-red" data-i18n="advocate">${t.advocate}</div>
+              <span class="text-2xl font-serif font-bold nav-logo-text">Jasvinder Singh Ply</span>
+              <div class="text-sm font-medium nav-logo-sub uppercase tracking-wider" data-i18n="advocate">${t.advocate}</div>
             </div>
           </a>
 
@@ -72,7 +72,7 @@ function getNavbarHTML(activePath, t) {
             
             <!-- Language Dropdown -->
             <div class="relative ml-4 mr-2">
-              <button id="lang-menu-btn" class="p-2 rounded-md hover:bg-gray-100 transition-colors text-theme-blue flex items-center gap-1">
+              <button id="lang-menu-btn" class="p-2 rounded-md hover:bg-white/10 transition-colors nav-link-idle flex items-center gap-1 border border-white/10">
                 <i data-lucide="languages" class="h-5 w-5"></i>
                 <i data-lucide="chevron-down" class="h-4 w-4"></i>
               </button>
@@ -103,7 +103,7 @@ function getNavbarHTML(activePath, t) {
                 <button onclick="changeLanguage('hi')" class="text-xs px-1 ${getCurrentLang() === 'hi' ? 'font-bold' : ''}">HI</button>
                 <button onclick="changeLanguage('mr')" class="text-xs px-1 ${getCurrentLang() === 'mr' ? 'font-bold' : ''}">MR</button>
             </div>
-            <button id="mobile-menu-btn" class="border border-theme-blue text-theme-blue p-2 rounded-md hover:bg-gray-50">
+            <button id="mobile-menu-btn" class="border border-white/20 text-white p-2 rounded-md hover:bg-white/10 nav-mobile-btn">
               <i data-lucide="menu" class="h-6 w-6"></i>
             </button>
           </div>
@@ -176,6 +176,12 @@ function getFooterHTML(t) {
                 <li><a href="/mutual-divorce-lawyer-nagpur.html" class="hover:text-gold" data-i18n="mutualDivorce">${t.mutualDivorce}</a></li>
                 <li><a href="/domestic-violence-lawyer-nagpur.html" class="hover:text-gold" data-i18n="domesticViolence">${t.domesticViolence}</a></li>
                 <li><a href="/marriage-registration-lawyer-nagpur.html" class="hover:text-gold" data-i18n="registerMarriage">${t.registerMarriage}</a></li>
+                <li><a href="/partnership-deeds-nagpur.html" class="hover:text-gold">Partnership Deeds</a></li>
+                <li><a href="/property-disputes-nagpur.html" class="hover:text-gold">Property Disputes</a></li>
+                <li><a href="/property-registry-nagpur.html" class="hover:text-gold">Property Registry</a></li>
+                <li><a href="/will-writing-nagpur.html" class="hover:text-gold">Will Writing</a></li>
+                <li><a href="/legal-agreements-nagpur.html" class="hover:text-gold">Legal Agreements</a></li>
+                <li><a href="/legal-notice-service-nagpur.html" class="hover:text-gold">Legal Notice Service</a></li>
              </ul>
           </div>
         </div>

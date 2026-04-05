@@ -61,6 +61,18 @@
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://advocatejsply.com/blogs.html">
+    <meta property="og:title" content="Legal Blog & Insights | Adv. Jasvinder Singh Ply">
+    <meta property="og:description" content="Expert legal articles on family law, property, and civil litigation in Nagpur by Adv. Jasvinder Singh Ply. Stay informed on Indian legal matters.">
+    <meta property="og:image" content="https://advocatejsply.com/assets/images/og-image.jpg">
+    <meta property="og:site_name" content="Advocate Jasvinder Singh Ply">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Legal Blog & Insights | Adv. Jasvinder Singh Ply">
+    <meta name="twitter:description" content="Expert legal articles on family law, property, and civil litigation in Nagpur by Adv. Jasvinder Singh Ply. Stay informed on Indian legal matters.">
+    <meta name="twitter:image" content="https://advocatejsply.com/assets/images/og-image.jpg">
 </head>
 
 <body class="bg-gray-50 text-slate-900">
@@ -68,164 +80,207 @@
     <div id="navbar-container"></div>
 
     <!-- Blog Hero Section -->
-    <section class="relative pt-32 pb-20 bg-navy overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="assets/images/blog-hero.png" alt="Legal Books and Gavel" class="w-full h-full object-cover opacity-20">
-            <div class="absolute inset-0 bg-gradient-to-t from-navy via-navy/80 to-transparent"></div>
-        </div>
+    <section class="relative pt-32 pb-24 bg-gradient-to-br from-navy via-navy-light to-navy-dark overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-gold/10 rounded-full blur-3xl opacity-50"></div>
+        <div class="absolute top-24 -left-24 w-64 h-64 bg-gold/5 rounded-full blur-2xl opacity-30"></div>
         
         <div class="container mx-auto px-6 relative z-10 text-center">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 animated-element" data-i18n="blogsHeroTitle">
+            <h1 class="text-4xl md:text-6xl font-serif font-bold text-white mb-6 drop-shadow-xl" data-i18n="blogsHeroTitle">
                 Legal Insights & Guides
             </h1>
-            <p class="text-lg text-gray-300 max-w-2xl mx-auto animated-element" data-i18n="blogsHeroDesc">
+            <p class="text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed" data-i18n="blogsHeroDesc">
                 Educational resources to help you navigate the complexities of Indian law with clarity and confidence.
             </p>
+            <div class="w-24 h-1.5 bg-gold mx-auto mt-10 rounded-full shadow-lg"></div>
         </div>
     </section>
 
     <!-- Blog Posts Grid -->
-    <section class="py-16 bg-white">
+    <section class="py-24 bg-white relative">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Blog Card: Advocate General (New) -->
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col animated-element relative">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="assets/images/advocate-general-hero.png" alt="Advocate General Maharashtra" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-navy text-gold text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Legal Appointment</span>
+                <!-- Blog Card: Sale Deed (New) -->
+                <article class="group bg-white rounded-[32px] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 flex flex-col relative transform hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/images/saledeed-hero.png" alt="Sale Deed Registration Nagpur" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-navy/90 backdrop-blur-md text-gold text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest border border-gold/30">Property Law</span>
                         </div>
                     </div>
-                    <div class="p-6 flex-grow flex flex-col">
-                        <div class="flex items-center text-gray-500 text-sm mb-3 space-x-4">
-                            <span class="flex items-center">
-                                <i data-lucide="calendar" class="h-4 w-4 mr-2"></i>
-                                <span>March 26, 2026</span>
+                    <div class="p-8 flex-grow flex flex-col bg-white">
+                        <div class="flex items-center text-gray-400 text-xs mb-4 space-x-6">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="calendar" class="h-4 w-4 text-gold"></i>
+                                April 5, 2026
                             </span>
-                            <span class="flex items-center">
-                                <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                                <span>4 min read</span>
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="clock" class="h-4 w-4 text-gold"></i>
+                                6 min read
                             </span>
                         </div>
-                        <h2 class="text-xl font-serif font-bold text-navy mb-3">
-                            <a href="blogs/maharashtra-new-advocate-general.html" class="hover:text-gold transition-colors after:absolute after:inset-0">
-                                Senior Advocate Dr. Milind Sathe Appointed as Maharashtra's New AG
+                        <h2 class="text-2xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition-colors duration-300 leading-tight">
+                            <a href="blogs/sale-deed-registration-guide-nagpur.html" class="after:absolute after:inset-0">
+                                Ultimate Guide to Sale Deed Registration in Nagpur (2026)
                             </a>
                         </h2>
-                        <p class="text-gray-600 mb-6 line-clamp-3">
-                            Senior Advocate Dr. Milind Sathe takes charge as Maharashtra's new Advocate General. Learn how this appointment finalized in Nagpur impacts the local legal landscape.
+                        <p class="text-gray-600 mb-8 line-clamp-3 font-light leading-relaxed">
+                            Complete step-by-step guide to buying property and registering a sale deed (Kharedikhat) in Nagpur, Maharashtra. Learn about stamp duty and local regulations.
                         </p>
-                        <div class="mt-auto">
-                            <span class="inline-flex items-center text-theme-blue font-bold group-hover:text-gold transition-colors">
-                                Read Full Article <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                        <div class="mt-auto pt-6 border-t border-gray-100">
+                            <span class="inline-flex items-center text-navy font-bold group-hover:text-gold transition-colors gap-2">
+                                Read Full Article <i data-lucide="arrow-right" class="h-4 w-4 transform group-hover:translate-x-2 transition-transform"></i>
                             </span>
                         </div>
                     </div>
                 </article>
-                <!-- Blog Card 1 -->
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col animated-element relative">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="assets/images/blog-hero.png" alt="Legal Notice" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-gold text-navy text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Legal Notice</span>
+
+                <article class="group bg-white rounded-[32px] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 flex flex-col relative transform hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/images/advocate-general-hero.png" alt="Advocate General Maharashtra" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-navy/90 backdrop-blur-md text-gold text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest border border-gold/30">Legal Appointment</span>
                         </div>
                     </div>
-                    <div class="p-6 flex-grow flex flex-col">
-                        <div class="flex items-center text-gray-500 text-sm mb-3 space-x-4">
-                            <span class="flex items-center">
-                                <i data-lucide="calendar" class="h-4 w-4 mr-2"></i>
-                                <span>March 24, 2026</span>
+                    <div class="p-8 flex-grow flex flex-col bg-white">
+                        <div class="flex items-center text-gray-400 text-xs mb-4 space-x-6">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="calendar" class="h-4 w-4 text-gold"></i>
+                                March 26, 2026
                             </span>
-                            <span class="flex items-center">
-                                <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                                <span>3 min read</span>
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="clock" class="h-4 w-4 text-gold"></i>
+                                4 min read
                             </span>
                         </div>
-                        <h2 class="text-xl font-serif font-bold text-navy mb-3">
-                            <a href="blogs/common-mistakes-legal-notice.html" class="hover:text-gold transition-colors after:absolute after:inset-0">
+                        <h2 class="text-2xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition-colors duration-300 leading-tight">
+                            <a href="blogs/maharashtra-new-advocate-general.html" class="after:absolute after:inset-0">
+                                Senior Advocate Dr. Milind Sathe Appointed as Maharashtra's New AG
+                            </a>
+                        </h2>
+                        <p class="text-gray-600 mb-8 line-clamp-3 font-light leading-relaxed">
+                            Senior Advocate Dr. Milind Sathe takes charge as Maharashtra's new Advocate General. Learn how this appointment finalized in Nagpur impacts the local legal landscape.
+                        </p>
+                        <div class="mt-auto pt-6 border-t border-gray-100">
+                            <span class="inline-flex items-center text-navy font-bold group-hover:text-gold transition-colors gap-2">
+                                Read Full Article <i data-lucide="arrow-right" class="h-4 w-4 transform group-hover:translate-x-2 transition-transform"></i>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Card 1 -->
+                <article class="group bg-white rounded-[32px] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 flex flex-col relative transform hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/images/blog-hero.png" alt="Legal Notice" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-navy/90 backdrop-blur-md text-gold text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest border border-gold/30">Legal Notice</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col bg-white">
+                        <div class="flex items-center text-gray-400 text-xs mb-4 space-x-6">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="calendar" class="h-4 w-4 text-gold"></i>
+                                March 24, 2026
+                            </span>
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="clock" class="h-4 w-4 text-gold"></i>
+                                3 min read
+                            </span>
+                        </div>
+                        <h2 class="text-2xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition-colors duration-300 leading-tight">
+                            <a href="blogs/common-mistakes-legal-notice.html" class="after:absolute after:inset-0">
                                 Common Mistakes People Make While Sending a Legal Notice
                             </a>
                         </h2>
-                        <p class="text-gray-600 mb-6 line-clamp-3">
+                        <p class="text-gray-600 mb-8 line-clamp-3 font-light leading-relaxed">
                             Sending a legal notice is the first step towards justice, but even a small error can weaken your case. Learn how to avoid common pitfalls.
                         </p>
-                        <div class="mt-auto">
-                            <span class="inline-flex items-center text-theme-blue font-bold group-hover:text-gold transition-colors">
-                                Read Full Article <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                        <div class="mt-auto pt-6 border-t border-gray-100">
+                            <span class="inline-flex items-center text-navy font-bold group-hover:text-gold transition-colors gap-2">
+                                Read Full Article <i data-lucide="arrow-right" class="h-4 w-4 transform group-hover:translate-x-2 transition-transform"></i>
                             </span>
                         </div>
                     </div>
                 </article>
 
                 <!-- Blog Card 2 (New) -->
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col animated-element relative">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="assets/images/divorce-hero.png" alt="Divorce and Annulment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-navy text-gold text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Family Law</span>
+                <article class="group bg-white rounded-[32px] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 flex flex-col relative transform hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/images/divorce-hero.png" alt="Divorce and Annulment" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-navy/90 backdrop-blur-md text-gold text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest border border-gold/30">Family Law</span>
                         </div>
                     </div>
-                    <div class="p-6 flex-grow flex flex-col">
-                        <div class="flex items-center text-gray-500 text-sm mb-3 space-x-4">
-                            <span class="flex items-center">
-                                <i data-lucide="calendar" class="h-4 w-4 mr-2"></i>
-                                <span>March 22, 2026</span>
+                    <div class="p-8 flex-grow flex flex-col bg-white">
+                        <div class="flex items-center text-gray-400 text-xs mb-4 space-x-6">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="calendar" class="h-4 w-4 text-gold"></i>
+                                March 22, 2026
                             </span>
-                            <span class="flex items-center">
-                                <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                                <span>4 min read</span>
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="clock" class="h-4 w-4 text-gold"></i>
+                                4 min read
                             </span>
                         </div>
-                        <h2 class="text-xl font-serif font-bold text-navy mb-3">
-                            <a href="blogs/annulment-divorce-guide-nagpur.html" class="hover:text-gold transition-colors after:absolute after:inset-0">
+                        <h2 class="text-2xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition-colors duration-300 leading-tight">
+                            <a href="blogs/annulment-divorce-guide-nagpur.html" class="after:absolute after:inset-0">
                                 "Marriage By Mistake"? Simple Guide to Annulment and Divorce in Nagpur
                             </a>
                         </h2>
-                        <p class="text-gray-600 mb-6 line-clamp-3">
+                        <p class="text-gray-600 mb-8 line-clamp-3 font-light leading-relaxed">
                             Confused between annulment and divorce? Learn about the legal remedies for marriage by fraud, pressure, or mistake in Nagpur.
                         </p>
-                        <div class="mt-auto">
-                            <span class="inline-flex items-center text-theme-blue font-bold group-hover:text-gold transition-colors">
-                                Read Full Article <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                        <div class="mt-auto pt-6 border-t border-gray-100">
+                            <span class="inline-flex items-center text-navy font-bold group-hover:text-gold transition-colors gap-2">
+                                Read Full Article <i data-lucide="arrow-right" class="h-4 w-4 transform group-hover:translate-x-2 transition-transform"></i>
                             </span>
                         </div>
                     </div>
                 </article>
 
                 <!-- Blog Card 3 (New) -->
-                <article class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col animated-element relative">
-                    <div class="relative h-56 overflow-hidden">
-                        <img src="assets/images/top10-hero.png" alt="Top Lawyers Nagpur" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        <div class="absolute top-4 left-4">
-                            <span class="bg-theme-blue text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Lawyer Listing</span>
+                <article class="group bg-white rounded-[32px] overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 border border-gold/10 flex flex-col relative transform hover:-translate-y-2">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/images/top10-hero.png" alt="Top Lawyers Nagpur" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-6 left-6">
+                            <span class="bg-navy/90 backdrop-blur-md text-gold text-xs font-bold px-4 py-2 rounded-full uppercase tracking-widest border border-gold/30">Lawyer Listing</span>
                         </div>
                     </div>
-                    <div class="p-6 flex-grow flex flex-col">
-                        <div class="flex items-center text-gray-500 text-sm mb-3 space-x-4">
-                            <span class="flex items-center">
-                                <i data-lucide="calendar" class="h-4 w-4 mr-2"></i>
-                                <span>March 24, 2026</span>
+                    <div class="p-8 flex-grow flex flex-col bg-white">
+                        <div class="flex items-center text-gray-400 text-xs mb-4 space-x-6">
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="calendar" class="h-4 w-4 text-gold"></i>
+                                March 24, 2026
                             </span>
-                            <span class="flex items-center">
-                                <i data-lucide="clock" class="h-4 w-4 mr-2"></i>
-                                <span>5 min read</span>
+                            <span class="flex items-center gap-2">
+                                <i data-lucide="clock" class="h-4 w-4 text-gold"></i>
+                                5 min read
                             </span>
                         </div>
-                        <h2 class="text-xl font-serif font-bold text-navy mb-3">
-                            <a href="blogs/top-10-divorce-lawyers-nagpur.html" class="hover:text-gold transition-colors after:absolute after:inset-0">
+                        <h2 class="text-2xl font-serif font-bold text-navy mb-4 group-hover:text-gold transition-colors duration-300 leading-tight">
+                            <a href="blogs/top-10-divorce-lawyers-nagpur.html" class="after:absolute after:inset-0">
                                 Top 10 Family & Divorce Lawyers in Nagpur (2026)
                             </a>
                         </h2>
-                        <p class="text-gray-600 mb-6 line-clamp-3">
+                        <p class="text-gray-600 mb-8 line-clamp-3 font-light leading-relaxed">
                             Searching for the right legal expert? We've curated a list of the top 10 family and divorce lawyers in Nagpur for 2026.
                         </p>
-                        <div class="mt-auto">
-                            <span class="inline-flex items-center text-theme-blue font-bold group-hover:text-gold transition-colors">
-                                Read Full Article <i data-lucide="arrow-right" class="ml-2 h-4 w-4"></i>
+                        <div class="mt-auto pt-6 border-t border-gray-100">
+                            <span class="inline-flex items-center text-navy font-bold group-hover:text-gold transition-colors gap-2">
+                                Read Full Article <i data-lucide="arrow-right" class="h-4 w-4 transform group-hover:translate-x-2 transition-transform"></i>
                             </span>
                         </div>
                     </div>
                 </article>
+            </div>
+        </div>
+    </section>
 
                 <!-- More cards can be added here -->
             </div>
@@ -233,22 +288,20 @@
     </section>
 
     <!-- Newsletter / CTA -->
-    <section class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto bg-navy rounded-3xl p-8 md:p-12 text-center relative overflow-hidden">
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-5xl mx-auto bg-navy rounded-[48px] p-12 md:p-20 shadow-3xl relative overflow-hidden group">
                 <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+                <div class="absolute -bottom-32 -left-32 w-80 h-80 bg-gold/10 rounded-full blur-3xl transition-transform group-hover:scale-110 duration-700"></div>
+                
                 <div class="relative z-10">
-                    <h2 class="text-3xl font-serif font-bold text-white mb-6">Need Professional Advice?</h2>
-                    <p class="text-gray-300 text-lg mb-8">
-                        Our blogs are for educational purposes. For legally binding advice and representation, schedule a consultation with Adv. Jasvinder Singh Ply.
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-white mb-8">Need Professional Legal Advice?</h2>
+                    <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+                        Our blogs are for educational purposes. For professional representation and legally binding advice, schedule a consultation with Advocate Jasvinder Singh Ply.
                     </p>
-                    <div class="flex flex-wrap justify-center gap-4">
-                        <a href="contact.html" class="bg-gold hover:bg-gold-dark text-navy font-bold py-3 px-8 rounded-xl transition-all transform hover:scale-105 shadow-xl">
-                            Book Consultation
-                        </a>
-                        <a href="https://wa.me/918857972717" target="_blank" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold py-3 px-8 rounded-xl transition-all">
-                            Chat on WhatsApp
-                        </a>
+                    <div class="flex flex-col md:flex-row justify-center gap-6">
+                        <a href="contact.html" class="bg-gold hover:bg-gold-light text-navy font-bold py-5 px-12 rounded-2xl shadow-xl transition-all transform hover:-translate-y-1">Book Consultation</a>
+                        <a href="https://wa.me/918857972717" target="_blank" class="bg-white/10 hover:bg-white/20 text-white font-bold py-5 px-12 rounded-2xl border border-white/20 transition-all backdrop-blur-sm">Chat on WhatsApp</a>
                     </div>
                 </div>
             </div>
