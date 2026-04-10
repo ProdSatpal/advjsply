@@ -209,8 +209,8 @@ textarea:focus {
 
 .notice-type-desc {
   font-size: 0.875rem;
-  color: #64748B;
-  /* Slate-500 */
+  color: #475569;
+  /* Slate-600 */
   line-height: 1.5;
   margin: 0;
 }

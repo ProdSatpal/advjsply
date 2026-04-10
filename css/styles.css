@@ -160,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-logo-text { color: #FFFFFF; transition: color 0.3s; }
 .nav-logo-sub { color: #E0B251; transition: color 0.3s; }
 .nav-mobile-btn { border-color: rgba(255, 255, 255, 0.3) !important; color: white !important; }
+.nav-mobile-lang-btn { color: white !important; transition: color 0.3s; }
 
 /* Scrolled (Over White Page) */
 #main-nav.bg-white .nav-link-idle { color: #0F2C4D; }
@@ -167,6 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 #main-nav.bg-white .nav-logo-text { color: #0F2C4D; }
 #main-nav.bg-white .nav-logo-sub { color: #B23850; }
 #main-nav.bg-white .nav-mobile-btn { border-color: #0F2C4D !important; color: #0F2C4D !important; }
+#main-nav.bg-white .nav-mobile-lang-btn { color: #0F2C4D !important; }
 
 /* Language Dropdown Adjustment */
 #main-nav.bg-white #lang-menu-btn { 
