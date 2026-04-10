@@ -99,9 +99,9 @@ function getNavbarHTML(activePath, t) {
           <!-- Mobile Menu Button -->
           <div class="md:hidden flex items-center space-x-2">
              <div class="flex items-center gap-1 mr-2">
-                <button onclick="changeLanguage('en')" class="text-xs px-1 ${getCurrentLang() === 'en' ? 'font-bold' : ''}">EN</button>
-                <button onclick="changeLanguage('hi')" class="text-xs px-1 ${getCurrentLang() === 'hi' ? 'font-bold' : ''}">HI</button>
-                <button onclick="changeLanguage('mr')" class="text-xs px-1 ${getCurrentLang() === 'mr' ? 'font-bold' : ''}">MR</button>
+                <button onclick="changeLanguage('en')" class="text-xs px-1 nav-mobile-lang-btn ${getCurrentLang() === 'en' ? 'font-bold' : ''}">EN</button>
+                <button onclick="changeLanguage('hi')" class="text-xs px-1 nav-mobile-lang-btn ${getCurrentLang() === 'hi' ? 'font-bold' : ''}">HI</button>
+                <button onclick="changeLanguage('mr')" class="text-xs px-1 nav-mobile-lang-btn ${getCurrentLang() === 'mr' ? 'font-bold' : ''}">MR</button>
             </div>
             <button id="mobile-menu-btn" class="border border-white/20 text-white p-2 rounded-md hover:bg-white/10 nav-mobile-btn">
               <i data-lucide="menu" class="h-6 w-6"></i>
