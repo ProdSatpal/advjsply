@@ -29,11 +29,21 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: { light: '#1A4978', DEFAULT: '#0F2C4D', dark: '#061C37' },
-                        gold: { light: '#F0D48A', DEFAULT: '#E0B251', dark: '#BE8C2C' },
-                        theme: { blue: { DEFAULT: '#3B88EB' }, red: { DEFAULT: '#B23850' } }
+                        navy: {
+                            light: '#162a4d',
+                            DEFAULT: '#0a1d37',
+                            dark: '#04142a'
+                        },
+                        gold: {
+                            light: '#fde047',
+                            DEFAULT: '#eab308',
+                            dark: '#ca8a04'
+                        }
                     },
-                    fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Poppins', 'sans-serif'] }
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
                 }
             }
         }
@@ -94,13 +104,7 @@
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
         <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-navy-light/20 rounded-full blur-3xl"></div>
         
-        <!-- Language Switcher Pill -->
-        <div class="absolute top-10 right-6 z-20 flex justify-center">
-            <div class="bg-navy-dark/40 backdrop-blur-md rounded-full p-1.5 border border-white/20 shadow-2xl flex gap-1">
-                <button onclick="setPageLang('en')" id="btn-en" class="px-5 py-2 rounded-full text-xs font-bold transition-all duration-300 bg-gold text-navy shadow-inner">English</button>
-                <button onclick="setPageLang('hi')" id="btn-hi" class="px-5 py-2 rounded-full text-xs font-bold transition-all duration-300 text-white hover:bg-white/10">Hindi</button>
-            </div>
-        </div>
+
 
         <div class="container mx-auto px-6 relative z-10">
             <h1 class="text-4xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl" data-i18n="contactUs">Contact Us</h1>
@@ -169,7 +173,10 @@
                         <!-- Tab Headers -->
                         <div class="flex border-b border-white/10 bg-navy-dark/40 p-3 gap-3">
                             <button onclick="switchTab('contact')" id="tab-btn-contact" class="flex-1 py-5 rounded-2xl font-bold transition-all duration-300 transform active:scale-95 bg-gold text-navy shadow-2xl" data-i18n="contactUs">Contact Us</button>
-                            <button onclick="switchTab('appointment')" id="tab-btn-appointment" class="flex-1 py-5 rounded-2xl font-bold transition-all duration-300 transform active:scale-95 text-white/70 hover:text-white hover:bg-white/5" data-i18n="bookAppointment">Book Appointment</button>
+                            <button onclick="switchTab('appointment')" id="tab-btn-appointment" 
+                                    data-i18n-title="consultationDisclaimer"
+                                    class="flex-1 py-5 rounded-2xl font-bold transition-all duration-300 transform active:scale-95 text-white/70 hover:text-white hover:bg-white/5" 
+                                    data-i18n="bookAppointment">Free Consultation</button>
                         </div>
 
                         <div class="flex-1 flex flex-col justify-center p-8 md:p-12 text-center relative overflow-hidden group">
@@ -203,9 +210,12 @@
                                     <p class="text-xl text-gray-600 max-w-lg mx-auto" data-i18n="appointmentInstruction">Secure your priority slot today. Select your preferred date and time via WhatsApp.</p>
                                 </div>
                                 <div class="flex justify-center">
-                                    <a href="https://wa.me/918857972717?text=I%20want%20to%20book%20an%20appointment..." target="_blank" class="group bg-navy hover:bg-navy-light text-white text-xl font-bold py-5 px-12 rounded-2xl flex items-center gap-4 transition-all transform hover:-translate-y-1 shadow-2xl hover:shadow-navy-500/30">
+                                    <a href="https://wa.me/918857972717?text=I%20want%20to%20book%20an%20appointment..." 
+                                       target="_blank" 
+                                       data-i18n-title="consultationDisclaimer"
+                                       class="group bg-navy hover:bg-navy-light text-white text-xl font-bold py-5 px-12 rounded-2xl flex items-center gap-4 transition-all transform hover:-translate-y-1 shadow-2xl hover:shadow-navy-500/30">
                                         <i data-lucide="check-circle" class="w-8 h-8 group-hover:scale-110 transition-transform"></i>
-                                        <span data-i18n="bookAppointmentNow">Book Appointment Now</span>
+                                        <span data-i18n="bookAppointmentNow">Book Free Consultation</span>
                                     </a>
                                 </div>
                                 <p class="text-sm text-gray-400">Available: Monday - Saturday, 10 AM to 7 PM</p>

@@ -27,10 +27,6 @@
 
     <!-- Fonts & Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
-        rel="stylesheet">
-
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -39,13 +35,20 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: { light: '#1A4978', DEFAULT: '#0F2C4D', dark: '#061C37' },
-                        gold: { light: '#F0D48A', DEFAULT: '#E0B251', dark: '#BE8C2C' },
-                        theme: { blue: { DEFAULT: '#3B88EB' }, red: { DEFAULT: '#B23850' } }
+                        navy: {
+                            light: '#162a4d',
+                            DEFAULT: '#0a1d37',
+                            dark: '#04142a'
+                        },
+                        gold: {
+                            light: '#fde047',
+                            DEFAULT: '#eab308',
+                            dark: '#ca8a04'
+                        }
                     },
                     fontFamily: {
                         serif: ['Playfair Display', 'serif'],
-                        sans: ['Poppins', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif']
                     }
                 }
             }
@@ -172,15 +175,15 @@
                 <div id="step-3" class="step-content hidden animate-fade-in">
                     <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-10">
                         <div>
-                            <h2 class="text-3xl font-serif font-bold text-navy mb-2">Notice Preview</h2>
-                            <p class="text-gray-500">Professional legal draft based on your inputs.</p>
+                            <h2 class="text-3xl font-serif font-bold text-navy mb-2" data-i18n="previewTitle">Notice Preview</h2>
+                            <p class="text-gray-500" data-i18n="previewDesc">Professional legal draft based on your inputs.</p>
                         </div>
                         <div class="flex gap-3">
                             <button onclick="document.prevStep()" class="btn-secondary px-6">
-                                <i data-lucide="edit" class="w-4 h-4 mr-2"></i> Edit
+                                <i data-lucide="edit" class="w-4 h-4 mr-2"></i> <span data-i18n="editButton">Edit</span>
                             </button>
                             <button onclick="document.nextStep()" class="btn-primary px-8">
-                                Looks Good <i data-lucide="check-circle" class="w-4 h-4 ml-2"></i>
+                                <span data-i18n="looksGood">Looks Good</span> <i data-lucide="check-circle" class="w-4 h-4 ml-2"></i>
                             </button>
                         </div>
                     </div>
@@ -230,14 +233,15 @@
 
                         <!-- Option 2: Free Consultation -->
                         <div class="bg-gray-100/50 p-10 rounded-[32px] border border-gray-200 hover:border-gold/30 transition-all group shadow-lg">
-                            <h3 class="text-2xl font-bold text-navy mb-4">Need Help?</h3>
-                            <p class="text-gray-600 mb-10 text-base leading-relaxed font-light">Not sure about the details? Book a free callback to discuss your case with the expert.</p>
+                            <h3 class="text-2xl font-bold text-navy mb-4" data-i18n="needHelp">Need Help?</h3>
+                            <p class="text-gray-600 mb-10 text-base leading-relaxed font-light" data-i18n="bookCallbackDesc">Not sure about the details? Book a free callback to discuss your case with the expert.</p>
                             <div class="w-20 h-1.5 bg-gold/30 rounded-full mx-auto mb-10"></div>
                             <button
                                 onclick="window.open('https://wa.me/918857972717?text=Hi,%20I%20need%20help%20with%20a%20legal%20notice.')"
+                                data-i18n-title="consultationDisclaimer"
                                 class="w-full border-2 border-navy text-navy py-5 rounded-2xl font-bold hover:bg-navy hover:text-white transition-all flex items-center justify-center gap-3 transform active:scale-95 shadow-md">
                                 <i data-lucide="phone" class="w-6 h-6"></i>
-                                Free Callback
+                                <span data-i18n="freeCallback">Free Callback</span>
                             </button>
                         </div>
                     </div>
@@ -246,9 +250,9 @@
                         <button onclick="document.generatePDF()"
                             class="text-gray-500 font-bold hover:text-navy flex items-center gap-2">
                             <i data-lucide="download" class="w-5 h-5"></i>
-                            Download Draft PDF (Free)
+                            <span data-i18n="downloadDraftFree">Download Draft PDF (Free)</span>
                         </button>
-                        <a href="index.html" class="text-theme-blue font-bold hover:underline">Return to Homepage</a>
+                        <a href="index.html" class="text-theme-blue font-bold hover:underline" data-i18n="returnHome">Return to Homepage</a>
                     </div>
                 </div>
 

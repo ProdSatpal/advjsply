@@ -24,10 +24,21 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: { light: '#1A4978', DEFAULT: '#0F2C4D', dark: '#061C37' },
-                        gold: { light: '#F0D48A', DEFAULT: '#E0B251', dark: '#BE8C2C' }
+                        navy: {
+                            light: '#162a4d',
+                            DEFAULT: '#0a1d37',
+                            dark: '#04142a'
+                        },
+                        gold: {
+                            light: '#fde047',
+                            DEFAULT: '#eab308',
+                            dark: '#ca8a04'
+                        }
                     },
-                    fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Poppins', 'sans-serif'] }
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
                 }
             }
         }
@@ -117,13 +128,7 @@
             
             <div class="w-24 h-1.5 bg-gold mx-auto mt-12 mb-10 rounded-full shadow-2xl"></div>
             
-            <!-- Language Switcher -->
-            <div class="flex justify-center mt-12">
-                <div class="inline-flex bg-navy-dark/40 p-2 rounded-[24px] backdrop-blur-md border border-white/20 shadow-2xl">
-                    <button onclick="setPageLang('en')" id="btn-en" class="px-10 py-3 rounded-[18px] font-bold transition-all duration-500 bg-gold text-navy shadow-inner transform hover:scale-105 active:scale-95">English</button>
-                    <button onclick="setPageLang('hi')" id="btn-hi" class="px-10 py-3 rounded-[18px] font-bold transition-all duration-500 text-white/80 hover:text-white transform hover:scale-105 active:scale-95">Hindi</button>
-                </div>
-            </div>
+
         </div>
     </div>
 
@@ -285,9 +290,10 @@
     <script src="js/main.js"></script>
     <script>
         function setPageLang(lang) {
+            const l = (lang === 'hi') ? 'hi' : 'en';
             document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-            document.getElementById('hero-' + lang).classList.add('active');
-            document.getElementById('content-' + lang).classList.add('active');
+            document.getElementById('hero-' + l).classList.add('active');
+            document.getElementById('content-' + l).classList.add('active');
             
             const btnEn = document.getElementById('btn-en');
             const btnHi = document.getElementById('btn-hi');
@@ -297,21 +303,23 @@
                 hi: { sidebar: "Property Secure Karein", cta: "Kya aapki Property Legal hai?", sideDesc: "Apne property ke documents ko mazboot banayein. Nagpur ke top expert se baat karein.", ctaDesc: "Apni mehnat ki kamayi ko galti se bachayein. Aaj hi legal review lein." }
             };
 
-            document.getElementById('sidebar-title').innerText = titles[lang].sidebar;
-            document.getElementById('sidebar-desc').innerText = titles[lang].sideDesc;
-            document.getElementById('cta-title').innerText = titles[lang].cta;
-            document.getElementById('cta-desc').innerText = titles[lang].ctaDesc;
+            document.getElementById('sidebar-title').innerText = titles[l].sidebar;
+            document.getElementById('sidebar-desc').innerText = titles[l].sideDesc;
+            document.getElementById('cta-title').innerText = titles[l].cta;
+            document.getElementById('cta-desc').innerText = titles[l].ctaDesc;
 
-            if (lang === 'en') {
-                btnEn.classList.add('bg-gold', 'text-navy');
-                btnEn.classList.remove('text-white');
-                btnHi.classList.remove('bg-gold', 'text-navy');
-                btnHi.classList.add('text-white');
-            } else {
-                btnHi.classList.add('bg-gold', 'text-navy');
-                btnHi.classList.remove('text-white');
-                btnEn.classList.remove('bg-gold', 'text-navy');
-                btnEn.classList.add('text-white');
+            if (btnEn && btnHi) {
+                if (l === 'en') {
+                    btnEn.classList.add('bg-gold', 'text-navy');
+                    btnEn.classList.remove('text-white');
+                    btnHi.classList.remove('bg-gold', 'text-navy');
+                    btnHi.classList.add('text-white');
+                } else {
+                    btnHi.classList.add('bg-gold', 'text-navy');
+                    btnHi.classList.remove('text-white');
+                    btnEn.classList.remove('bg-gold', 'text-navy');
+                    btnEn.classList.add('text-white');
+                }
             }
         }
         document.addEventListener('DOMContentLoaded', () => {
