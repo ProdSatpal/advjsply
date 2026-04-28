@@ -29,11 +29,21 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: { light: '#1A4978', DEFAULT: '#0F2C4D', dark: '#061C37' },
-                        gold: { light: '#F0D48A', DEFAULT: '#E0B251', dark: '#BE8C2C' },
-                        theme: { blue: { DEFAULT: '#3B88EB' }, red: { DEFAULT: '#B23850' } }
+                        navy: {
+                            light: '#162a4d',
+                            DEFAULT: '#0a1d37',
+                            dark: '#04142a'
+                        },
+                        gold: {
+                            light: '#fde047',
+                            DEFAULT: '#eab308',
+                            dark: '#ca8a04'
+                        }
                     },
-                    fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Poppins', 'sans-serif'] }
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
                 }
             }
         }
@@ -81,14 +91,6 @@
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
         <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-navy-light/20 rounded-full blur-3xl"></div>
         
-        <!-- Language Switcher Pill -->
-        <div class="absolute top-10 right-6 z-20 flex justify-center">
-            <div class="bg-navy-dark/40 backdrop-blur-md rounded-full p-1.5 border border-white/20 shadow-2xl flex gap-1">
-                <button onclick="setPageLang('en')" id="btn-en" class="px-5 py-2 rounded-full text-xs font-bold transition-all duration-300 bg-gold text-navy shadow-inner">English</button>
-                <button onclick="setPageLang('hi')" id="btn-hi" class="px-5 py-2 rounded-full text-xs font-bold transition-all duration-300 text-white hover:bg-white/10">Hindi</button>
-            </div>
-        </div>
-
         <div class="container mx-auto px-6 relative z-10">
             <h1 class="text-4xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-2xl">
                 <span data-i18n="about">About</span> <span class="text-gold" data-i18n="Me">Me</span>
@@ -138,8 +140,11 @@
                                     </div>
                                 </div>
 
-                                <a href="contact.html" class="block w-full bg-navy hover:bg-navy-light text-white font-bold py-4 rounded-xl text-center transition-all shadow-lg hover:shadow-xl transform active:scale-95" data-i18n="scheduleConsultation">
-                                    Schedule a Consultation
+                                <a href="contact.html" 
+                                   class="block w-full bg-navy hover:bg-navy-light text-white font-bold py-4 rounded-xl text-center transition-all shadow-lg hover:shadow-xl transform active:scale-95" 
+                                   data-i18n="scheduleConsultation"
+                                   data-i18n-title="consultationDisclaimer">
+                                    Free Consultation
                                 </a>
                             </div>
                         </div>

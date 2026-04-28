@@ -29,30 +29,19 @@
                 extend: {
                     colors: {
                         navy: {
-                            light: '#1A4978',
-                            DEFAULT: '#0F2C4D',
-                            dark: '#061C37'
+                            light: '#162a4d',
+                            DEFAULT: '#0a1d37',
+                            dark: '#04142a'
                         },
                         gold: {
-                            light: '#F0D48A',
-                            DEFAULT: '#E0B251',
-                            dark: '#BE8C2C'
-                        },
-                        theme: {
-                            blue: {
-                                light: '#3B88EB',
-                                DEFAULT: '#3B88EB',
-                                dark: '#2778D8'
-                            },
-                            red: {
-                                DEFAULT: '#B23850',
-                                light: '#C34A62'
-                            }
+                            light: '#fde047',
+                            DEFAULT: '#eab308',
+                            dark: '#ca8a04'
                         }
                     },
                     fontFamily: {
                         serif: ['Playfair Display', 'serif'],
-                        sans: ['Poppins', 'sans-serif']
+                        sans: ['Inter', 'sans-serif']
                     }
                 }
             }
@@ -317,8 +306,14 @@
                         Our blogs are for educational purposes. For professional representation and legally binding advice, schedule a consultation with Advocate Jasvinder Singh Ply.
                     </p>
                     <div class="flex flex-col md:flex-row justify-center gap-6">
-                        <a href="contact.html" class="bg-gold hover:bg-gold-light text-navy font-bold py-5 px-12 rounded-2xl shadow-xl transition-all transform hover:-translate-y-1">Book Consultation</a>
-                        <a href="https://wa.me/918857972717" target="_blank" class="bg-white/10 hover:bg-white/20 text-white font-bold py-5 px-12 rounded-2xl border border-white/20 transition-all backdrop-blur-sm">Chat on WhatsApp</a>
+                        <a href="contact.html" 
+                           data-i18n-title="consultationDisclaimer"
+                           class="bg-gold hover:bg-gold-dark text-navy font-bold py-5 px-12 rounded-2xl shadow-xl transition-all transform hover:-translate-y-1">
+                            <span data-i18n="bookConsultation">Free Consultation</span>
+                        </a>
+                        <a href="https://wa.me/918857972717" target="_blank" class="bg-white/10 hover:bg-white/20 text-white font-bold py-5 px-12 rounded-2xl border border-white/20 transition-all backdrop-blur-sm">
+                            <span data-i18n="connectOnWhatsapp">Chat on WhatsApp</span>
+                        </a>
                     </div>
                 </div>
             </div>

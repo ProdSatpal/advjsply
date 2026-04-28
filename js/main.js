@@ -38,12 +38,12 @@ function getNavbarHTML(activePath, t) {
     const isActive = !link.external && ((activePath === link.path) ||
       (activePath.endsWith('index.html') && link.path === '/') ||
       (activePath === '/' && link.path === '/'));
-    const activeClass = isActive ? 'text-theme-red font-semibold' : 'text-theme-blue';
+    const activeClass = isActive ? 'text-gold font-semibold underline underline-offset-4' : 'text-navy';
     const targetAttr = link.external ? 'target="_blank" rel="noopener noreferrer"' : '';
     return `
             <li>
                 <a href="${link.path}" ${targetAttr}
-                   class="block px-4 py-2 text-base font-medium transition-colors hover:bg-muted ${activeClass}"
+                   class="block px-4 py-2 text-base font-medium transition-colors hover:bg-light-gray ${activeClass}"
                    data-i18n="${link.key}">
                    ${t[link.key]}
                 </a>
@@ -78,19 +78,20 @@ function getNavbarHTML(activePath, t) {
               </button>
               <div id="lang-dropdown" class="absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg border border-gray-100 py-1 hidden z-[60]">
                 <button onclick="changeLanguage('en')" class="w-full text-left px-4 py-2 text-sm text-slate-700 hover:bg-gray-50 flex items-center justify-between ${getCurrentLang() === 'en' ? 'bg-gray-50 font-bold' : ''}">
-                  English ${getCurrentLang() === 'en' ? '<i data-lucide="check" class="h-3 w-3 text-theme-red"></i>' : ''}
+                  English ${getCurrentLang() === 'en' ? '<i data-lucide="check" class="h-3 w-3 text-gold"></i>' : ''}
                 </button>
                 <button onclick="changeLanguage('hi')" class="w-full text-left px-4 py-2 text-sm text-slate-700 hover:bg-gray-50 flex items-center justify-between ${getCurrentLang() === 'hi' ? 'bg-gray-50 font-bold' : ''}">
-                  हिन्दी ${getCurrentLang() === 'hi' ? '<i data-lucide="check" class="h-3 w-3 text-theme-red"></i>' : ''}
+                  हिन्दी ${getCurrentLang() === 'hi' ? '<i data-lucide="check" class="h-3 w-3 text-gold"></i>' : ''}
                 </button>
                 <button onclick="changeLanguage('mr')" class="w-full text-left px-4 py-2 text-sm text-slate-700 hover:bg-gray-50 flex items-center justify-between ${getCurrentLang() === 'mr' ? 'bg-gray-50 font-bold' : ''}">
-                  मराठी ${getCurrentLang() === 'mr' ? '<i data-lucide="check" class="h-3 w-3 text-theme-red"></i>' : ''}
+                  मराठी ${getCurrentLang() === 'mr' ? '<i data-lucide="check" class="h-3 w-3 text-gold"></i>' : ''}
                 </button>
               </div>
             </div>
 
             <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer"
-               class="bg-theme-blue hover:bg-theme-blue-dark text-white px-4 py-2 rounded-md flex items-center transition-colors shadow-lg">
+               data-i18n-title="consultationDisclaimer"
+               class="bg-gold hover:bg-gold-dark text-navy px-4 py-2 rounded-md flex items-center transition-all shadow-lg font-bold">
                 <i data-lucide="message-square" class="mr-2 h-4 w-4"></i>
                 <span data-i18n="bookAppointment">${t.bookAppointment}</span>
             </a>
@@ -115,7 +116,8 @@ function getNavbarHTML(activePath, t) {
                 ${mobileLinksHTML}
               <li class="mt-2 px-4 py-2">
                 <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer"
-                   class="w-full bg-theme-blue hover:bg-theme-blue-dark text-white py-2 rounded-md flex items-center justify-center">
+                   data-i18n-title="consultationDisclaimer"
+                   class="w-full bg-gold hover:bg-gold-dark text-navy py-2 rounded-md flex items-center justify-center font-bold">
                     <i data-lucide="message-square" class="mr-2 h-4 w-4"></i>
                     <span data-i18n="bookAppointment">${t.bookAppointment}</span>
                 </a>
@@ -135,6 +137,15 @@ function getNavbarHTML(activePath, t) {
 function getFooterHTML(t) {
   const year = new Date().getFullYear();
   return `
+    <section class="py-8 bg-gray-50 border-t border-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <p class="text-sm text-gray-500 leading-relaxed italic" data-i18n="bottomDisclaimer">
+            ${t.bottomDisclaimer}
+          </p>
+        </div>
+      </div>
+    </section>
     <footer class="bg-navy text-white pt-12 pb-6">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -211,6 +222,15 @@ function changeLanguage(lang) {
   renderComponents();
   // Update all data-i18n elements in the page content
   updatePageTranslations();
+  
+  // Update specialty pages that use local setPageLang
+  if (typeof window.setPageLang === 'function') {
+    window.setPageLang(lang);
+  }
+  // Update blog pages that use local setBlogLang
+  if (typeof window.setBlogLang === 'function') {
+    window.setBlogLang(lang);
+  }
 }
 
 function updatePageTranslations() {
@@ -228,6 +248,13 @@ function updatePageTranslations() {
       } else {
         el.textContent = t[key];
       }
+    }
+  });
+
+  document.querySelectorAll('[data-i18n-title]').forEach(el => {
+    const key = el.getAttribute('data-i18n-title');
+    if (t[key]) {
+      el.setAttribute('title', t[key]);
     }
   });
 }
@@ -288,7 +315,8 @@ function initScroll() {
   const nav = document.getElementById('main-nav');
   if (nav) {
     const handleScroll = () => {
-      if (window.scrollY > 20) {
+      const hasHero = !!document.querySelector('.premium-gradient');
+      if (window.scrollY > 20 || !hasHero) {
         nav.classList.add('bg-white', 'shadow-md', 'py-2');
         nav.classList.remove('bg-transparent', 'py-4');
       } else {

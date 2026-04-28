@@ -24,10 +24,21 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: { light: '#1A4978', DEFAULT: '#0F2C4D', dark: '#061C37' },
-                        gold: { light: '#F0D48A', DEFAULT: '#E0B251', dark: '#BE8C2C' }
+                        navy: {
+                            light: '#162a4d',
+                            DEFAULT: '#0a1d37',
+                            dark: '#04142a'
+                        },
+                        gold: {
+                            light: '#fde047',
+                            DEFAULT: '#eab308',
+                            dark: '#ca8a04'
+                        }
                     },
-                    fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Poppins', 'sans-serif'] }
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
                 }
             }
         }
@@ -103,13 +114,7 @@
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-gold/10 rounded-full blur-3xl"></div>
         <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-navy-light/20 rounded-full blur-3xl"></div>
         
-        <!-- Language Switcher Pill -->
-        <div class="absolute top-6 right-6 z-20 flex justify-center">
-            <div class="bg-navy-dark/40 backdrop-blur-md rounded-full p-1 border border-white/20 shadow-2xl flex gap-1">
-                <button onclick="setPageLang('en')" id="btn-en" class="px-6 py-2 rounded-full text-xs font-bold transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gold text-navy shadow-inner">English</button>
-                <button onclick="setPageLang('hi')" id="btn-hi" class="px-6 py-2 rounded-full text-xs font-bold transition-all duration-300 transform hover:scale-105 active:scale-95 text-white hover:bg-white/10">Hindi</button>
-            </div>
-        </div>
+
 
         <div class="container mx-auto px-6 relative z-10">
             <!-- English Title -->
@@ -291,34 +296,25 @@
     <script src="js/main.js"></script>
     <script>
         function setPageLang(lang) {
+            const l = (lang === 'hi') ? 'hi' : 'en';
             document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-            document.getElementById('hero-' + lang).classList.add('active');
-            document.getElementById('content-' + lang).classList.add('active');
-            
-            const btnEn = document.getElementById('btn-en');
-            const btnHi = document.getElementById('btn-hi');
+            document.getElementById('hero-' + l).classList.add('active');
+            document.getElementById('content-' + l).classList.add('active');
             
             const titles = {
                 en: { sidebar: "Take Legal Action", cta: "Want to Resolve a Dispute Quickly?", sideDesc: "Issue an authoritative legal warning before you litigate. Consult Nagpur's top expert today.", ctaDesc: "A professional legal notice can often end a dispute before it ever reaches the courtroom." },
                 hi: { sidebar: "Kanooni Kadham Uthayein", cta: "Vivad jaldi khatam karna hai?", sideDesc: "Litigation se pehle ek prabhavshali legal notice bhejein. Nagpur ke top expert se baat karein.", ctaDesc: "Ek prabhavshali legal notice aksar Court ke chakkar lagane se pehle hi mamla suljha deta hai." }
             };
 
-            document.getElementById('sidebar-title').innerText = titles[lang].sidebar;
-            document.getElementById('sidebar-desc').innerText = titles[lang].sideDesc;
-            document.getElementById('cta-title').innerText = titles[lang].cta;
-            document.getElementById('cta-desc').innerText = titles[lang].ctaDesc;
+            const sidebarTitle = document.getElementById('sidebar-title');
+            const sidebarDesc = document.getElementById('sidebar-desc');
+            const ctaTitle = document.getElementById('cta-title');
+            const ctaDesc = document.getElementById('cta-desc');
 
-            if (lang === 'en') {
-                btnEn.classList.add('bg-gold', 'text-navy');
-                btnEn.classList.remove('text-white');
-                btnHi.classList.remove('bg-gold', 'text-navy');
-                btnHi.classList.add('text-white');
-            } else {
-                btnHi.classList.add('bg-gold', 'text-navy');
-                btnHi.classList.remove('text-white');
-                btnEn.classList.remove('bg-gold', 'text-navy');
-                btnEn.classList.add('text-white');
-            }
+            if (sidebarTitle) sidebarTitle.innerText = titles[l].sidebar;
+            if (sidebarDesc) sidebarDesc.innerText = titles[l].sideDesc;
+            if (ctaTitle) ctaTitle.innerText = titles[l].cta;
+            if (ctaDesc) ctaDesc.innerText = titles[l].ctaDesc;
         }
         document.addEventListener('DOMContentLoaded', () => {
             const currentLang = localStorage.getItem('language') || 'en';

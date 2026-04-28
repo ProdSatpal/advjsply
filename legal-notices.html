@@ -29,11 +29,21 @@
             theme: {
                 extend: {
                     colors: {
-                        navy: { light: '#1A4978', DEFAULT: '#0F2C4D', dark: '#061C37' },
-                        gold: { light: '#F0D48A', DEFAULT: '#E0B251', dark: '#BE8C2C' },
-                        theme: { blue: { DEFAULT: '#3B88EB' }, red: { DEFAULT: '#B23850' } }
+                        navy: {
+                            light: '#162a4d',
+                            DEFAULT: '#0a1d37',
+                            dark: '#04142a'
+                        },
+                        gold: {
+                            light: '#fde047',
+                            DEFAULT: '#eab308',
+                            dark: '#ca8a04'
+                        }
                     },
-                    fontFamily: { serif: ['Playfair Display', 'serif'], sans: ['Poppins', 'sans-serif'] }
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
                 }
             }
         }
@@ -152,9 +162,10 @@
                     <span data-i18n="lnTryDrafting">Try Drafting a Notice</span>
                 </a>
                 <a href="contact.html"
+                    data-i18n-title="consultationDisclaimer"
                     class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold py-5 px-12 rounded-2xl transition-all flex items-center gap-3 backdrop-blur-md active:scale-95 shadow-xl">
                     <i data-lucide="calendar" class="w-6 h-6 text-gold"></i>
-                    <span data-i18n="lnBookConsultation">Book Consultation</span>
+                    <span data-i18n="lnBookConsultation">Free Consultation</span>
                 </a>
             </div>
             <div class="w-24 h-1.5 bg-gold mx-auto mt-16 rounded-full shadow-2xl"></div>
@@ -308,8 +319,10 @@
                     <h3 class="text-2xl font-bold mb-4" data-i18n="lnStep2Title">Get Professional Review</h3>
                     <p class="text-gray-400 mb-6 leading-relaxed" data-i18n="lnStep2Desc">Schedule a consultation for
                         expert review, compliance check, and advocate signature.</p>
-                    <a href="contact.html" class="text-gold font-bold hover:underline inline-flex items-center gap-2">
-                        <span data-i18n="lnBookConsultation">Book Consultation</span>
+                    <a href="contact.html" 
+                       data-i18n-title="consultationDisclaimer"
+                       class="text-gold font-bold hover:underline inline-flex items-center gap-2">
+                        <span data-i18n="lnBookConsultation">Free Consultation</span>
                         <i data-lucide="chevron-right" class="w-4 h-4"></i>
                     </a>
                 </div>

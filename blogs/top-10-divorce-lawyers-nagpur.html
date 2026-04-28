@@ -29,26 +29,19 @@
                 extend: {
                     colors: {
                         navy: {
-                            light: '#1A4978',
-                            DEFAULT: '#0F2C4D',
-                            dark: '#061C37'
+                            light: '#162a4d',
+                            DEFAULT: '#0a1d37',
+                            dark: '#04142a'
                         },
                         gold: {
-                            light: '#F0D48A',
-                            DEFAULT: '#E0B251',
-                            dark: '#BE8C2C'
-                        },
-                        theme: {
-                            blue: {
-                                light: '#3B88EB',
-                                DEFAULT: '#3B88EB',
-                                dark: '#2778D8'
-                            },
+                            light: '#fde047',
+                            DEFAULT: '#eab308',
+                            dark: '#ca8a04'
                         }
                     },
                     fontFamily: {
                         serif: ['Playfair Display', 'serif'],
-                        sans: ['Poppins', 'sans-serif']
+                        sans: ['Inter', 'sans-serif']
                     }
                 }
             }
@@ -123,13 +116,7 @@
     <article class="pt-32 pb-20">
         <div class="container mx-auto px-6 max-w-4xl">
             
-            <!-- Language Switcher -->
-            <div class="flex justify-center mb-8">
-                <div class="inline-flex bg-gray-100 p-1 rounded-xl shadow-inner">
-                    <button onclick="setBlogLang('en')" id="btn-en" class="px-6 py-2 rounded-lg font-bold transition-all duration-300">English</button>
-                    <button onclick="setBlogLang('hi')" id="btn-hi" class="px-6 py-2 rounded-lg font-bold transition-all duration-300">Hindi</button>
-                </div>
-            </div>
+
 
             <!-- Blog Post Content -->
             <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
@@ -416,26 +403,13 @@
     <script src="../js/main.js"></script>
     <script>
         function setBlogLang(lang) {
+            const l = (lang === 'hi') ? 'hi' : 'en';
             document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-            document.getElementById('content-' + lang).classList.add('active');
-            
-            const btnEn = document.getElementById('btn-en');
-            const btnHi = document.getElementById('btn-hi');
-            
-            if (lang === 'en') {
-                btnEn.classList.add('bg-navy', 'text-white');
-                btnEn.classList.remove('text-navy');
-                btnHi.classList.remove('bg-navy', 'text-white');
-                btnHi.classList.add('text-navy');
-            } else {
-                btnHi.classList.add('bg-navy', 'text-white');
-                btnHi.classList.remove('text-navy');
-                btnEn.classList.remove('bg-navy', 'text-white');
-                btnEn.classList.add('text-navy');
-            }
+            document.getElementById('content-' + l).classList.add('active');
         }
         document.addEventListener('DOMContentLoaded', () => {
-            setBlogLang('en');
+            const currentLang = localStorage.getItem('language') || 'en';
+            setBlogLang(currentLang === 'hi' ? 'hi' : 'en');
         });
     </script>
 </body>
