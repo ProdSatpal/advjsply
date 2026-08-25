@@ -1,0 +1,1076 @@
+{
+  "about.html": {
+    "title": "About Advocate Jasvinder Singh Ply | Legal Expert in Nagpur",
+    "description": "Learn about Adv. Jasvinder Singh Ply, a dedicated legal professional in Nagpur with 12+ years of experience in Family Law and Real Estate.",
+    "canonical": "https://advocatejsply.com/about.html",
+    "script_count": 1,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://advocatejsply.com/about.html"
+          }
+        ]
+      }
+    ]
+  },
+  "blogs.html": {
+    "title": "Blogs & Legal Insights | Adv. Jasvinder Singh Ply",
+    "description": "Read the latest legal insights, guides, and updates from Advocate Jasvinder Singh Ply. Expert advice on legal notices, property disputes, and more.",
+    "canonical": "MISSING",
+    "script_count": 1,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://advocatejsply.com/blogs.html"
+          }
+        ]
+      }
+    ]
+  },
+  "blogs/annulment-divorce-guide-nagpur.html": {
+    "title": "Annulment vs Divorce Guide Nagpur | Adv. JS Ply",
+    "description": "Confused about marriage annulment or divorce in Nagpur? Read our guide on",
+    "canonical": "https://advocatejsply.com/blogs/annulment-divorce-guide-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://advocatejsply.com/blogs.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Annulment vs Divorce Guide",
+            "item": "https://advocatejsply.com/blogs/annulment-divorce-guide-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "\"Marriage By Mistake\"? Simple Guide to Annulment and Divorce in Nagpur",
+        "image": [
+          "https://advocatejsply.com/assets/images/divorce-hero.png"
+        ],
+        "datePublished": "2026-03-22T08:00:00+05:30",
+        "dateModified": "2026-04-17T08:00:00+05:30",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Adv. Jasvinder Singh Ply",
+            "url": "https://advocatejsply.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "blogs/common-mistakes-legal-notice.html": {
+    "title": "Common Mistakes in Legal Notices | Adv. Jasvinder Singh Ply",
+    "description": "Learn about the 5 most common mistakes people make while sending a legal notice in India. Expert legal guide by Advocate Jasvinder Singh Ply.",
+    "canonical": "https://advocatejsply.com/blogs/common-mistakes-legal-notice.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://advocatejsply.com/blogs.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Common Mistakes in Legal Notices",
+            "item": "https://advocatejsply.com/blogs/common-mistakes-legal-notice.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "5 Common Mistakes to Avoid While Sending a Legal Notice",
+        "image": [
+          "https://advocatejsply.com/assets/images/blog-hero.png"
+        ],
+        "datePublished": "2026-03-24T08:00:00+05:30",
+        "dateModified": "2026-04-17T08:00:00+05:30",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Adv. Jasvinder Singh Ply",
+            "url": "https://advocatejsply.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "blogs/maharashtra-new-advocate-general.html": {
+    "title": "Maharashtra New Advocate General 2025 | Adv. JS Ply",
+    "description": "Senior Advocate Dr. Milind Sathe takes charge as Maharashtra",
+    "canonical": "https://advocatejsply.com/blogs/maharashtra-new-advocate-general.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://advocatejsply.com/blogs.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Maharashtra New Advocate General 2025",
+            "item": "https://advocatejsply.com/blogs/maharashtra-new-advocate-general.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Senior Advocate Dr. Milind Sathe Appointed as Maharashtra's New Advocate General: What It Means for Nagpur",
+        "image": [
+          "https://advocatejsply.com/assets/images/advocate-general-hero.png"
+        ],
+        "datePublished": "2026-03-26T08:00:00+05:30",
+        "dateModified": "2026-04-17T08:00:00+05:30",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Adv. Jasvinder Singh Ply",
+            "url": "https://advocatejsply.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "blogs/sale-deed-registration-guide-nagpur.html": {
+    "title": "Sale Deed Registration Guide Nagpur 2026 | Adv. JS Ply",
+    "description": "Step-by-step guide to Sale Deed registration in Nagpur 2026. Learn about stamp duty, NMRDA approvals, and the IGR Maharashtra process.",
+    "canonical": "https://advocatejsply.com/blogs/sale-deed-registration-guide-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://advocatejsply.com/blogs.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Sale Deed Registration Guide",
+            "item": "https://advocatejsply.com/blogs/sale-deed-registration-guide-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Ultimate Guide to Sale Deed Registration in Nagpur (2026)",
+        "image": [
+          "https://advocatejsply.com/assets/images/saledeed-hero.png"
+        ],
+        "datePublished": "2026-04-05T08:00:00+05:30",
+        "dateModified": "2026-04-17T08:00:00+05:30",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Adv. Jasvinder Singh Ply",
+            "url": "https://advocatejsply.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "blogs/top-10-divorce-lawyers-nagpur.html": {
+    "title": "Best Lawyers & Advocates in Nagpur (2026) | Adv. JS Ply",
+    "description": "Looking for the best legal help in Nagpur? Our 2026 guide covers top-rated advocates in Family Law, Consumer Court, Civil Litigation, GST &amp; Corporate Law.",
+    "canonical": "https://advocatejsply.com/blogs/top-10-divorce-lawyers-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogs",
+            "item": "https://advocatejsply.com/blogs.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Best Lawyers & Advocates in Nagpur (2026)",
+            "item": "https://advocatejsply.com/blogs/top-10-divorce-lawyers-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "The Ultimate Guide to Finding the Best Lawyers & Advocates in Nagpur (2026)",
+        "image": [
+          "https://advocatejsply.com/assets/images/top10-hero.png"
+        ],
+        "datePublished": "2026-03-24T08:00:00+05:30",
+        "dateModified": "2026-04-17T08:00:00+05:30",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Adv. Jasvinder Singh Ply",
+            "url": "https://advocatejsply.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "contact.html": {
+    "title": "Contact Advocate Jasvinder Singh Ply | Legal Support Nagpur",
+    "description": "Contact Adv. Jasvinder Singh Ply for legal consultations in Nagpur. Call, email, or visit our office at Indora Square for expert legal assistance.",
+    "canonical": "https://advocatejsply.com/contact.html",
+    "script_count": 1,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": "https://advocatejsply.com/contact.html"
+          }
+        ]
+      }
+    ]
+  },
+  "divorce-lawyer-nagpur.html": {
+    "title": "Contested Divorce Lawyer in Nagpur | Adv. JS Ply",
+    "description": "Facing a contested divorce or child custody battle? Consult the best family court lawyer in Nagpur for strong, strategic representation.",
+    "canonical": "https://advocatejsply.com/divorce-lawyer-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://advocatejsply.com/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Contested Divorce",
+            "item": "https://advocatejsply.com/divorce-lawyer-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are the grounds for contested divorce?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Grounds for contested divorce include cruelty, adultery, desertion, mental disorder, or renunciation under the Hindu Marriage Act. A thorough evaluation of facts is required to build a case."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get a divorce without spouse's consent?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, if one spouse can prove specific statutory grounds like cruelty or desertion, a contested divorce can be granted by the court even without the other spouse's consent."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "domestic-violence-lawyer-nagpur.html": {
+    "title": "Alimony & DV Lawyer in Nagpur | Adv. Jasvinder Ply",
+    "description": "Facing domestic abuse or fighting for fair alimony? Consult the top alimony and domestic violence lawyer in Nagpur for immediate court protection.",
+    "canonical": "https://advocatejsply.com/domestic-violence-lawyer-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://advocatejsply.com/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Domestic Violence",
+            "item": "https://advocatejsply.com/domestic-violence-lawyer-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How to file a domestic violence case in Nagpur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A domestic violence complaint can be filed before the Magistrate court under the PWDVA. Legal experts help with Protection Orders and monetary relief."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get immediate court protection?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, 'ex-parte' interim protection orders can be sought if there is an imminent threat, legally barring abusers from the shared household."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "index.html": {
+    "title": "Advocate Jasvinder Singh Ply | High Court Lawyer in Nagpur",
+    "description": "Expert legal services by Adv. Jasvinder Singh Ply in Nagpur. Specializing in Property Disputes, Family Law, Criminal Defense, and Legal Notice drafting.",
+    "canonical": "https://advocatejsply.com/",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "Advocate Jasvinder Singh Ply",
+        "image": "https://advocatejsply.com/assets/images/logo.png",
+        "logo": "https://advocatejsply.com/assets/images/logo.png",
+        "@id": "https://advocatejsply.com",
+        "url": "https://advocatejsply.com",
+        "telephone": "+918857972717",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Buddh Nagar, Indora Square",
+          "addressLocality": "Nagpur",
+          "addressRegion": "Maharashtra",
+          "postalCode": "440017",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 21.1722807,
+          "longitude": 79.1011674
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        "priceRange": "$$"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          }
+        ]
+      }
+    ]
+  },
+  "legal-agreements-nagpur.html": {
+    "title": "Legal Agreements Lawyer Nagpur | Adv. Jasvinder Ply",
+    "description": "Professional drafting of Legal Agreements in Nagpur. Specialty in Leave and License, Loan Agreements, and customized Service Contracts for experts.",
+    "canonical": "https://advocatejsply.com/legal-agreements-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://advocatejsply.com/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Legal Agreements",
+            "item": "https://advocatejsply.com/legal-agreements-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why are custom legal agreements better than templates?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Generic templates often fail in court because they don't account for specific local laws and unique circumstances. Custom drafting ensures all clauses are airtight and legally binding."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the importance of witnesses in an agreement?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Witnesses confirm the identity of signing parties and verify the voluntary nature of the agreement, adding critical legal weight during enforcement."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "legal-notice-service-nagpur.html": {
+    "title": "Legal Notice Services Nagpur | Adv. Jasvinder Ply",
+    "description": "Strategic Legal Notice services in Nagpur. Specializing in Cheque Bounce (Sec 138 NI Act), Breach of Contract, and Notices to Govt (Sec 80 CPC).",
+    "canonical": "https://advocatejsply.com/legal-notice-service-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://advocatejsply.com/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Legal Notice",
+            "item": "https://advocatejsply.com/legal-notice-service-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the notice period for Cheque Bounce in Nagpur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A legal notice for cheque bounce must be sent within 30 days of receiving the bank memo. The recipient has 15 days to settle the amount before criminal proceedings can begin."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a notice mandatory before suing a government body?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, under Section 80 of the CPC, a formal 2-month notice is mandatory before filing a lawsuit against any government body like the Nagpur Municipal Corporation (NMC)."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "legal-notices.html": {
+    "title": "Legal Notices Guide India | Adv. Jasvinder Singh Ply",
+    "description": "Understand Legal Notices in India. Learn about Cheque Bounce, Money Recovery, and Consumer Notices. Draft your notice online or consult an expert.",
+    "canonical": "https://advocatejsply.com/legal-notices.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Legal Notices Guide",
+            "item": "https://advocatejsply.com/legal-notices.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is a legal notice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A formal communication to inform of a grievance before legal proceedings, often a mandatory first step in India."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use the draft from your tool directly?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, the tool is for educational purposes. Notices must be reviewed and signed by Adv. Jasvinder Singh Ply for legal validity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do I need a lawyer if I can draft it myself?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Precision, citations, and an advocate's signature are mandatory for a notice to have legal standing in court."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Typically drafted and dispatched within 24-48 hours after consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is RPAD?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Registered Post Acknowledgement Due; it provides the official proof of delivery required in court."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need to visit your office?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, the entire process can be handled remotely and digitally."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "marriage-registration-lawyer-nagpur.html": {
+    "title": "Court Marriage Lawyer Nagpur | Adv. Jasvinder Ply",
+    "description": "Fast, hassle-free, and legally sound marriage registration in Nagpur. Consult top court marriage advocate Jasvinder Singh Ply.",
+    "canonical": "https://advocatejsply.com/marriage-registration-lawyer-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://advocatejsply.com/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Marriage Registration",
+            "item": "https://advocatejsply.com/marriage-registration-lawyer-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How to register a marriage in Nagpur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To register a marriage in Nagpur, both partners must submit an application supported by required age, address proof, and witness verification to the Marriage Registrar or Family Court office. Hiring a leading court marriage lawyer guarantees document scrutiny and smooth processing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What documents are required for court marriage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Required documents include Age proof (Birth Certificate/SSC marksheet), residential proof (Aadhar/Passport), passport size photographs, and an affidavit regarding marital status. A 30-day notice is mandatory under the Special Marriage Act."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "mutual-divorce-lawyer-nagpur.html": {
+    "title": "Mutual Consent Divorce Lawyer Nagpur | Adv. JS Ply",
+    "description": "Looking for a mutual consent divorce lawyer in Nagpur? Get fast, confidential, and effective legal solutions with top family court attorney Adv. Jasvinder Singh Ply.",
+    "canonical": "https://advocatejsply.com/mutual-divorce-lawyer-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://advocatejsply.com/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Mutual Consent Divorce",
+            "item": "https://advocatejsply.com/mutual-divorce-lawyer-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I file for a mutual consent divorce in Nagpur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Filing for a mutual consent divorce in Nagpur involves drafting a joint petition detailing agreed terms and submitting it to the Family Court. Expert guidance ensures an error-free process."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the cooling-off period?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The cooling-off period is generally 6 months between first and second motions, but can sometimes be waived under Supreme Court guidelines."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "notice.html": {
+    "title": "Draft Legal Notice Online | Nagpur | Adv. Jasvinder",
+    "description": "Free online tool to draft legal notices for Cheque Bounce, Money Recovery, and Consumer Disputes in India. Instant educational preview draft.",
+    "canonical": "https://advocatejsply.com/notice.html",
+    "script_count": 1,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Legal Notice Generator",
+            "item": "https://advocatejsply.com/notice.html"
+          }
+        ]
+      }
+    ]
+  },
+  "partnership-deeds-nagpur.html": {
+    "title": "Partnership Deed Lawyer in Nagpur | Adv. JS Ply",
+    "description": "Expert drafting and registration of Partnership Deeds in Nagpur. Registration with Registrar of Firms (RoF) Maharashtra for business compliance.",
+    "canonical": "https://advocatejsply.com/partnership-deeds-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://advocatejsply.com/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Partnership Deeds",
+            "item": "https://advocatejsply.com/partnership-deeds-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is RoF registration mandatory for partnerships in Maharashtra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, in Maharashtra, registration of firms is mandatory for a firm to file a lawsuit against partners or third parties. It is a critical safeguard for business compliance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What documentation is needed for a Partnership Deed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Key documents include notarized partnership deeds, address proofs of partners, and digital filings with the Registrar of Firms (RoF) Maharashtra."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "property-disputes-nagpur.html": {
+    "title": "Property Dispute Lawyer Nagpur | Adv. Jasvinder Ply",
+    "description": "Expert property dispute resolution in Nagpur. Specializing in MahaRERA cases, Partition Suits, and Permanent Injunctions at Nagpur District Court.",
+    "canonical": "https://advocatejsply.com/property-disputes-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://advocatejsply.com/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Property Disputes",
+            "item": "https://advocatejsply.com/property-disputes-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How to resolve property disputes in Nagpur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Property disputes in Nagpur can be resolved through MahaRERA complaints, partition suits, or title declarations at the District Court. Seeking expert legal representation is crucial for protecting ownership rights."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the help available for delayed flats?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "If project delivery is delayed, homebuyers can approach MahaRERA for interest compensation or full refunds. Our team specializes in representing buyers at the MahaRERA Appellate Tribunal."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "property-registry-nagpur.html": {
+    "title": "Property Registry Lawyer in Nagpur | Adv. JS Ply",
+    "description": "Expert legal assistance for Property Registry, Sale Deeds, and Gift Deeds in Nagpur. Compliance with Maharashtra Stamp Act and Title Verification.",
+    "canonical": "https://advocatejsply.com/property-registry-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://advocatejsply.com/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Property Registry",
+            "item": "https://advocatejsply.com/property-registry-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why is Title Verification necessary in Nagpur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Title verification is necessary to ensure the property is free from all encumbrances, loans, or pending litigation, especially in rapidly developing areas of Nagpur."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens after the Sale Deed is registered?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "After Sale Deed registration, it is crucial to perform Mutation (Naam-antaran) in government records to officially reflect the new ownership."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "services.html": {
+    "title": "Legal Services | Advocate Jasvinder Singh Ply",
+    "description": "Comprehensive legal services including Property Registration, Family Disputes, Criminal Law, and Corporate Legal Notices.",
+    "canonical": "https://advocatejsply.com/services.html",
+    "script_count": 1,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://advocatejsply.com/services.html"
+          }
+        ]
+      }
+    ]
+  },
+  "will-writing-nagpur.html": {
+    "title": "Will Writing Lawyer in Nagpur | Adv. Jasvinder Ply",
+    "description": "Expert Will writing and estate planning services in Nagpur. Protecting your family",
+    "canonical": "https://advocatejsply.com/will-writing-nagpur.html",
+    "script_count": 2,
+    "syntax_errors": [],
+    "blocks": [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://advocatejsply.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://advocatejsply.com/services.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Will Writing",
+            "item": "https://advocatejsply.com/will-writing-nagpur.html"
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is registration of a Will mandatory in Nagpur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "While not mandatory under the Registration Act, registering your Will in Nagpur is strongly recommended to ensure its authenticity and make it harder to contest in the future."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I update my Will?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You should update your Will after significant life events like marriage, divorce, birth of a child, or acquisition of new property using a Codicil or a fresh Will."
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

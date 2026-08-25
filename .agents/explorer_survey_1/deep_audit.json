@@ -1,0 +1,988 @@
+{
+  "total_pages": 22,
+  "sitemap_url_count": 22,
+  "sitemap_urls": [
+    {
+      "loc": "https://advocatejsply.com/",
+      "lastmod": "2026-04-23",
+      "changefreq": "daily",
+      "priority": "1.0"
+    },
+    {
+      "loc": "https://advocatejsply.com/services.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://advocatejsply.com/about.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "monthly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://advocatejsply.com/contact.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "monthly",
+      "priority": "0.7"
+    },
+    {
+      "loc": "https://advocatejsply.com/blogs.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://advocatejsply.com/mutual-divorce-lawyer-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.9"
+    },
+    {
+      "loc": "https://advocatejsply.com/divorce-lawyer-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.9"
+    },
+    {
+      "loc": "https://advocatejsply.com/domestic-violence-lawyer-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.9"
+    },
+    {
+      "loc": "https://advocatejsply.com/marriage-registration-lawyer-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.9"
+    },
+    {
+      "loc": "https://advocatejsply.com/legal-agreements-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.9"
+    },
+    {
+      "loc": "https://advocatejsply.com/legal-notice-service-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.9"
+    },
+    {
+      "loc": "https://advocatejsply.com/partnership-deeds-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.9"
+    },
+    {
+      "loc": "https://advocatejsply.com/property-disputes-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.9"
+    },
+    {
+      "loc": "https://advocatejsply.com/property-registry-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.9"
+    },
+    {
+      "loc": "https://advocatejsply.com/will-writing-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.9"
+    },
+    {
+      "loc": "https://advocatejsply.com/legal-notices.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://advocatejsply.com/notice.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "monthly",
+      "priority": "0.6"
+    },
+    {
+      "loc": "https://advocatejsply.com/blogs/common-mistakes-legal-notice.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://advocatejsply.com/blogs/annulment-divorce-guide-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://advocatejsply.com/blogs/top-10-divorce-lawyers-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://advocatejsply.com/blogs/maharashtra-new-advocate-general.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    },
+    {
+      "loc": "https://advocatejsply.com/blogs/sale-deed-registration-guide-nagpur.html",
+      "lastmod": "2026-04-23",
+      "changefreq": "weekly",
+      "priority": "0.8"
+    }
+  ],
+  "robots_txt": "User-agent: *\nAllow: /\nSitemap: https://advocatejsply.com/sitemap.xml\n",
+  "page_audits": [
+    {
+      "file": "about.html",
+      "category": "core",
+      "title": "About Advocate Jasvinder Singh Ply | Legal Expert in Nagpur",
+      "title_len": 59,
+      "description": "Learn about Adv. Jasvinder Singh Ply, a dedicated legal professional in Nagpur with 12+ years of experience in Family Law and Real Estate.",
+      "description_len": 138,
+      "canonical": "https://advocatejsply.com/about.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/about.html",
+        "og:title": "About Adv. Jasvinder Singh Ply | Lawyer in Nagpur",
+        "og:description": "Meet Adv. Jasvinder Singh Ply, a dedicated legal professional in Nagpur with expertise in family law, real estate, and civil litigation.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "About Adv. Jasvinder Singh Ply | Lawyer in Nagpur",
+        "twitter:description": "Meet Adv. Jasvinder Singh Ply, a dedicated legal professional in Nagpur with expertise in family law, real estate, and civil litigation.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "blogs.html",
+      "category": "blog_index",
+      "title": "Blogs & Legal Insights | Adv. Jasvinder Singh Ply",
+      "title_len": 49,
+      "description": "Read the latest legal insights, guides, and updates from Advocate Jasvinder Singh Ply. Expert advice on legal notices, property disputes, and more.",
+      "description_len": 147,
+      "canonical": null,
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/blogs.html",
+        "og:title": "Legal Blog & Insights | Adv. Jasvinder Singh Ply",
+        "og:description": "Expert legal articles on family law, property, and civil litigation in Nagpur by Adv. Jasvinder Singh Ply. Stay informed on Indian legal matters.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Legal Blog & Insights | Adv. Jasvinder Singh Ply",
+        "twitter:description": "Expert legal articles on family law, property, and civil litigation in Nagpur by Adv. Jasvinder Singh Ply. Stay informed on Indian legal matters.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ]
+      ],
+      "issues": [
+        "Missing canonical link tag"
+      ],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "blogs/annulment-divorce-guide-nagpur.html",
+      "category": "blog_articles",
+      "title": "Annulment vs Divorce Guide Nagpur | Adv. JS Ply",
+      "title_len": 47,
+      "description": "Confused about marriage annulment or divorce in Nagpur? Read our guide on 'Marriage By Mistake' and legal remedies by Advocate Jasvinder Singh Ply.",
+      "description_len": 147,
+      "canonical": "https://advocatejsply.com/blogs/annulment-divorce-guide-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "article",
+        "og:url": "https://advocatejsply.com/blogs/annulment-divorce-guide-nagpur.html",
+        "og:title": "Annulment vs Divorce Guide Nagpur | Adv. JS Ply",
+        "og:description": "Annulment vs divorce: key differences explained for Nagpur residents. Expert guide by Adv. Jasvinder Singh Ply on Indian family law.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Annulment vs Divorce Guide Nagpur | Adv. JS Ply",
+        "twitter:description": "Annulment vs divorce: key differences explained for Nagpur residents. Expert guide by Adv. Jasvinder Singh Ply on Indian family law.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "BlogPosting"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "blogs/common-mistakes-legal-notice.html",
+      "category": "blog_articles",
+      "title": "Common Mistakes in Legal Notices | Adv. Jasvinder Singh Ply",
+      "title_len": 59,
+      "description": "Learn about the 5 most common mistakes people make while sending a legal notice in India. Expert legal guide by Advocate Jasvinder Singh Ply.",
+      "description_len": 141,
+      "canonical": "https://advocatejsply.com/blogs/common-mistakes-legal-notice.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "article",
+        "og:url": "https://advocatejsply.com/blogs/common-mistakes-legal-notice.html",
+        "og:title": "Common Mistakes in Legal Notices | Adv. Jasvinder",
+        "og:description": "Avoid costly errors in legal notices. Expert tips from Adv. Jasvinder Singh Ply on drafting effective legal notices in India.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Common Mistakes in Legal Notices | Adv. Jasvinder",
+        "twitter:description": "Avoid costly errors in legal notices. Expert tips from Adv. Jasvinder Singh Ply on drafting effective legal notices in India.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "BlogPosting"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "blogs/maharashtra-new-advocate-general.html",
+      "category": "blog_articles",
+      "title": "Maharashtra New Advocate General 2025 | Adv. JS Ply",
+      "title_len": 51,
+      "description": "Senior Advocate Dr. Milind Sathe takes charge as Maharashtra's new Advocate General. Learn about his career and how this appointment impacts Nagpur's legal landscape.",
+      "description_len": 166,
+      "canonical": "https://advocatejsply.com/blogs/maharashtra-new-advocate-general.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "article",
+        "og:url": "https://advocatejsply.com/blogs/maharashtra-new-advocate-general.html",
+        "og:title": "Maharashtra New Advocate General 2025 | Adv. JS Ply",
+        "og:description": "Sr. Advocate Dr. Milind Sathe appointed as Maharashtra's new Advocate General. Analysis and insights by Adv. Jasvinder Singh Ply.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Maharashtra New Advocate General 2025 | Adv. JS Ply",
+        "twitter:description": "Sr. Advocate Dr. Milind Sathe appointed as Maharashtra's new Advocate General. Analysis and insights by Adv. Jasvinder Singh Ply.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "BlogPosting"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Meta description length (166 chars) exceeds recommended ~160 chars",
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "blogs/sale-deed-registration-guide-nagpur.html",
+      "category": "blog_articles",
+      "title": "Sale Deed Registration Guide Nagpur 2026 | Adv. JS Ply",
+      "title_len": 54,
+      "description": "Step-by-step guide to Sale Deed registration in Nagpur 2026. Learn about stamp duty, NMRDA approvals, and the IGR Maharashtra process.",
+      "description_len": 134,
+      "canonical": "https://advocatejsply.com/blogs/sale-deed-registration-guide-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "article",
+        "og:url": "https://advocatejsply.com/blogs/sale-deed-registration-guide-nagpur.html",
+        "og:title": "Sale Deed Registration Guide Nagpur 2026 | Adv. JS Ply",
+        "og:description": "Complete guide to sale deed registration in Nagpur (2026). Step-by-step process, stamp duty, and Maharashtra Stamp Act explained.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Sale Deed Registration Guide Nagpur 2026 | Adv. JS Ply",
+        "twitter:description": "Complete guide to sale deed registration in Nagpur (2026). Step-by-step process, stamp duty, and Maharashtra Stamp Act explained.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "BlogPosting"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "blogs/top-10-divorce-lawyers-nagpur.html",
+      "category": "blog_articles",
+      "title": "Best Lawyers & Advocates in Nagpur (2026) | Adv. JS Ply",
+      "title_len": 55,
+      "description": "Looking for the best legal help in Nagpur? Our 2026 guide covers top-rated advocates in Family Law, Consumer Court, Civil Litigation, GST & Corporate Law.",
+      "description_len": 154,
+      "canonical": "https://advocatejsply.com/blogs/top-10-divorce-lawyers-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "article",
+        "og:url": "https://advocatejsply.com/blogs/top-10-divorce-lawyers-nagpur.html",
+        "og:title": "Best Lawyers & Advocates in Nagpur (2026) | Adv. JS Ply",
+        "og:description": "Ultimate guide to finding top lawyers and advocates in Nagpur (2026). Expert recommendations by Adv. Jasvinder Singh Ply.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Best Lawyers & Advocates in Nagpur (2026) | Adv. JS Ply",
+        "twitter:description": "Ultimate guide to finding top lawyers and advocates in Nagpur (2026). Expert recommendations by Adv. Jasvinder Singh Ply.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "BlogPosting"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "contact.html",
+      "category": "core",
+      "title": "Contact Advocate Jasvinder Singh Ply | Legal Support Nagpur",
+      "title_len": 59,
+      "description": "Contact Adv. Jasvinder Singh Ply for legal consultations in Nagpur. Call, email, or visit our office at Indora Square for expert legal assistance.",
+      "description_len": 146,
+      "canonical": "https://advocatejsply.com/contact.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/contact.html",
+        "og:title": "Contact Adv. Jasvinder Singh Ply | Nagpur",
+        "og:description": "Contact Adv. Jasvinder Singh Ply for legal consultations in Nagpur. Call, email, or visit our office at Indora Square.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Contact Adv. Jasvinder Singh Ply | Nagpur",
+        "twitter:description": "Contact Adv. Jasvinder Singh Ply for legal consultations in Nagpur. Call, email, or visit our office at Indora Square.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "divorce-lawyer-nagpur.html",
+      "category": "practice_areas",
+      "title": "Contested Divorce Lawyer in Nagpur | Adv. JS Ply",
+      "title_len": 48,
+      "description": "Facing a contested divorce or child custody battle? Consult the best family court lawyer in Nagpur for strong, strategic representation.",
+      "description_len": 136,
+      "canonical": "https://advocatejsply.com/divorce-lawyer-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/divorce-lawyer-nagpur.html",
+        "og:title": "Contested Divorce Lawyer in Nagpur | Adv. JS Ply",
+        "og:description": "Facing a contested divorce or child custody battle in Nagpur? Consult the best family court lawyer for strong, strategic representation.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Contested Divorce Lawyer in Nagpur | Adv. JS Ply",
+        "twitter:description": "Facing a contested divorce or child custody battle in Nagpur? Consult the best family court lawyer for strong, strategic representation.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "FAQPage"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "domestic-violence-lawyer-nagpur.html",
+      "category": "practice_areas",
+      "title": "Alimony & DV Lawyer in Nagpur | Adv. Jasvinder Ply",
+      "title_len": 50,
+      "description": "Facing domestic abuse or fighting for fair alimony? Consult the top alimony and domestic violence lawyer in Nagpur for immediate court protection.",
+      "description_len": 146,
+      "canonical": "https://advocatejsply.com/domestic-violence-lawyer-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/domestic-violence-lawyer-nagpur.html",
+        "og:title": "Alimony & DV Lawyer in Nagpur | Adv. Jasvinder Ply",
+        "og:description": "Facing domestic abuse or fighting for alimony in Nagpur? Get immediate court protection from top domestic violence lawyer Adv. Jasvinder Singh Ply.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Alimony & DV Lawyer in Nagpur | Adv. Jasvinder Ply",
+        "twitter:description": "Facing domestic abuse or fighting for alimony in Nagpur? Get immediate court protection from top domestic violence lawyer Adv. Jasvinder Singh Ply.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "FAQPage"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "index.html",
+      "category": "core",
+      "title": "Advocate Jasvinder Singh Ply | High Court Lawyer in Nagpur",
+      "title_len": 58,
+      "description": "Expert legal services by Adv. Jasvinder Singh Ply in Nagpur. Specializing in Property Disputes, Family Law, Criminal Defense, and Legal Notice drafting.",
+      "description_len": 152,
+      "canonical": "https://advocatejsply.com/",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:title": "Advocate Jasvinder Singh Ply | High Court Lawyer in Nagpur",
+        "og:description": "Expert legal services in Nagpur. Specializing in Property Disputes, Family Law, Criminal Defense, and Legal Notice drafting.",
+        "og:image": "https://advocatejsply.com/assets/images/logo.png",
+        "og:url": "https://advocatejsply.com/",
+        "og:type": "website"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Advocate Jasvinder Singh Ply | High Court Lawyer in Nagpur",
+        "twitter:description": "Expert legal services in Nagpur. Specializing in Property Disputes, Family Law, Criminal Defense, and Legal Notice drafting.",
+        "twitter:image": "https://advocatejsply.com/assets/images/logo.png"
+      },
+      "json_ld_types": [
+        [
+          "LegalService"
+        ],
+        [
+          "BreadcrumbList"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:site_name",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "legal-agreements-nagpur.html",
+      "category": "practice_areas",
+      "title": "Legal Agreements Lawyer Nagpur | Adv. Jasvinder Ply",
+      "title_len": 51,
+      "description": "Professional drafting of Legal Agreements in Nagpur. Specialty in Leave and License, Loan Agreements, and customized Service Contracts for experts.",
+      "description_len": 147,
+      "canonical": "https://advocatejsply.com/legal-agreements-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/legal-agreements-nagpur.html",
+        "og:title": "Legal Agreements Lawyer Nagpur | Adv. Jasvinder Ply",
+        "og:description": "Professional drafting of legal agreements in Nagpur. Leave & license, loan agreements, and customized service contracts.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Legal Agreements Lawyer Nagpur | Adv. Jasvinder Ply",
+        "twitter:description": "Professional drafting of legal agreements in Nagpur. Leave & license, loan agreements, and customized service contracts.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "FAQPage"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "legal-notice-service-nagpur.html",
+      "category": "practice_areas",
+      "title": "Legal Notice Services Nagpur | Adv. Jasvinder Ply",
+      "title_len": 49,
+      "description": "Strategic Legal Notice services in Nagpur. Specializing in Cheque Bounce (Sec 138 NI Act), Breach of Contract, and Notices to Govt (Sec 80 CPC).",
+      "description_len": 144,
+      "canonical": "https://advocatejsply.com/legal-notice-service-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/legal-notice-service-nagpur.html",
+        "og:title": "Legal Notice Services Nagpur | Adv. Jasvinder Ply",
+        "og:description": "Strategic legal notice services in Nagpur. Specializing in cheque bounce (Sec 138 NI Act), breach of contract, and Sec 80 CPC notices.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Legal Notice Services Nagpur | Adv. Jasvinder Ply",
+        "twitter:description": "Strategic legal notice services in Nagpur. Specializing in cheque bounce (Sec 138 NI Act), breach of contract, and Sec 80 CPC notices.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "FAQPage"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "legal-notices.html",
+      "category": "core",
+      "title": "Legal Notices Guide India | Adv. Jasvinder Singh Ply",
+      "title_len": 52,
+      "description": "Understand Legal Notices in India. Learn about Cheque Bounce, Money Recovery, and Consumer Notices. Draft your notice online or consult an expert.",
+      "description_len": 146,
+      "canonical": "https://advocatejsply.com/legal-notices.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:title": "Complete Guide to Legal Notices in India | Adv. Jasvinder Singh Ply",
+        "og:description": "Understand Legal Notices in India. Learn about Cheque Bounce, Money Recovery, and Consumer Notices. Draft your notice online or consult an expert.",
+        "og:image": "https://advocatejsply.com/assets/images/logo.png",
+        "og:url": "https://advocatejsply.com/legal-notices.html",
+        "og:type": "article"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Complete Guide to Legal Notices in India | Adv. Jasvinder Singh Ply",
+        "twitter:description": "Understand Legal Notices in India. Learn about Cheque Bounce, Money Recovery, and Consumer Notices. Draft your notice online or consult an expert.",
+        "twitter:image": "https://advocatejsply.com/assets/images/logo.png"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "FAQPage"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:site_name",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "marriage-registration-lawyer-nagpur.html",
+      "category": "practice_areas",
+      "title": "Court Marriage Lawyer Nagpur | Adv. Jasvinder Ply",
+      "title_len": 49,
+      "description": "Fast, hassle-free, and legally sound marriage registration in Nagpur. Consult top court marriage advocate Jasvinder Singh Ply.",
+      "description_len": 126,
+      "canonical": "https://advocatejsply.com/marriage-registration-lawyer-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/marriage-registration-lawyer-nagpur.html",
+        "og:title": "Court Marriage Lawyer Nagpur | Adv. Jasvinder Ply",
+        "og:description": "Fast, hassle-free court marriage and registration in Nagpur. Consult top court marriage advocate Adv. Jasvinder Singh Ply today.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Court Marriage Lawyer Nagpur | Adv. Jasvinder Ply",
+        "twitter:description": "Fast, hassle-free court marriage and registration in Nagpur. Consult top court marriage advocate Adv. Jasvinder Singh Ply today.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "FAQPage"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "mutual-divorce-lawyer-nagpur.html",
+      "category": "practice_areas",
+      "title": "Mutual Consent Divorce Lawyer Nagpur | Adv. JS Ply",
+      "title_len": 50,
+      "description": "Looking for a mutual consent divorce lawyer in Nagpur? Get fast, confidential, and effective legal solutions with top family court attorney Adv. Jasvinder Singh Ply.",
+      "description_len": 165,
+      "canonical": "https://advocatejsply.com/mutual-divorce-lawyer-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/mutual-divorce-lawyer-nagpur.html",
+        "og:title": "Mutual Consent Divorce Lawyer Nagpur | Adv. JS Ply",
+        "og:description": "Fast, confidential mutual consent divorce in Nagpur. Expert family court attorney Adv. Jasvinder Singh Ply guides you step by step.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Mutual Consent Divorce Lawyer Nagpur | Adv. JS Ply",
+        "twitter:description": "Fast, confidential mutual consent divorce in Nagpur. Expert family court attorney Adv. Jasvinder Singh Ply guides you step by step.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "FAQPage"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Meta description length (165 chars) exceeds recommended ~160 chars",
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "notice.html",
+      "category": "generator",
+      "title": "Draft Legal Notice Online | Nagpur | Adv. Jasvinder",
+      "title_len": 51,
+      "description": "Free online tool to draft legal notices for Cheque Bounce, Money Recovery, and Consumer Disputes in India. Instant educational preview draft.",
+      "description_len": 141,
+      "canonical": "https://advocatejsply.com/notice.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/notice.html",
+        "og:title": "Draft Legal Notice Online | Nagpur | Adv. Jasvinder",
+        "og:description": "Generate professional legal notices online: cheque bounce, recovery, consumer, and property disputes. Expert guidance by Adv. Jasvinder Singh Ply.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Draft Legal Notice Online | Nagpur | Adv. Jasvinder",
+        "twitter:description": "Generate professional legal notices online: cheque bounce, recovery, consumer, and property disputes. Expert guidance by Adv. Jasvinder Singh Ply.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "partnership-deeds-nagpur.html",
+      "category": "practice_areas",
+      "title": "Partnership Deed Lawyer in Nagpur | Adv. JS Ply",
+      "title_len": 47,
+      "description": "Expert drafting and registration of Partnership Deeds in Nagpur. Registration with Registrar of Firms (RoF) Maharashtra for business compliance.",
+      "description_len": 144,
+      "canonical": "https://advocatejsply.com/partnership-deeds-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/partnership-deeds-nagpur.html",
+        "og:title": "Partnership Deed Lawyer in Nagpur | Adv. JS Ply",
+        "og:description": "Expert drafting and registration of partnership deeds in Nagpur. RoF Maharashtra compliance and business legal support.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Partnership Deed Lawyer in Nagpur | Adv. JS Ply",
+        "twitter:description": "Expert drafting and registration of partnership deeds in Nagpur. RoF Maharashtra compliance and business legal support.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "FAQPage"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "property-disputes-nagpur.html",
+      "category": "practice_areas",
+      "title": "Property Dispute Lawyer Nagpur | Adv. Jasvinder Ply",
+      "title_len": 51,
+      "description": "Expert property dispute resolution in Nagpur. Specializing in MahaRERA cases, Partition Suits, and Permanent Injunctions at Nagpur District Court.",
+      "description_len": 146,
+      "canonical": "https://advocatejsply.com/property-disputes-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/property-disputes-nagpur.html",
+        "og:title": "Property Dispute Lawyer Nagpur | Adv. Jasvinder Ply",
+        "og:description": "Expert property dispute resolution in Nagpur. Specializing in MahaRERA cases, partition suits, and permanent injunctions.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Property Dispute Lawyer Nagpur | Adv. Jasvinder Ply",
+        "twitter:description": "Expert property dispute resolution in Nagpur. Specializing in MahaRERA cases, partition suits, and permanent injunctions.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "FAQPage"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "property-registry-nagpur.html",
+      "category": "practice_areas",
+      "title": "Property Registry Lawyer in Nagpur | Adv. JS Ply",
+      "title_len": 48,
+      "description": "Expert legal assistance for Property Registry, Sale Deeds, and Gift Deeds in Nagpur. Compliance with Maharashtra Stamp Act and Title Verification.",
+      "description_len": 146,
+      "canonical": "https://advocatejsply.com/property-registry-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/property-registry-nagpur.html",
+        "og:title": "Property Registry Lawyer in Nagpur | Adv. JS Ply",
+        "og:description": "Expert legal help for property registry, sale deeds, and gift deeds in Nagpur. Compliance with Maharashtra Stamp Act and title verification.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Property Registry Lawyer in Nagpur | Adv. JS Ply",
+        "twitter:description": "Expert legal help for property registry, sale deeds, and gift deeds in Nagpur. Compliance with Maharashtra Stamp Act and title verification.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "FAQPage"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "services.html",
+      "category": "core",
+      "title": "Legal Services | Advocate Jasvinder Singh Ply",
+      "title_len": 45,
+      "description": "Comprehensive legal services including Property Registration, Family Disputes, Criminal Law, and Corporate Legal Notices.",
+      "description_len": 121,
+      "canonical": "https://advocatejsply.com/services.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/services.html",
+        "og:title": "Legal Services | Advocate Jasvinder Singh Ply",
+        "og:description": "Comprehensive legal services in Nagpur: family law, property, partnership deeds, legal notices, and more. Expert guidance at every step.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Legal Services | Advocate Jasvinder Singh Ply",
+        "twitter:description": "Comprehensive legal services in Nagpur: family law, property, partnership deeds, legal notices, and more. Expert guidance at every step.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    },
+    {
+      "file": "will-writing-nagpur.html",
+      "category": "practice_areas",
+      "title": "Will Writing Lawyer in Nagpur | Adv. Jasvinder Ply",
+      "title_len": 50,
+      "description": "Expert Will writing and estate planning services in Nagpur. Protecting your family's future through legally binding Wills and Trusts.",
+      "description_len": 133,
+      "canonical": "https://advocatejsply.com/will-writing-nagpur.html",
+      "html_lang": "en",
+      "charset": "UTF-8",
+      "viewport": "width=device-width, initial-scale=1.0",
+      "og_tags": {
+        "og:type": "website",
+        "og:url": "https://advocatejsply.com/will-writing-nagpur.html",
+        "og:title": "Will Writing Lawyer in Nagpur | Adv. Jasvinder Ply",
+        "og:description": "Expert will writing and estate planning in Nagpur. Protect your family's future through legally binding wills and trusts.",
+        "og:image": "https://advocatejsply.com/assets/images/og-image.jpg",
+        "og:site_name": "Advocate Jasvinder Singh Ply"
+      },
+      "twitter_tags": {
+        "twitter:card": "summary_large_image",
+        "twitter:title": "Will Writing Lawyer in Nagpur | Adv. Jasvinder Ply",
+        "twitter:description": "Expert will writing and estate planning in Nagpur. Protect your family's future through legally binding wills and trusts.",
+        "twitter:image": "https://advocatejsply.com/assets/images/og-image.jpg"
+      },
+      "json_ld_types": [
+        [
+          "BreadcrumbList"
+        ],
+        [
+          "FAQPage"
+        ]
+      ],
+      "issues": [],
+      "warnings": [
+        "Generic lang=\"en\" instead of localized \"en-IN\" for Indian legal practice",
+        "Missing recommended Open Graph tag: og:locale"
+      ]
+    }
+  ]
+}
