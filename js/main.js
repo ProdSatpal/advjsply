@@ -246,7 +246,11 @@ function updatePageTranslations() {
       } else if (el.tagName === 'META') {
         el.setAttribute('content', t[key]);
       } else {
-        el.textContent = t[key];
+        if (t[key].includes('<')) {
+          el.innerHTML = t[key];
+        } else {
+          el.textContent = t[key];
+        }
       }
     }
   });
@@ -257,6 +261,10 @@ function updatePageTranslations() {
       el.setAttribute('title', t[key]);
     }
   });
+
+  if (window.lucide) {
+    window.lucide.createIcons();
+  }
 }
 
 function renderComponents() {
